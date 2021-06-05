@@ -504,7 +504,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1094084138}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99999106
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -893,7 +893,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uCC55\uD130\uBC84\uD2BC"
+  m_Text: 
 --- !u!222 &765464569
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1275,6 +1275,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 850
       objectReference: {fileID: 0}
+    - target: {fileID: 8521221861629247220, guid: 197808b0683adf34685856ed5d37b5bd,
+        type: 3}
+      propertyPath: m_Name
+      value: explain_Text
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 197808b0683adf34685856ed5d37b5bd, type: 3}
 --- !u!224 &1103190213 stripped
@@ -1580,7 +1585,7 @@ GameObject:
   - component: {fileID: 1319546145}
   - component: {fileID: 1319546144}
   m_Layer: 5
-  m_Name: Home_button
+  m_Name: Button_home
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1940,6 +1945,8 @@ MonoBehaviour:
   selectBlock: {fileID: 0}
   blockText: {fileID: 0}
   listId: 0
+  posX: 0
+  posY: 0
 --- !u!1 &1696699438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,7 +1959,7 @@ GameObject:
   - component: {fileID: 1696699441}
   - component: {fileID: 1696699440}
   m_Layer: 5
-  m_Name: CodeReset_button
+  m_Name: Button_codeReset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2107,7 +2114,7 @@ GameObject:
   - component: {fileID: 1878634593}
   - component: {fileID: 1878634592}
   m_Layer: 5
-  m_Name: CodeStart_button
+  m_Name: Button_execute
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2183,7 +2190,7 @@ GameObject:
   - component: {fileID: 1887609006}
   - component: {fileID: 1887609005}
   m_Layer: 5
-  m_Name: Chapter_button
+  m_Name: Button_chapter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2229,7 +2236,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 7828c2fe3cd0b0d49a5c89eb6388a47d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2315,7 +2322,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0000201857}
+  m_AnchoredPosition: {x: 0, y: 0.0000045651514}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1001 &7803207577143682959

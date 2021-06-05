@@ -101,7 +101,7 @@ public class BlockManager : MonoBehaviour
         head.next = newBlock;
         return 1;
     }
-    /* (tg) 중간삽입     드래그 앤 드랍했을 때 어떤 노드들 사이에 들어가는지 알 수 있어야 함
+    /* (tg) 중간삽입     개발 중.. 드래그 앤 드랍했을 때 어떤 노드들 사이에 들어가는지 알 수 있어야 함
      * public int insert()
     {
         string direction = blockText.text;
@@ -128,11 +128,11 @@ public class BlockManager : MonoBehaviour
         showBlocks();
     }
     // (tg) 넘겨받은 id값으로 블럭 삭제 (수정 필요)
-    public void deleteNode(string num)
+    public void deleteNode(string blockName)
     {
-        //string[] result = blockText.text.Split(':'); (tg)
-        //string deleteNum = result[1]; (tg)
-        Block delete = getNode(num);
+        string[] result = blockName.Split(':'); //(tg)
+        string deleteNum = result[1]; //(tg)
+        Block delete = getNode(result[1]);
         if (delete == null)
             Debug.Log("Can't find that block");
         else
@@ -159,7 +159,7 @@ public class BlockManager : MonoBehaviour
             print = print.next;
         }
     }
-    // (tg) 동작확인 함수
+    // (tg) 연결리스트 동작확인 함수
     public void verifiAlgorithm()
     {
         for (int i = 1; i < 9; i++)
@@ -173,36 +173,51 @@ public class BlockManager : MonoBehaviour
         printList();
     }
 
+    /* (tg) 아래에 블럭생성 통합코드를 작성했으므로 삭제 요청합니당! ㅎㅅㅎ
     // ht 블럭 생성
-    public void createForwardBlock()
+    public void createForwardBlock(string id)
     {
         GameObject newObj = new GameObject();
+        GameObject layerObj = new GameObject();
         newObj.name = "ForwardBlock";
+        layerObj.name = "BlockDelete";
         newObj.AddComponent<CanvasRenderer>();
         newObj.AddComponent<Button>();
         newObj.AddComponent<Image>();
+        layerObj.AddComponent<CanvasRenderer>();
+        layerObj.AddComponent<Button>();
+        layerObj.AddComponent<Image>();
 
         // Tag를 Block으로 변경
         newObj.gameObject.tag = "Block";
-
+        
         // 이미지 변경
         newObj.GetComponent<Image>().sprite = Resources.Load("images/Forward", typeof(Sprite)) as Sprite;
+        layerObj.GetComponent<Image>().sprite = Resources.Load("images/Button_blockDelete", typeof(Sprite)) as Sprite;
 
         // Image가 보이도록 부모를 Panel로 변경 
         newObj.transform.SetParent(GameObject.Find("CodePanel").transform);
+        layerObj.transform.SetParent(GameObject.Find("CodePanel").transform);
 
         // 생성위치를 좌상단으로 지정
         newObj.GetComponent<RectTransform>().anchorMin = new Vector2(0f, 1f);
         newObj.GetComponent<RectTransform>().anchorMax = new Vector2(0f, 1f);
         newObj.GetComponent<RectTransform>().pivot = new Vector2(0f, 1f);
+
+        layerObj.GetComponent<RectTransform>().anchorMin = new Vector2(0f, 1f);
+        layerObj.GetComponent<RectTransform>().anchorMax = new Vector2(0f, 1f);
+        layerObj.GetComponent<RectTransform>().pivot = new Vector2(0f, 1f);
         // RectTransform의 PosX, PosY, PosZ 변경 방법
         newObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(posX, posY);
+        layerObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(posX, posY);
         posY -= 100f; // 다음 블럭 y좌표 조정
+
+        layerObj.GetComponent<RectTransform>().localScale = new Vector2(1,1);
         //Debug.Log("Created");
 
     }
     // ht 좌회전 블럭 생성
-    public void createLeftBlock()
+    public void createLeftBlock(string id)
     {
         GameObject newObj = new GameObject();
         newObj.name = "LeftBlock";
@@ -230,10 +245,10 @@ public class BlockManager : MonoBehaviour
 
     }
     // ht 우회전 블럭 생성
-    public void createRightBlock()
+    public void createRightBlock(string id)
     {
         GameObject newObj = new GameObject();
-        newObj.name = "RightBlock";
+        newObj.name = "RightBlock:"+id;
         newObj.AddComponent<CanvasRenderer>();
         newObj.AddComponent<Button>();
         newObj.AddComponent<Image>();
@@ -257,6 +272,8 @@ public class BlockManager : MonoBehaviour
         //Debug.Log("Created");
 
     }
+    -여기까지-
+    */
     // ht 만들었던 블럭들 삭제
     public void deleteBlocks(string target)
     {
@@ -268,9 +285,59 @@ public class BlockManager : MonoBehaviour
         }
     }
 
+    // (tg) 블록생성 함수 코드 중복을 막기 위해서 하나로 통합
+    public void createBlock(string block)
+    {
+        string whatis = block.Split(':')[0];            // 클릭된 블럭이 무엇인지 판단
+        string listId = block.Split(':')[1];            // 클릭된 불럭의 id값 저장 (삭제 등을 할 때 무슨 블럭인지 알아야 해서)
+        string prefResource;                            // 생성할 프리펩 리소스
+        string designObjName;                           // 클릭된 블럭의 이름
+        string imgResource;                             // 프리펩에 씌울 이미지 이름
+                
+        // 이름 및 이미지 지정
+        if (whatis.Equals("Button_left"))       // 좌회전 버튼이면
+        {
+            designObjName = "LeftBlock:" + listId;
+            imgResource = "images/Left";
+            prefResource = "Prefabs/Button_left";
+        }
+        else if (whatis.Equals("Button_forward"))       // 직진 버튼이면
+        {
+            designObjName = "ForwardBlock:" + listId;
+            imgResource = "images/forward";
+            prefResource = "Prefabs/Button_forward";
+        }
+        else
+        {   // 둘 다 아니면 우회전 버튼이므로
+            designObjName = "RightBlock:" + listId;
+            imgResource = "images/Right";
+            prefResource = "Prefabs/Button_right";
+        }
 
-    // ht 연결리스트 헤드를 받아서 화면에 출력
-    public void showBlocks()
+        // 프리펩 호출
+        GameObject prefab = Resources.Load(prefResource) as GameObject;
+        // 블루존(코딩존)에 생성할 프리펩 인스턴스화
+        GameObject newObj = Instantiate(prefab) as GameObject;
+        newObj.name = designObjName;
+        newObj.GetComponent<Image>().sprite = Resources.Load(imgResource, typeof(Sprite)) as Sprite;
+
+        // Tag를 Block으로 변경
+        newObj.gameObject.tag = "Block";
+
+        // Image가 보이도록 부모를 Panel로 변경 
+        newObj.transform.SetParent(GameObject.Find("CodePanel").transform);
+
+        // 생성위치를 좌상단으로 지정
+        newObj.GetComponent<RectTransform>().anchorMin = new Vector2(0f, 1f);
+        newObj.GetComponent<RectTransform>().anchorMax = new Vector2(0f, 1f);
+        newObj.GetComponent<RectTransform>().pivot = new Vector2(0f, 1f);
+
+        // RectTransform의 PosX, PosY, PosZ 변경 방법
+        newObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(posX, posY);
+        posY -= 300f; // 다음 블럭 y좌표 조정
+                      // ht 연결리스트 헤드를 받아서 화면에 출력
+    }
+        public void showBlocks()
     {
         // head 부터 tail까지 돌면서 블럭생성
         Block LL = head.next;
@@ -279,45 +346,44 @@ public class BlockManager : MonoBehaviour
         posY = 0f;
         while (!isTail(LL))
         {
+            // (tg) 코드 중복을 최소화 하기 위해서 아래의 코드를 함수 하나로 처리
             // 각 노드가 어떤 블럭인지 판단후 해당 블럭 생성하는 함수 실행
-            string[] direction_temp = LL.direction.Split(':');
-            if (direction_temp[0].Equals("forward"))
+            /*string[] direction_temp = LL.direction.Split(':');
+            if (direction_temp[0].Equals("Button_forward"))
             {
-                createForwardBlock(); // 전진 블럭인 경우 (일단 모든 노드가 전진블럭이라고 가정)
+                createForwardBlock(direction_temp[1]); // 전진 블럭인 경우 (일단 모든 노드가 전진블럭이라고 가정)
             }
-            else if (direction_temp[0].Equals("left"))
+            else if (direction_temp[0].Equals("Button_left"))
             {
-                createLeftBlock(); // 좌회전 블럭인 경우
+                createLeftBlock(direction_temp[1]); // 좌회전 블럭인 경우
 
             }
-            else if (direction_temp[0].Equals("right"))
+            else if (direction_temp[0].Equals("Button_right"))
             {
-                createRightBlock(); // 우회전 블럭인 경우
+                createRightBlock(direction_temp[1]); // 우회전 블럭인 경우
             }
+            */
+            createBlock(LL.direction);
             LL = LL.next;
         }
 
-        // 만들었던 블럭들 삭제
+        // (tg) 만들었던 블럭들 삭제
         //deleteBlocks("Block");
     }
 
     void Start()
     {
         initlist();
-        // 동작 확인을 위해 스타트 함수에서 실행
+        // (tg) 동작 확인을 위해 스타트 함수에서 실행
         //verifiAlgorithm();
-
-        // 연결리스트가 갱신될때마다 ( = 코딩블럭이 클릭될때 (insert), 코딩존의 블럭이 삭제될 때 (delete))
-        // showBlocks() 실행
-
-
     }
 
     void Update()
     {
+
     }
 
-    /*
+    /*  (tg) 단일 연결리스트 코드
         public class BlockList
         {
             Block head;
