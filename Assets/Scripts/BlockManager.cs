@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+    (tg)
+    연결리스트와 관련된 요소는 '노드'로 칭하고
+    표면적으로 드러나는 코딩블럭은 '블럭'으로 표기
+*/
+
 public class BlockManager : MonoBehaviour
 {
     public GameObject selectBlock;
@@ -49,8 +55,8 @@ public class BlockManager : MonoBehaviour
         string condition;
     }
 
-    // (tg) 리스트 head 및 tail
-    Block head, tail;
+    // (tg) 리스트 head 및 tail, middle(리스트 중간에 삽입할 위치를 가리키는 포인터)
+    Block head, tail, middle;
 
     // (tg) 리스트 초기화
     public void initlist()
@@ -62,6 +68,7 @@ public class BlockManager : MonoBehaviour
         head.prev = head;
         //tail.next = tail;   head는 자기 참조가 되든데 tail은 왜?..
         tail.prev = head;
+        middle = null;
     }
     // (tg) 현재 블럭이 끝이면 true 아니면 false 반환
     public bool isTail(Block b)
@@ -101,32 +108,39 @@ public class BlockManager : MonoBehaviour
         head.next = newBlock;
         return 1;
     }
-    /* (tg) 중간삽입     개발 중.. 드래그 앤 드랍했을 때 어떤 노드들 사이에 들어가는지 알 수 있어야 함
-     * public int insert()
+    // (tg) 중간삽입     개발 중.. 드래그 앤 드랍했을 때 어떤 노드들 사이에 들어가는지 알 수 있어야 함
+    public void setMiddle(string prevNode)
     {
-        string direction = blockText.text;
-
-        listId++;
-        Block newBlock = new Block(direction, listId);
-
+        string idValue = prevNode.Split(':')[1];
+        middle = getNode(idValue);
     }
-    */
     // (tg) 클릭한 블럭을 생성해서 리스트 맨 뒤에 삽입
     public void insertLast(string direction)
     {
         //direction = "test node";       // (tg) 테스트용
-        listId++;
         // ht Debug.Log("Here i am");
-        Block newBlock = new Block(direction, listId);
-        newBlock.prev = tail.prev;
-        newBlock.next = tail;
-        tail.prev.next = newBlock;
-        tail.prev = newBlock;
-
+        listId++;                                       // id값 증가
+        Block newBlock = new Block(direction, listId);  // 노드 생성
+        if (middle != null)
+        {
+            newBlock.prev = middle;
+            newBlock.next = middle.next;
+            middle.next.prev = newBlock;
+            middle.next = newBlock;
+            middle = null;
+        }
+        else
+        {
+            newBlock.prev = tail.prev;                      // 연결
+            newBlock.next = tail;
+            tail.prev.next = newBlock;
+            tail.prev = newBlock;
+        }
         // ht 연결리스트에 노드가 추가되었으므로 이전에 있던 걸 지우고 새로 랜더링
         deleteBlocks("Block");
         showBlocks();
     }
+    
     // (tg) 넘겨받은 id값으로 블럭 삭제 (수정 필요)
     public void deleteNode(string blockName)
     {

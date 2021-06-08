@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6C3B321A-9867-99B8-5812-63D8AE1A3D18}</ProjectGuid>
+    <ProjectGuid>{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,13 +62,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayAction.cs" />
     <Compile Include="Assets\Scripts\Object.cs" />
+    <Compile Include="Assets\Scripts\MouseManager.cs" />
     <Compile Include="Assets\Scripts\Nickname.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\testMouse.cs" />
     <Compile Include="Assets\Scripts\TalkManager.cs" />
     <Compile Include="Assets\Scripts\BlockManager.cs" />
     <Compile Include="Assets\Scripts\AudioPlay.cs" />
-    <Compile Include="Assets\Scripts\testMouse.cs" />
-    <Compile Include="Assets\Scripts\MouseManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\CasualGameBGM05\ReadMe.txt" />

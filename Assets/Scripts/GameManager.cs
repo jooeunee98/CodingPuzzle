@@ -79,7 +79,14 @@ public class GameManager : MonoBehaviour
         //Debug.Log("button : " + clicked);
         blockManager.insertLast(clicked);                                       // 클릭된 버튼 노드 생성
     }
-
+    // (tg) 기존의 블럭들 사이에 새로운 블럭 삽입
+    // 임의의 블럭(A)을 선택하고 레드존의 블럭(B)을 누르면, A 뒤에 B를 삽입
+    public void ClickInsert()
+    {
+        string prevBlockName = EventSystem.current.currentSelectedGameObject.name;
+        Debug.Log("Insert new block at next : " + prevBlockName);
+        blockManager.setMiddle(prevBlockName);
+    }
     // (tg) 블루존에 있는 코드블럭을 제거
     public void ClickDelete()
     {
