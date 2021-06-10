@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3079169315897723700}
   - component: {fileID: 7416077835070641138}
   - component: {fileID: 5405303195252824225}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 3778508185688933407}
   - component: {fileID: 3371869130364906658}
   - component: {fileID: 4290840880393035673}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Button_delete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 845989807934101871}
   - component: {fileID: 6530368529916041835}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 4935839411666229651}
   - component: {fileID: 4935839411666229650}
   - component: {fileID: 4935839411666229645}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Button_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ RectTransform:
   m_GameObject: {fileID: 4935839411666229646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 4935839411996916421}
   - {fileID: 845989807934101871}
@@ -299,11 +299,11 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 60}
   m_SizeDelta: {x: 300, y: 300}
-  m_Pivot: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
 --- !u!222 &4935839411666229651
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 4935839411996916421}
   - component: {fileID: 4935839411996916427}
   - component: {fileID: 4935839411996916426}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: left
   m_TagString: Untagged
   m_Icon: {fileID: 0}

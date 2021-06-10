@@ -18,6 +18,7 @@ public class BlockManager : MonoBehaviour
     // ht 블럭 위치 조정용 변수
     public float posX = 0f;
     public float posY = 0f;
+    public float posZ = 0f;
 
     public class Block
     {
@@ -339,23 +340,25 @@ public class BlockManager : MonoBehaviour
         newObj.gameObject.tag = "Block";
 
         // Image가 보이도록 부모를 Panel로 변경 
-        newObj.transform.SetParent(GameObject.Find("CodePanel").transform);
+        newObj.transform.SetParent(GameObject.Find("codeCanvas").transform);
 
         // 생성위치를 좌상단으로 지정
-        newObj.GetComponent<RectTransform>().anchorMin = new Vector2(0f, 1f);
-        newObj.GetComponent<RectTransform>().anchorMax = new Vector2(0f, 1f);
-        newObj.GetComponent<RectTransform>().pivot = new Vector2(0f, 1f);
-
+        //newObj.GetComponent<RectTransform>().anchorMin = new Vector2(0f, 1f);
+        //newObj.GetComponent<RectTransform>().anchorMax = new Vector2(0f, 1f);
+        //newObj.GetComponent<RectTransform>().pivot = new Vector2(0f, 1f);
         // RectTransform의 PosX, PosY, PosZ 변경 방법
-        newObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(posX, posY);
-        posY -= 300f; // 다음 블럭 y좌표 조정
+        posY += 438f;
+        newObj.GetComponent<RectTransform>().position = new Vector3(posX, posY, posZ);
+        posY -= 438f;
+
+        Debug.Log(posX + " " + posY + " " + posZ);
+        posY -= 65f; // 다음 블럭 y좌표 조정
                       // ht 연결리스트 헤드를 받아서 화면에 출력
     }
         public void showBlocks()
     {
         // head 부터 tail까지 돌면서 블럭생성
         Block LL = head.next;
-
         // 블럭 생성 시작위치 초기화
         posY = 0f;
         while (!isTail(LL))
@@ -388,6 +391,8 @@ public class BlockManager : MonoBehaviour
     void Start()
     {
         initlist();
+        posX += 389.5f;
+        //posZ -= 379f;
         // (tg) 동작 확인을 위해 스타트 함수에서 실행
         //verifiAlgorithm();
     }
