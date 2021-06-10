@@ -30,9 +30,9 @@ public class CodeCamMov : MonoBehaviour
             }
 
             Vector2 dir = (Input.GetTouch(0).position - prevPos).normalized;
-            Vector3 vec = new Vector3(dir.x, 0, dir.y);
+            Vector3 vec = new Vector3(-(dir.x), -(dir.y), 0);
 
-            cam.position -= vec * moveSpeed * Time.deltaTime;
+            cam.position += vec * moveSpeed * Time.deltaTime;
             prevPos = Input.GetTouch(0).position;
         }
 
@@ -49,8 +49,8 @@ public class CodeCamMov : MonoBehaviour
 
             Vector3 pos = cam.position;
 
-            if (move < 0) pos.y -= moveSpeed * Time.deltaTime * 10;
-            else if (move > 0) pos.y += moveSpeed * Time.deltaTime * 10;
+            if (move < 0) pos.z += moveSpeed * Time.deltaTime * 1;
+            else if (move > 0) pos.z -= moveSpeed * Time.deltaTime * 1;
 
             cam.position = pos;
             prevDistance = curDistance;
