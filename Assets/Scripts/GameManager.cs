@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         blockManager = BlockManager.FindObjectOfType<BlockManager>();
+
     }
 
     public void Action(int sNumber)  // 대화 시작

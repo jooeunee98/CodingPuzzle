@@ -14,12 +14,10 @@ public class BlockManager : MonoBehaviour
     public GameObject selectBlock;
     public Text blockText;          // (tg) 블럭 오브젝트 내에 Text를 연결
     public int listId = 0;          // (tg) 블럭 id
-
     // ht 블럭 위치 조정용 변수
     public float posX = 0f;
     public float posY = 0f;
     public float posZ = 0f;
-    
     
     public class Block
     {
@@ -58,7 +56,7 @@ public class BlockManager : MonoBehaviour
     }
 
     // (tg) 리스트 head 및 tail, middle(리스트 중간에 삽입할 위치를 가리키는 포인터)
-    Block head, tail, middle;
+    public Block head, tail, middle;
 
     // (tg) 리스트 초기화
     public void initlist()
@@ -415,6 +413,7 @@ public class BlockManager : MonoBehaviour
 
     void Start()
     {
+
         initlist();
         //posX += 389.5f;
         //posZ -= 379f;

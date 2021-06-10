@@ -5,8 +5,10 @@ using UnityEngine;
 public class CharacterManager : MonoBehaviour
 {
     // Start is called before the first frame update
+    
     void Start()
     {
+
         // 프리펩 호출
         GameObject prefab = Resources.Load("Prefabs/Walking") as GameObject;
         // 블루존(코딩존)에 생성할 프리펩 인스턴스화
@@ -16,10 +18,14 @@ public class CharacterManager : MonoBehaviour
         // 첫번째 블록 위에서 생성
         character.transform.localPosition = new Vector3(0, 8, 0);
         character.name = "Character";
-    }
 
-    // Update is called once per frame
-    void Update()
+
+       
+       
+    }
+    
+// Update is called once per frame
+void Update()
     {
         
     }
