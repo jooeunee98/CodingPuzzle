@@ -15,11 +15,11 @@ D:/GitHub/GitHub/CodingPuzzle
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63034
+65282
 Successfully changed project path to: D:/GitHub/GitHub/CodingPuzzle
 D:/GitHub/GitHub/CodingPuzzle
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 24.08 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 24.39 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
 [Subsystems] Discovering subsystems at path D:/Unity/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -35,7 +35,7 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56480
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56712
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2020.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -43,19 +43,19 @@ Register platform support module: D:/Unity/2020.3.8f1/Editor/Data/PlaybackEngine
 Register platform support module: D:/Unity/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Unity/2020.3.8f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
 Register platform support module: D:/Unity/2020.3.8f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
-Registered in 0.002489 seconds.
+Registered in 0.002251 seconds.
 Native extension for Lumin target not found
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 24.47 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 24.04 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.444 seconds
+- Completed reload, in  1.468 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000599 seconds.
+Registered in 0.000659 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for Lumin target not found
 Native extension for LinuxStandalone target not found
@@ -65,447 +65,91 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.676 seconds
+- Completed reload, in  0.671 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1163 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 61.3 MB.
 System memory in use after: 61.3 MB.
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1608.
-Total: 2.068600 ms (FindLiveObjects: 0.236600 ms CreateObjectMapping: 0.081400 ms MarkObjects: 1.682200 ms  DeleteObjects: 0.066600 ms)
+Total: 1.653700 ms (FindLiveObjects: 0.142000 ms CreateObjectMapping: 0.027000 ms MarkObjects: 1.421400 ms  DeleteObjects: 0.062200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Resources/Prefabs/Walking.prefab
-  artifactKey: Guid(ac8a91d20f5ce404f868ead938b4f452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/Walking.prefab using Guid(ac8a91d20f5ce404f868ead938b4f452) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The legacy Animation Clip "Walking" cannot be used in the State "Walking". Legacy AnimationClips are not allowed in Animator Controllers.To use this animation in this Animator Controller, you must reimport in as a Generic or Humanoid animation clip
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 440]
-
- -> (artifact id: 'e3d489a00658b4ddf1a6c715e8f7dc6b') in 0.423015 seconds
-  Import took 0.425514 seconds .
+  path: Assets/Scenes/Stage0101.unity
+  artifactKey: Guid(75d9b0b58d2e3fe4895a8611cbf3d9fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Stage0101.unity using Guid(75d9b0b58d2e3fe4895a8611cbf3d9fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f58076b86136dbaa78d690f8ee774593') in 0.014672 seconds
+  Import took 0.016506 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000350 seconds.
-  path: Assets/Resources/Prefabs/Taunt.prefab
-  artifactKey: Guid(70c59e18f724a4f48a2fd1ebbe9ac08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/Taunt.prefab using Guid(70c59e18f724a4f48a2fd1ebbe9ac08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The legacy Animation Clip "Taunt" cannot be used in the State "Taunt". Legacy AnimationClips are not allowed in Animator Controllers.To use this animation in this Animator Controller, you must reimport in as a Generic or Humanoid animation clip
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 440]
-
- -> (artifact id: 'a37d0e4c90e1018016c5b3ef8fd1cc7c') in 0.174684 seconds
-  Import took 0.176812 seconds .
+  Time since last request: 0.000236 seconds.
+  path: Assets/Scenes/RaycastTest.unity
+  artifactKey: Guid(0691081706e8e9349be3797ce422e047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/RaycastTest.unity using Guid(0691081706e8e9349be3797ce422e047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f1f34e6da608c1b0386f5b773169798') in 0.006004 seconds
+  Import took 0.008089 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.171112 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/AnimatorController/Walking.controller
-  artifactKey: Guid(9a0cb6e1403b449c4b150ac8fd0041c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/AnimatorController/Walking.controller using Guid(9a0cb6e1403b449c4b150ac8fd0041c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The legacy Animation Clip "Walking" cannot be used in the State "Walking". Legacy AnimationClips are not allowed in Animator Controllers.To use this animation in this Animator Controller, you must reimport in as a Generic or Humanoid animation clip
-
- -> (artifact id: '471ebe0ea691a9a649c0da648d3f3beb') in 0.007224 seconds
-  Import took 0.009173 seconds .
+  Time since last request: 0.000240 seconds.
+  path: Assets/Scenes/20210603ty1.unity
+  artifactKey: Guid(a923a34929aa7f74b8cd3604421420a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/20210603ty1.unity using Guid(a923a34929aa7f74b8cd3604421420a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '686d421b4aae5b243476c7579b316784') in 0.007255 seconds
+  Import took 0.009271 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 228.127851 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/AnimatorController
-  artifactKey: Guid(58548077450e54440ae3b4b8c78fb533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/AnimatorController using Guid(58548077450e54440ae3b4b8c78fb533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42f1f43c79a786ce4ac846c6901daf6') in 0.007295 seconds
-  Import took 0.009457 seconds .
+  Time since last request: 0.000242 seconds.
+  path: Assets/Scenes/GameScreen.unity
+  artifactKey: Guid(83ce4323459f3fb45a2570b76bf4a838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GameScreen.unity using Guid(83ce4323459f3fb45a2570b76bf4a838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68b31be7a9a5944bef404eb426276648') in 0.006593 seconds
+  Import took 0.008260 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.629516 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/AnimatorController/New Animator Controller.controller
-  artifactKey: Guid(8efa31ea245a3d94888fbc5e26aa8e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/AnimatorController/New Animator Controller.controller using Guid(8efa31ea245a3d94888fbc5e26aa8e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f623b4a197c74a0e2dffe0193fea720') in 0.011513 seconds
-  Import took 0.013935 seconds .
+  Time since last request: 0.000211 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0600ca859120d64c28b7f41768fbc095') in 0.006288 seconds
+  Import took 0.007950 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 29.130192 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Hit Reaction.fbx
-  artifactKey: Guid(2130e1c90801546bbabb90e324ae264d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Hit Reaction.fbx using Guid(2130e1c90801546bbabb90e324ae264d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f8830b17a98b0f3de22b3644fe95e6') in 0.140500 seconds
-  Import took 0.142874 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Taunt.fbx
-  artifactKey: Guid(83a03a501eed54f658b7d72e69a12630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Taunt.fbx using Guid(83a03a501eed54f658b7d72e69a12630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff24bedff30a8f8570a107c24c4a4024') in 0.064057 seconds
-  Import took 0.066047 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Jump.fbx
-  artifactKey: Guid(bb8cf9edbd79e4c929ee99867e615348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Jump.fbx using Guid(bb8cf9edbd79e4c929ee99867e615348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '031df2b77a4a2aa543ef2f38a2bc2714') in 0.055997 seconds
-  Import took 0.058038 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx
-  artifactKey: Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx using Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0968cabf8e761845209609836ed609de') in 0.387316 seconds
-  Import took 0.391006 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Running.fbx
-  artifactKey: Guid(86e23fcd2273a41f799bc54ef5c63bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Running.fbx using Guid(86e23fcd2273a41f799bc54ef5c63bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b2c409fecedca78958be3413071539c') in 0.064292 seconds
-  Import took 0.066422 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Walking.fbx
-  artifactKey: Guid(c0fed32fa139548b0a46c1068d86ffc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Walking.fbx using Guid(c0fed32fa139548b0a46c1068d86ffc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2ef2dabd4e548c60f140099668d424') in 0.066792 seconds
-  Import took 0.069103 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.321515 seconds.
-  path: Assets/Resources/Prefabs/Walking.prefab
-  artifactKey: Guid(ac8a91d20f5ce404f868ead938b4f452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/Walking.prefab using Guid(ac8a91d20f5ce404f868ead938b4f452) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (New Animator Controller) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (New Animator Controller) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '8efe4db7c0fef4757f727d95444e3e74') in 0.198278 seconds
-  Import took 0.201229 seconds .
+  Time since last request: 16.062689 seconds.
+  path: Assets/Scenes/ChapterStage.unity
+  artifactKey: Guid(e60f0620af5a05a49986247d8715ce43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ChapterStage.unity using Guid(e60f0620af5a05a49986247d8715ce43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c843d52d6aeab23aab3bac8169adc0') in 0.007047 seconds
+  Import took 0.008970 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000691 seconds.
+Registered in 0.000627 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for Lumin target not found
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.697 seconds
+- Completed reload, in  0.647 seconds
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
 Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1161 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.6 MB.
-System memory in use after: 78.7 MB.
+System memory in use before: 61.2 MB.
+System memory in use after: 61.3 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1655.
-Total: 1.372300 ms (FindLiveObjects: 0.146900 ms CreateObjectMapping: 0.030100 ms MarkObjects: 1.180100 ms  DeleteObjects: 0.014100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 86.408928 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Running.fbx
-  artifactKey: Guid(86e23fcd2273a41f799bc54ef5c63bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Running.fbx using Guid(86e23fcd2273a41f799bc54ef5c63bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09835a153577316dccb5e712e6e5de8a') in 0.157227 seconds
-  Import took 0.159697 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.083430 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Walking.fbx
-  artifactKey: Guid(c0fed32fa139548b0a46c1068d86ffc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Walking.fbx using Guid(c0fed32fa139548b0a46c1068d86ffc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e6f935d3a2f9b4fb27ff7357faf81b') in 0.086117 seconds
-  Import took 0.088504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.928343 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx
-  artifactKey: Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx using Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c15ec539e7cf3599c5a822434583a60a') in 0.341889 seconds
-  Import took 0.345642 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.417375 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Taunt.fbx
-  artifactKey: Guid(83a03a501eed54f658b7d72e69a12630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Taunt.fbx using Guid(83a03a501eed54f658b7d72e69a12630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c53ae2b00cdeee54ac35185a8741f360') in 0.088403 seconds
-  Import took 0.090862 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 80.314803 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx
-  artifactKey: Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx using Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e400e0ba2b19b5eb1c615a2567cd2af8') in 0.331699 seconds
-  Import took 0.335238 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.468717 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx
-  artifactKey: Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx using Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e821fddfe7a87e0011db7356cadea1') in 0.351448 seconds
-  Import took 0.355103 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.143968 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Walking.fbx
-  artifactKey: Guid(c0fed32fa139548b0a46c1068d86ffc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Walking.fbx using Guid(c0fed32fa139548b0a46c1068d86ffc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '133b931d65080ec1734f857f136e65c8') in 0.119340 seconds
-  Import took 0.121769 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.985731 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Walking.fbx
-  artifactKey: Guid(c0fed32fa139548b0a46c1068d86ffc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Walking.fbx using Guid(c0fed32fa139548b0a46c1068d86ffc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71549663cdc7ddb5df643165e8ecbd78') in 0.086565 seconds
-  Import took 0.089030 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000598 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.645 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1161 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.8 MB.
-System memory in use after: 78.9 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1659.
-Total: 1.389200 ms (FindLiveObjects: 0.150400 ms CreateObjectMapping: 0.031400 ms MarkObjects: 1.189400 ms  DeleteObjects: 0.016500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 55.065780 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx
-  artifactKey: Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx using Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa4b7af8bbf8121eee3996b7a582cef5') in 0.447127 seconds
-  Import took 0.451075 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.798333 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx
-  artifactKey: Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx using Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa4b7af8bbf8121eee3996b7a582cef5') in 0.393767 seconds
-  Import took 0.398052 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000641 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.643 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1161 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.0 MB.
-System memory in use after: 79.1 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1663.
-Total: 1.358300 ms (FindLiveObjects: 0.138600 ms CreateObjectMapping: 0.031700 ms MarkObjects: 1.176900 ms  DeleteObjects: 0.010100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 13.556421 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx
-  artifactKey: Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx using Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e4d5b1b264828790a3094a5a2f81871') in 0.331914 seconds
-  Import took 0.335614 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.437123 seconds.
-  path: Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx
-  artifactKey: Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Scanta/Sharkoy/Models/Sharkoy.fbx using Guid(5353a88a9272f490b91bb199bec7ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93a263ce39386b9e6fef7cb00c488cbb') in 0.341471 seconds
-  Import took 0.345548 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.540693 seconds.
-  path: Assets/Scripts/CharacterManager.cs
-  artifactKey: Guid(1711eff75c4d3df488fe562eb83104c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CharacterManager.cs using Guid(1711eff75c4d3df488fe562eb83104c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb0d337a125d65a98a0ffd7c4d9e95e') in 0.010566 seconds
-  Import took 0.012543 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.572626 seconds.
-  path: Assets/Scripts/CharacterMotion.cs
-  artifactKey: Guid(7ccb98d70e00d404791ac2cf984166be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CharacterMotion.cs using Guid(7ccb98d70e00d404791ac2cf984166be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9cc3f65b731a13ac4153629e4e02924') in 0.003390 seconds
-  Import took 0.005392 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.021562 seconds.
-  path: Assets/Scripts/CharacterMotion.cs
-  artifactKey: Guid(7ccb98d70e00d404791ac2cf984166be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CharacterMotion.cs using Guid(7ccb98d70e00d404791ac2cf984166be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9cc3f65b731a13ac4153629e4e02924') in 0.002873 seconds
-  Import took 0.004793 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000634 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.703 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1161 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.0 MB.
-System memory in use after: 79.1 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1667.
-Total: 1.394600 ms (FindLiveObjects: 0.153400 ms CreateObjectMapping: 0.026100 ms MarkObjects: 1.201800 ms  DeleteObjects: 0.012000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000545 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.665 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1161 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.1 MB.
-System memory in use after: 79.1 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1670.
-Total: 1.352900 ms (FindLiveObjects: 0.140000 ms CreateObjectMapping: 0.025300 ms MarkObjects: 1.176000 ms  DeleteObjects: 0.010800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000601 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for Lumin target not found
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.661 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1161 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.1 MB.
-System memory in use after: 79.2 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1673.
-Total: 1.419800 ms (FindLiveObjects: 0.142400 ms CreateObjectMapping: 0.026200 ms MarkObjects: 1.237000 ms  DeleteObjects: 0.013000 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1611.
+Total: 1.590900 ms (FindLiveObjects: 0.139800 ms CreateObjectMapping: 0.025600 ms MarkObjects: 1.410400 ms  DeleteObjects: 0.013700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
