@@ -18,6 +18,8 @@ public class BlockManager : MonoBehaviour
     // ht 블럭 위치 조정용 변수
     public float posX = 0f;
     public float posY = 0f;
+    public float posZ = 0f;
+    
 
     public class Block
     {
@@ -61,6 +63,8 @@ public class BlockManager : MonoBehaviour
     // (tg) 리스트 초기화
     public void initlist()
     {
+        posX -= 687f;
+        posZ -= 2440f;
         //Debug.Log("Init list");
         head = new Block("head");
         tail = new Block("tail");
@@ -138,6 +142,11 @@ public class BlockManager : MonoBehaviour
         }
         // ht 연결리스트에 노드가 추가되었으므로 이전에 있던 걸 지우고 새로 랜더링
         deleteBlocks("Block");
+        posX = 0f;
+        posY = 0f;
+        posZ = 0f;
+        posX -= 687f;
+        posZ -= 2440f;
         showBlocks();
     }
     
@@ -333,24 +342,26 @@ public class BlockManager : MonoBehaviour
         // 블루존(코딩존)에 생성할 프리펩 인스턴스화
         GameObject newObj = Instantiate(prefab) as GameObject;
         newObj.name = designObjName;
-        newObj.GetComponent<Image>().sprite = Resources.Load(imgResource, typeof(Sprite)) as Sprite;
 
         // Tag를 Block으로 변경
         newObj.gameObject.tag = "Block";
 
-        // Image가 보이도록 부모를 Panel로 변경 
-        newObj.transform.SetParent(GameObject.Find("CodePanel").transform);
+        // Image가 보이도록 부모를 CodeZone으로 변경 
+        newObj.transform.SetParent(GameObject.Find("CodeZone").transform);
 
         // 생성위치를 좌상단으로 지정
-        newObj.GetComponent<RectTransform>().anchorMin = new Vector2(0f, 1f);
-        newObj.GetComponent<RectTransform>().anchorMax = new Vector2(0f, 1f);
-        newObj.GetComponent<RectTransform>().pivot = new Vector2(0f, 1f);
+        //newObj.GetComponent<RectTransform>().anchorMin = new Vector2(0f, 1f);
+        //newObj.GetComponent<RectTransform>().anchorMax = new Vector2(0f, 1f);
+        //newObj.GetComponent<RectTransform>().pivot = new Vector2(0f, 1f);
 
         // RectTransform의 PosX, PosY, PosZ 변경 방법
-        newObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(posX, posY);
-        posY -= 300f; // 다음 블럭 y좌표 조정
-                      // ht 연결리스트 헤드를 받아서 화면에 출력
+        
+        newObj.GetComponent<RectTransform>().position = new Vector3(posX, posY, posZ);
+        posZ -= 20f; // 다음 블럭 y좌표 조정
+        Debug.Log(posX + " " + posY + " " + posZ);
     }
+
+    // ht 연결리스트 헤드를 받아서 화면에 출력
         public void showBlocks()
     {
         // head 부터 tail까지 돌면서 블럭생성
