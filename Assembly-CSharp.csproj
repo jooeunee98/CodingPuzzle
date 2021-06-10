@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\PlayAction.cs" />
     <Compile Include="Assets\Scripts\Object.cs" />
     <Compile Include="Assets\Scripts\MouseManager.cs" />
+    <Compile Include="Assets\Scripts\CharacterMotion.cs" />
     <Compile Include="Assets\Scripts\Nickname.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\CodeZoneTouch.cs" />
@@ -69,7 +70,6 @@
     <Compile Include="Assets\Scripts\TalkManager.cs" />
     <Compile Include="Assets\Scripts\BlockManager.cs" />
     <Compile Include="Assets\Scripts\AudioPlay.cs" />
-    <Compile Include="Assets\Scripts\CharacterMotion.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\CasualGameBGM05\ReadMe.txt" />

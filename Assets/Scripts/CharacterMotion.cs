@@ -19,7 +19,6 @@ public class CharacterMotion : MonoBehaviour
     public void Coru()
     {
         animator = GameObject.Find("Character").GetComponent<Animator>();
-        animator.SetBool("theEnd", false);
         coroutine = readCommand(1.0f);
         StartCoroutine(coroutine);
 
@@ -63,7 +62,7 @@ public class CharacterMotion : MonoBehaviour
 
             yield return new WaitForSeconds(waitTime);
         }
-        animator.SetBool("theEnd", true);
+        animator.SetBool("theEnd", false);
 
         go_forward = false;
     }
