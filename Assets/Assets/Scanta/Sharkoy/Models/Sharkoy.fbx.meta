@@ -1,0 +1,3829 @@
+fileFormatVersion: 2
+guid: 5353a88a9272f490b91bb199bec7ab74
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: NULL
+  - first:
+      1: 100004
+    second: persp1
+  - first:
+      1: 100006
+    second: scaryBoy_rig_0007:AimEye
+  - first:
+      1: 100008
+    second: scaryBoy_rig_0007:AimFollowEye
+  - first:
+      1: 100010
+    second: scaryBoy_rig_0007:AimFollowOffEye
+  - first:
+      1: 100012
+    second: scaryBoy_rig_0007:AimFollowOnEye
+  - first:
+      1: 100014
+    second: scaryBoy_rig_0007:AimOffsetEye
+  - first:
+      1: 100016
+    second: scaryBoy_rig_0007:AimSystem
+  - first:
+      1: 100018
+    second: scaryBoy_rig_0007:AlignIKToAnkle_L
+  - first:
+      1: 100020
+    second: scaryBoy_rig_0007:AlignIKToAnkle_R
+  - first:
+      1: 100022
+    second: scaryBoy_rig_0007:Ankle_L
+  - first:
+      1: 100024
+    second: scaryBoy_rig_0007:Ankle_R
+  - first:
+      1: 100026
+    second: scaryBoy_rig_0007:back
+  - first:
+      1: 100028
+    second: scaryBoy_rig_0007:Back_jnt_wing_down
+  - first:
+      1: 100030
+    second: scaryBoy_rig_0007:Back_jnt_wing_up1
+  - first:
+      1: 100032
+    second: scaryBoy_rig_0007:Belt:Group3
+  - first:
+      1: 100034
+    second: scaryBoy_rig_0007:BendSystem
+  - first:
+      1: 100036
+    second: scaryBoy_rig_0007:cc_exp
+  - first:
+      1: 100038
+    second: scaryBoy_rig_0007:cc_exp 1
+  - first:
+      1: 100040
+    second: scaryBoy_rig_0007:cc_exp 2
+  - first:
+      1: 100042
+    second: scaryBoy_rig_0007:cc_exp 3
+  - first:
+      1: 100044
+    second: scaryBoy_rig_0007:Chest_M
+  - first:
+      1: 100046
+    second: scaryBoy_rig_0007:ConstraintSystem
+  - first:
+      1: 100048
+    second: scaryBoy_rig_0007:curve1
+  - first:
+      1: 100050
+    second: scaryBoy_rig_0007:curve1 1
+  - first:
+      1: 100052
+    second: scaryBoy_rig_0007:curve1 2
+  - first:
+      1: 100054
+    second: scaryBoy_rig_0007:curve1 3
+  - first:
+      1: 100056
+    second: scaryBoy_rig_0007:D
+  - first:
+      1: 100058
+    second: scaryBoy_rig_0007:D1
+  - first:
+      1: 100060
+    second: scaryBoy_rig_0007:D2
+  - first:
+      1: 100062
+    second: scaryBoy_rig_0007:D3
+  - first:
+      1: 100064
+    second: scaryBoy_rig_0007:D4
+  - first:
+      1: 100066
+    second: scaryBoy_rig_0007:DeformationSystem
+  - first:
+      1: 100068
+    second: scaryBoy_rig_0007:DrivingSystem
+  - first:
+      1: 100070
+    second: scaryBoy_rig_0007:DynamicSystem
+  - first:
+      1: 100072
+    second: scaryBoy_rig_0007:Elbow_L
+  - first:
+      1: 100074
+    second: scaryBoy_rig_0007:Elbow_R
+  - first:
+      1: 100076
+    second: scaryBoy_rig_0007:expression_curve:cc_exp
+  - first:
+      1: 100078
+    second: scaryBoy_rig_0007:expression_curve:curve1
+  - first:
+      1: 100080
+    second: scaryBoy_rig_0007:Eye_L
+  - first:
+      1: 100082
+    second: scaryBoy_rig_0007:Eye_R
+  - first:
+      1: 100084
+    second: scaryBoy_rig_0007:EyeEnd_L
+  - first:
+      1: 100086
+    second: scaryBoy_rig_0007:EyeEnd_R
+  - first:
+      1: 100088
+    second: scaryBoy_rig_0007:Eyes:Group2
+  - first:
+      1: 100090
+    second: scaryBoy_rig_0007:Eyes:Group3
+  - first:
+      1: 100092
+    second: scaryBoy_rig_0007:Face:Group2
+  - first:
+      1: 100094
+    second: scaryBoy_rig_0007:Feet:Group2
+  - first:
+      1: 100096
+    second: scaryBoy_rig_0007:Feet:Group3
+  - first:
+      1: 100098
+    second: scaryBoy_rig_0007:FitSkeleton
+  - first:
+      1: 100100
+    second: scaryBoy_rig_0007:FKAnkle_L
+  - first:
+      1: 100102
+    second: scaryBoy_rig_0007:FKAnkle_R
+  - first:
+      1: 100104
+    second: scaryBoy_rig_0007:FKExtraAnkle_L
+  - first:
+      1: 100106
+    second: scaryBoy_rig_0007:FKExtraAnkle_R
+  - first:
+      1: 100108
+    second: scaryBoy_rig_0007:FKExtraHip_L
+  - first:
+      1: 100110
+    second: scaryBoy_rig_0007:FKExtraHip_R
+  - first:
+      1: 100112
+    second: scaryBoy_rig_0007:FKExtraIndexFinger1_L
+  - first:
+      1: 100114
+    second: scaryBoy_rig_0007:FKExtraIndexFinger1_R
+  - first:
+      1: 100116
+    second: scaryBoy_rig_0007:FKExtraKnee_L
+  - first:
+      1: 100118
+    second: scaryBoy_rig_0007:FKExtraKnee_R
+  - first:
+      1: 100120
+    second: scaryBoy_rig_0007:FKExtraMiddleFinger1_L
+  - first:
+      1: 100122
+    second: scaryBoy_rig_0007:FKExtraMiddleFinger1_R
+  - first:
+      1: 100124
+    second: scaryBoy_rig_0007:FKExtraNeck_M
+  - first:
+      1: 100126
+    second: scaryBoy_rig_0007:FKExtraPinkyFinger1_L
+  - first:
+      1: 100128
+    second: scaryBoy_rig_0007:FKExtraPinkyFinger1_R
+  - first:
+      1: 100130
+    second: scaryBoy_rig_0007:FKExtraRingFinger1_L
+  - first:
+      1: 100132
+    second: scaryBoy_rig_0007:FKExtraRingFinger1_R
+  - first:
+      1: 100134
+    second: scaryBoy_rig_0007:FKExtraRoot_M
+  - first:
+      1: 100136
+    second: scaryBoy_rig_0007:FKExtraScapula_L
+  - first:
+      1: 100138
+    second: scaryBoy_rig_0007:FKExtraScapula_R
+  - first:
+      1: 100140
+    second: scaryBoy_rig_0007:FKExtraShoulder_L
+  - first:
+      1: 100142
+    second: scaryBoy_rig_0007:FKExtraShoulder_R
+  - first:
+      1: 100144
+    second: scaryBoy_rig_0007:FKExtraThumbFinger1_L
+  - first:
+      1: 100146
+    second: scaryBoy_rig_0007:FKExtraThumbFinger1_R
+  - first:
+      1: 100148
+    second: scaryBoy_rig_0007:FKExtraToes_L
+  - first:
+      1: 100150
+    second: scaryBoy_rig_0007:FKExtraToes_R
+  - first:
+      1: 100152
+    second: scaryBoy_rig_0007:FKHip_L
+  - first:
+      1: 100154
+    second: scaryBoy_rig_0007:FKHip_R
+  - first:
+      1: 100156
+    second: scaryBoy_rig_0007:FKIKMixElbow_L
+  - first:
+      1: 100158
+    second: scaryBoy_rig_0007:FKIKMixElbow_R
+  - first:
+      1: 100160
+    second: scaryBoy_rig_0007:FKIKParentConstraintArm_L
+  - first:
+      1: 100162
+    second: scaryBoy_rig_0007:FKIKParentConstraintArm_R
+  - first:
+      1: 100164
+    second: scaryBoy_rig_0007:FKIKParentConstraintLeg_L
+  - first:
+      1: 100166
+    second: scaryBoy_rig_0007:FKIKParentConstraintLeg_R
+  - first:
+      1: 100168
+    second: scaryBoy_rig_0007:FKIKParentConstraintSpine_M
+  - first:
+      1: 100170
+    second: scaryBoy_rig_0007:FKIKSystem
+  - first:
+      1: 100172
+    second: scaryBoy_rig_0007:FKKnee_L
+  - first:
+      1: 100174
+    second: scaryBoy_rig_0007:FKKnee_R
+  - first:
+      1: 100176
+    second: scaryBoy_rig_0007:FKOffsetAnkle_L
+  - first:
+      1: 100178
+    second: scaryBoy_rig_0007:FKOffsetAnkle_R
+  - first:
+      1: 100180
+    second: scaryBoy_rig_0007:FKOffsetHip_L
+  - first:
+      1: 100182
+    second: scaryBoy_rig_0007:FKOffsetHip_R
+  - first:
+      1: 100184
+    second: scaryBoy_rig_0007:FKOffsetIndexFinger1_L
+  - first:
+      1: 100186
+    second: scaryBoy_rig_0007:FKOffsetIndexFinger1_R
+  - first:
+      1: 100188
+    second: scaryBoy_rig_0007:FKOffsetKnee_L
+  - first:
+      1: 100190
+    second: scaryBoy_rig_0007:FKOffsetKnee_R
+  - first:
+      1: 100192
+    second: scaryBoy_rig_0007:FKOffsetMiddleFinger1_L
+  - first:
+      1: 100194
+    second: scaryBoy_rig_0007:FKOffsetMiddleFinger1_R
+  - first:
+      1: 100196
+    second: scaryBoy_rig_0007:FKOffsetNeck_M
+  - first:
+      1: 100198
+    second: scaryBoy_rig_0007:FKOffsetPinkyFinger1_L
+  - first:
+      1: 100200
+    second: scaryBoy_rig_0007:FKOffsetPinkyFinger1_R
+  - first:
+      1: 100202
+    second: scaryBoy_rig_0007:FKOffsetRingFinger1_L
+  - first:
+      1: 100204
+    second: scaryBoy_rig_0007:FKOffsetRingFinger1_R
+  - first:
+      1: 100206
+    second: scaryBoy_rig_0007:FKOffsetRoot_M
+  - first:
+      1: 100208
+    second: scaryBoy_rig_0007:FKOffsetScapula_L
+  - first:
+      1: 100210
+    second: scaryBoy_rig_0007:FKOffsetScapula_R
+  - first:
+      1: 100212
+    second: scaryBoy_rig_0007:FKOffsetShoulder_L
+  - first:
+      1: 100214
+    second: scaryBoy_rig_0007:FKOffsetShoulder_R
+  - first:
+      1: 100216
+    second: scaryBoy_rig_0007:FKOffsetThumbFinger1_L
+  - first:
+      1: 100218
+    second: scaryBoy_rig_0007:FKOffsetThumbFinger1_R
+  - first:
+      1: 100220
+    second: scaryBoy_rig_0007:FKOffsetToes_L
+  - first:
+      1: 100222
+    second: scaryBoy_rig_0007:FKOffsetToes_R
+  - first:
+      1: 100224
+    second: scaryBoy_rig_0007:FKParentConstraintToChest_M
+  - first:
+      1: 100226
+    second: scaryBoy_rig_0007:FKParentConstraintToRoot_M
+  - first:
+      1: 100228
+    second: scaryBoy_rig_0007:FKParentConstraintToScapula_L
+  - first:
+      1: 100230
+    second: scaryBoy_rig_0007:FKParentConstraintToScapula_R
+  - first:
+      1: 100232
+    second: scaryBoy_rig_0007:FKParentConstraintToWrist_L
+  - first:
+      1: 100234
+    second: scaryBoy_rig_0007:FKParentConstraintToWrist_R
+  - first:
+      1: 100236
+    second: scaryBoy_rig_0007:FKSystem
+  - first:
+      1: 100238
+    second: scaryBoy_rig_0007:FKToes_L
+  - first:
+      1: 100240
+    second: scaryBoy_rig_0007:FKToes_R
+  - first:
+      1: 100242
+    second: scaryBoy_rig_0007:FKXAnkle_L
+  - first:
+      1: 100244
+    second: scaryBoy_rig_0007:FKXAnkle_R
+  - first:
+      1: 100246
+    second: scaryBoy_rig_0007:FKXHip_L
+  - first:
+      1: 100248
+    second: scaryBoy_rig_0007:FKXHip_R
+  - first:
+      1: 100250
+    second: scaryBoy_rig_0007:FKXKnee_L
+  - first:
+      1: 100252
+    second: scaryBoy_rig_0007:FKXKnee_R
+  - first:
+      1: 100254
+    second: scaryBoy_rig_0007:FKXToes_L
+  - first:
+      1: 100256
+    second: scaryBoy_rig_0007:FKXToes_R
+  - first:
+      1: 100258
+    second: scaryBoy_rig_0007:Geometry
+  - first:
+      1: 100260
+    second: scaryBoy_rig_0007:GlobalHead_M
+  - first:
+      1: 100262
+    second: scaryBoy_rig_0007:GlobalOffsetHead_M
+  - first:
+      1: 100264
+    second: scaryBoy_rig_0007:GlobalSystem
+  - first:
+      1: 100266
+    second: scaryBoy_rig_0007:Group
+  - first:
+      1: 100268
+    second: scaryBoy_rig_0007:group1
+  - first:
+      1: 100270
+    second: scaryBoy_rig_0007:Group2
+  - first:
+      1: 100272
+    second: scaryBoy_rig_0007:group2
+  - first:
+      1: 100274
+    second: scaryBoy_rig_0007:Group2 1
+  - first:
+      1: 100276
+    second: scaryBoy_rig_0007:group3
+  - first:
+      1: 100278
+    second: scaryBoy_rig_0007:group4
+  - first:
+      1: 100280
+    second: scaryBoy_rig_0007:group5
+  - first:
+      1: 100282
+    second: scaryBoy_rig_0007:group6
+  - first:
+      1: 100284
+    second: scaryBoy_rig_0007:group7
+  - first:
+      1: 100286
+    second: scaryBoy_rig_0007:group8
+  - first:
+      1: 100288
+    second: scaryBoy_rig_0007:Hair:Group10231
+  - first:
+      1: 100290
+    second: scaryBoy_rig_0007:Half_pant:Group2
+  - first:
+      1: 100292
+    second: scaryBoy_rig_0007:Hand:Group2
+  - first:
+      1: 100294
+    second: scaryBoy_rig_0007:Hand:Group3
+  - first:
+      1: 100296
+    second: scaryBoy_rig_0007:Head_M
+  - first:
+      1: 100298
+    second: scaryBoy_rig_0007:HeadEnd_M
+  - first:
+      1: 100300
+    second: scaryBoy_rig_0007:Hip_L
+  - first:
+      1: 100302
+    second: scaryBoy_rig_0007:Hip_R
+  - first:
+      1: 100304
+    second: scaryBoy_rig_0007:Hood_part1:Group2
+  - first:
+      1: 100306
+    second: scaryBoy_rig_0007:Hood_part1:Group3
+  - first:
+      1: 100308
+    second: scaryBoy_rig_0007:IKArm_L
+  - first:
+      1: 100310
+    second: scaryBoy_rig_0007:IKArm_R
+  - first:
+      1: 100312
+    second: scaryBoy_rig_0007:IKArmHandle_L
+  - first:
+      1: 100314
+    second: scaryBoy_rig_0007:IKArmHandle_R
+  - first:
+      1: 100316
+    second: scaryBoy_rig_0007:IKCurve
+  - first:
+      1: 100318
+    second: scaryBoy_rig_0007:IKdistanceArm_L
+  - first:
+      1: 100320
+    second: scaryBoy_rig_0007:IKdistanceArm_R
+  - first:
+      1: 100322
+    second: scaryBoy_rig_0007:IKdistanceLeg_L
+  - first:
+      1: 100324
+    second: scaryBoy_rig_0007:IKdistanceLeg_R
+  - first:
+      1: 100326
+    second: scaryBoy_rig_0007:IKExtraArm_L
+  - first:
+      1: 100328
+    second: scaryBoy_rig_0007:IKExtraArm_R
+  - first:
+      1: 100330
+    second: scaryBoy_rig_0007:IKExtraLeg_L
+  - first:
+      1: 100332
+    second: scaryBoy_rig_0007:IKExtraLeg_R
+  - first:
+      1: 100334
+    second: scaryBoy_rig_0007:IKExtraSpine1_M
+  - first:
+      1: 100336
+    second: scaryBoy_rig_0007:IKExtraSpine2_M
+  - first:
+      1: 100338
+    second: scaryBoy_rig_0007:IKfake0Spine_M
+  - first:
+      1: 100340
+    second: scaryBoy_rig_0007:IKfake1Spine_M
+  - first:
+      1: 100342
+    second: scaryBoy_rig_0007:IKFake1UpLocSpine_M
+  - first:
+      1: 100344
+    second: scaryBoy_rig_0007:IKfake2Spine_M
+  - first:
+      1: 100346
+    second: scaryBoy_rig_0007:IKfake3Spine_M
+  - first:
+      1: 100348
+    second: scaryBoy_rig_0007:IKFKAlignedArm_L
+  - first:
+      1: 100350
+    second: scaryBoy_rig_0007:IKFKAlignedArm_R
+  - first:
+      1: 100352
+    second: scaryBoy_rig_0007:IKFKAlignedOffsetArm_L
+  - first:
+      1: 100354
+    second: scaryBoy_rig_0007:IKFKAlignedOffsetArm_R
+  - first:
+      1: 100356
+    second: scaryBoy_rig_0007:IKFollow
+  - first:
+      1: 100358
+    second: scaryBoy_rig_0007:IKHandle
+  - first:
+      1: 100360
+    second: scaryBoy_rig_0007:IKJoints
+  - first:
+      1: 100362
+    second: scaryBoy_rig_0007:IKMessure
+  - first:
+      1: 100364
+    second: scaryBoy_rig_0007:IKmessureConstrainToArm_L
+  - first:
+      1: 100366
+    second: scaryBoy_rig_0007:IKmessureConstrainToArm_R
+  - first:
+      1: 100368
+    second: scaryBoy_rig_0007:IKMessureFromHip_L
+  - first:
+      1: 100370
+    second: scaryBoy_rig_0007:IKMessureFromHip_R
+  - first:
+      1: 100372
+    second: scaryBoy_rig_0007:IKMessureFromShoulder_L
+  - first:
+      1: 100374
+    second: scaryBoy_rig_0007:IKMessureFromShoulder_R
+  - first:
+      1: 100376
+    second: scaryBoy_rig_0007:IKmessureLoc1Arm_L
+  - first:
+      1: 100378
+    second: scaryBoy_rig_0007:IKmessureLoc1Arm_R
+  - first:
+      1: 100380
+    second: scaryBoy_rig_0007:IKmessureLoc1Leg_L
+  - first:
+      1: 100382
+    second: scaryBoy_rig_0007:IKmessureLoc1Leg_R
+  - first:
+      1: 100384
+    second: scaryBoy_rig_0007:IKmessureLoc2Arm_L
+  - first:
+      1: 100386
+    second: scaryBoy_rig_0007:IKmessureLoc2Arm_R
+  - first:
+      1: 100388
+    second: scaryBoy_rig_0007:IKmessureLoc2Leg_L
+  - first:
+      1: 100390
+    second: scaryBoy_rig_0007:IKmessureLoc2Leg_R
+  - first:
+      1: 100392
+    second: scaryBoy_rig_0007:IKOffsetArm_L
+  - first:
+      1: 100394
+    second: scaryBoy_rig_0007:IKOffsetArm_LFollow
+  - first:
+      1: 100396
+    second: scaryBoy_rig_0007:IKOffsetArm_LFollowNoScale
+  - first:
+      1: 100398
+    second: scaryBoy_rig_0007:IKOffsetArm_LStatic
+  - first:
+      1: 100400
+    second: scaryBoy_rig_0007:IKOffsetArm_R
+  - first:
+      1: 100402
+    second: scaryBoy_rig_0007:IKOffsetArm_RFollow
+  - first:
+      1: 100404
+    second: scaryBoy_rig_0007:IKOffsetArm_RFollowNoScale
+  - first:
+      1: 100406
+    second: scaryBoy_rig_0007:IKOffsetArm_RStatic
+  - first:
+      1: 100408
+    second: scaryBoy_rig_0007:IKOffsetLeg_L
+  - first:
+      1: 100410
+    second: scaryBoy_rig_0007:IKOffsetLeg_R
+  - first:
+      1: 100412
+    second: scaryBoy_rig_0007:IKOffsetSpine1_M
+  - first:
+      1: 100414
+    second: scaryBoy_rig_0007:IKOffsetSpine2_M
+  - first:
+      1: 100416
+    second: scaryBoy_rig_0007:IKParentConstraintHip_L
+  - first:
+      1: 100418
+    second: scaryBoy_rig_0007:IKParentConstraintHip_R
+  - first:
+      1: 100420
+    second: scaryBoy_rig_0007:IKParentConstraintRoot_M
+  - first:
+      1: 100422
+    second: scaryBoy_rig_0007:IKParentConstraintShoulder_L
+  - first:
+      1: 100424
+    second: scaryBoy_rig_0007:IKParentConstraintShoulder_R
+  - first:
+      1: 100426
+    second: scaryBoy_rig_0007:IKRootConstraint
+  - first:
+      1: 100428
+    second: scaryBoy_rig_0007:IKScalerChest_M
+  - first:
+      1: 100430
+    second: scaryBoy_rig_0007:IKScalerRoot_M
+  - first:
+      1: 100432
+    second: scaryBoy_rig_0007:IKScalerSpine1_M
+  - first:
+      1: 100434
+    second: scaryBoy_rig_0007:IKSpChest_M
+  - first:
+      1: 100436
+    second: scaryBoy_rig_0007:IKSpChestFollowOffset_M
+  - first:
+      1: 100438
+    second: scaryBoy_rig_0007:IKSpine0AlignTo_M
+  - first:
+      1: 100440
+    second: scaryBoy_rig_0007:IKSpine1_M
+  - first:
+      1: 100442
+    second: scaryBoy_rig_0007:IKSpine2_M
+  - first:
+      1: 100444
+    second: scaryBoy_rig_0007:IKSpine2AlignTo_M
+  - first:
+      1: 100446
+    second: scaryBoy_rig_0007:IKSpine2AlignUnIKTwistTo_M
+  - first:
+      1: 100448
+    second: scaryBoy_rig_0007:IKSpine2AlignUnIKTwistToOffset_M
+  - first:
+      1: 100450
+    second: scaryBoy_rig_0007:IKSpineCurve_M
+  - first:
+      1: 100452
+    second: scaryBoy_rig_0007:IKSpineHandle_M
+  - first:
+      1: 100454
+    second: scaryBoy_rig_0007:IKSpineLocator0_M
+  - first:
+      1: 100456
+    second: scaryBoy_rig_0007:IKSpineLocator1_M
+  - first:
+      1: 100458
+    second: scaryBoy_rig_0007:IKSpineLocator2_M
+  - first:
+      1: 100460
+    second: scaryBoy_rig_0007:IKSpineLocator3_M
+  - first:
+      1: 100462
+    second: scaryBoy_rig_0007:IKSpRoot_M
+  - first:
+      1: 100464
+    second: scaryBoy_rig_0007:IKSpRootFollowOffset_M
+  - first:
+      1: 100466
+    second: scaryBoy_rig_0007:IKSpSpine1_M
+  - first:
+      1: 100468
+    second: scaryBoy_rig_0007:IKSpSpine1FollowOffset_M
+  - first:
+      1: 100470
+    second: scaryBoy_rig_0007:IKSpSpineOffset_M
+  - first:
+      1: 100472
+    second: scaryBoy_rig_0007:IKStatic
+  - first:
+      1: 100474
+    second: scaryBoy_rig_0007:IKStiffOrientSpine1_M
+  - first:
+      1: 100476
+    second: scaryBoy_rig_0007:IKStiffOrientSpine2_M
+  - first:
+      1: 100478
+    second: scaryBoy_rig_0007:IKSystem
+  - first:
+      1: 100480
+    second: scaryBoy_rig_0007:IKX2Chest_M
+  - first:
+      1: 100482
+    second: scaryBoy_rig_0007:IKX2Elbow_L
+  - first:
+      1: 100484
+    second: scaryBoy_rig_0007:IKX2Elbow_R
+  - first:
+      1: 100486
+    second: scaryBoy_rig_0007:IKX2Root_M
+  - first:
+      1: 100488
+    second: scaryBoy_rig_0007:IKX2Shoulder_L
+  - first:
+      1: 100490
+    second: scaryBoy_rig_0007:IKX2Shoulder_R
+  - first:
+      1: 100492
+    second: scaryBoy_rig_0007:IKX2Spine1_M
+  - first:
+      1: 100494
+    second: scaryBoy_rig_0007:IKX2Wrist_L
+  - first:
+      1: 100496
+    second: scaryBoy_rig_0007:IKX2Wrist_R
+  - first:
+      1: 100498
+    second: scaryBoy_rig_0007:IKXChest_M
+  - first:
+      1: 100500
+    second: scaryBoy_rig_0007:IKXElbow_L
+  - first:
+      1: 100502
+    second: scaryBoy_rig_0007:IKXElbow_R
+  - first:
+      1: 100504
+    second: scaryBoy_rig_0007:IKXOffsetHip_L
+  - first:
+      1: 100506
+    second: scaryBoy_rig_0007:IKXOffsetHip_R
+  - first:
+      1: 100508
+    second: scaryBoy_rig_0007:IKXOffsetRoot_M
+  - first:
+      1: 100510
+    second: scaryBoy_rig_0007:IKXOffsetShoulder_L
+  - first:
+      1: 100512
+    second: scaryBoy_rig_0007:IKXOffsetShoulder_R
+  - first:
+      1: 100514
+    second: scaryBoy_rig_0007:IKXRoot_M
+  - first:
+      1: 100516
+    second: scaryBoy_rig_0007:IKXShoulder_L
+  - first:
+      1: 100518
+    second: scaryBoy_rig_0007:IKXShoulder_R
+  - first:
+      1: 100520
+    second: scaryBoy_rig_0007:IKXSpine1_M
+  - first:
+      1: 100522
+    second: scaryBoy_rig_0007:IKXWrist_L
+  - first:
+      1: 100524
+    second: scaryBoy_rig_0007:IKXWrist_R
+  - first:
+      1: 100526
+    second: scaryBoy_rig_0007:IndexFinger1_L
+  - first:
+      1: 100528
+    second: scaryBoy_rig_0007:IndexFinger1_R
+  - first:
+      1: 100530
+    second: scaryBoy_rig_0007:IndexFinger2_L
+  - first:
+      1: 100532
+    second: scaryBoy_rig_0007:IndexFinger2_R
+  - first:
+      1: 100534
+    second: scaryBoy_rig_0007:IndexFinger3_L
+  - first:
+      1: 100536
+    second: scaryBoy_rig_0007:IndexFinger3_R
+  - first:
+      1: 100538
+    second: scaryBoy_rig_0007:IndexFinger4_L
+  - first:
+      1: 100540
+    second: scaryBoy_rig_0007:IndexFinger4_R
+  - first:
+      1: 100542
+    second: scaryBoy_rig_0007:Jaw_M
+  - first:
+      1: 100544
+    second: scaryBoy_rig_0007:JawEnd_M
+  - first:
+      1: 100546
+    second: scaryBoy_rig_0007:jnt_jacket_back
+  - first:
+      1: 100548
+    second: scaryBoy_rig_0007:jnt_teeth_down_
+  - first:
+      1: 100550
+    second: scaryBoy_rig_0007:jnt_teeth_up
+  - first:
+      1: 100552
+    second: scaryBoy_rig_0007:joint1
+  - first:
+      1: 100554
+    second: scaryBoy_rig_0007:joint2
+  - first:
+      1: 100556
+    second: scaryBoy_rig_0007:Knee_L
+  - first:
+      1: 100558
+    second: scaryBoy_rig_0007:Knee_R
+  - first:
+      1: 100560
+    second: scaryBoy_rig_0007:l_bro
+  - first:
+      1: 100562
+    second: scaryBoy_rig_0007:L_eyeBrow_jnt
+  - first:
+      1: 100564
+    second: scaryBoy_rig_0007:L_jnt_wing_down
+  - first:
+      1: 100566
+    second: scaryBoy_rig_0007:L_jnt_wing_up
+  - first:
+      1: 100568
+    second: scaryBoy_rig_0007:left
+  - first:
+      1: 100570
+    second: scaryBoy_rig_0007:LegLockConstrained
+  - first:
+      1: 100572
+    second: scaryBoy_rig_0007:Main
+  - first:
+      1: 100574
+    second: scaryBoy_rig_0007:MiddleFinger1_L
+  - first:
+      1: 100576
+    second: scaryBoy_rig_0007:MiddleFinger1_R
+  - first:
+      1: 100578
+    second: scaryBoy_rig_0007:MiddleFinger2_L
+  - first:
+      1: 100580
+    second: scaryBoy_rig_0007:MiddleFinger2_R
+  - first:
+      1: 100582
+    second: scaryBoy_rig_0007:MiddleFinger3_L
+  - first:
+      1: 100584
+    second: scaryBoy_rig_0007:MiddleFinger3_R
+  - first:
+      1: 100586
+    second: scaryBoy_rig_0007:MiddleFinger4_L
+  - first:
+      1: 100588
+    second: scaryBoy_rig_0007:MiddleFinger4_R
+  - first:
+      1: 100590
+    second: scaryBoy_rig_0007:MotionSystem
+  - first:
+      1: 100592
+    second: scaryBoy_rig_0007:Mouth_open:Group2
+  - first:
+      1: 100594
+    second: scaryBoy_rig_0007:Neck_M
+  - first:
+      1: 100596
+    second: scaryBoy_rig_0007:pCube5
+  - first:
+      1: 100598
+    second: scaryBoy_rig_0007:PinkyFinger1_L
+  - first:
+      1: 100600
+    second: scaryBoy_rig_0007:PinkyFinger1_R
+  - first:
+      1: 100602
+    second: scaryBoy_rig_0007:PinkyFinger2_L
+  - first:
+      1: 100604
+    second: scaryBoy_rig_0007:PinkyFinger2_R
+  - first:
+      1: 100606
+    second: scaryBoy_rig_0007:PinkyFinger3_L
+  - first:
+      1: 100608
+    second: scaryBoy_rig_0007:PinkyFinger3_R
+  - first:
+      1: 100610
+    second: scaryBoy_rig_0007:PinkyFinger4_L
+  - first:
+      1: 100612
+    second: scaryBoy_rig_0007:PinkyFinger4_R
+  - first:
+      1: 100614
+    second: scaryBoy_rig_0007:PoleAimLeg_L
+  - first:
+      1: 100616
+    second: scaryBoy_rig_0007:PoleAimLeg_R
+  - first:
+      1: 100618
+    second: scaryBoy_rig_0007:PoleAnnotationArm_L
+  - first:
+      1: 100620
+    second: scaryBoy_rig_0007:PoleAnnotationArm_R
+  - first:
+      1: 100622
+    second: scaryBoy_rig_0007:PoleArm_L
+  - first:
+      1: 100624
+    second: scaryBoy_rig_0007:PoleArm_R
+  - first:
+      1: 100626
+    second: scaryBoy_rig_0007:PoleExtraArm_L
+  - first:
+      1: 100628
+    second: scaryBoy_rig_0007:PoleExtraArm_R
+  - first:
+      1: 100630
+    second: scaryBoy_rig_0007:PoleExtraLeg_L
+  - first:
+      1: 100632
+    second: scaryBoy_rig_0007:PoleExtraLeg_R
+  - first:
+      1: 100634
+    second: scaryBoy_rig_0007:PoleOffsetArm_L
+  - first:
+      1: 100636
+    second: scaryBoy_rig_0007:PoleOffsetArm_LFollow
+  - first:
+      1: 100638
+    second: scaryBoy_rig_0007:PoleOffsetArm_LFollowNoScale
+  - first:
+      1: 100640
+    second: scaryBoy_rig_0007:PoleOffsetArm_LStatic
+  - first:
+      1: 100642
+    second: scaryBoy_rig_0007:PoleOffsetArm_R
+  - first:
+      1: 100644
+    second: scaryBoy_rig_0007:PoleOffsetArm_RFollow
+  - first:
+      1: 100646
+    second: scaryBoy_rig_0007:PoleOffsetArm_RFollowNoScale
+  - first:
+      1: 100648
+    second: scaryBoy_rig_0007:PoleOffsetArm_RStatic
+  - first:
+      1: 100650
+    second: scaryBoy_rig_0007:PoleOffsetLeg_L
+  - first:
+      1: 100652
+    second: scaryBoy_rig_0007:PoleOffsetLeg_LFollow
+  - first:
+      1: 100654
+    second: scaryBoy_rig_0007:PoleOffsetLeg_LFollowNoScale
+  - first:
+      1: 100656
+    second: scaryBoy_rig_0007:PoleOffsetLeg_LStatic
+  - first:
+      1: 100658
+    second: scaryBoy_rig_0007:PoleOffsetLeg_R
+  - first:
+      1: 100660
+    second: scaryBoy_rig_0007:PoleOffsetLeg_RFollow
+  - first:
+      1: 100662
+    second: scaryBoy_rig_0007:PoleOffsetLeg_RFollowNoScale
+  - first:
+      1: 100664
+    second: scaryBoy_rig_0007:PoleOffsetLeg_RStatic
+  - first:
+      1: 100666
+    second: scaryBoy_rig_0007:r_brow
+  - first:
+      1: 100668
+    second: scaryBoy_rig_0007:R_eyeBrow_jnt
+  - first:
+      1: 100670
+    second: scaryBoy_rig_0007:R_jnt_wing_down
+  - first:
+      1: 100672
+    second: scaryBoy_rig_0007:R_jnt_wing_up
+  - first:
+      1: 100674
+    second: scaryBoy_rig_0007:RingFinger1_L
+  - first:
+      1: 100676
+    second: scaryBoy_rig_0007:RingFinger1_R
+  - first:
+      1: 100678
+    second: scaryBoy_rig_0007:RingFinger2_L
+  - first:
+      1: 100680
+    second: scaryBoy_rig_0007:RingFinger2_R
+  - first:
+      1: 100682
+    second: scaryBoy_rig_0007:RingFinger3_L
+  - first:
+      1: 100684
+    second: scaryBoy_rig_0007:RingFinger3_R
+  - first:
+      1: 100686
+    second: scaryBoy_rig_0007:RingFinger4_L
+  - first:
+      1: 100688
+    second: scaryBoy_rig_0007:RingFinger4_R
+  - first:
+      1: 100690
+    second: scaryBoy_rig_0007:Root_M
+  - first:
+      1: 100692
+    second: scaryBoy_rig_0007:RootExtraX_M
+  - first:
+      1: 100694
+    second: scaryBoy_rig_0007:RootOffsetX_M
+  - first:
+      1: 100696
+    second: scaryBoy_rig_0007:RootSystem
+  - first:
+      1: 100698
+    second: scaryBoy_rig_0007:Scapula_L
+  - first:
+      1: 100700
+    second: scaryBoy_rig_0007:Scapula_R
+  - first:
+      1: 100702
+    second: scaryBoy_rig_0007:SDK1FKIndexFinger1_L
+  - first:
+      1: 100704
+    second: scaryBoy_rig_0007:SDK1FKIndexFinger1_R
+  - first:
+      1: 100706
+    second: scaryBoy_rig_0007:SDK1FKMiddleFinger1_L
+  - first:
+      1: 100708
+    second: scaryBoy_rig_0007:SDK1FKMiddleFinger1_R
+  - first:
+      1: 100710
+    second: scaryBoy_rig_0007:SDK1FKPinkyFinger1_L
+  - first:
+      1: 100712
+    second: scaryBoy_rig_0007:SDK1FKPinkyFinger1_R
+  - first:
+      1: 100714
+    second: scaryBoy_rig_0007:SDK1FKRingFinger1_L
+  - first:
+      1: 100716
+    second: scaryBoy_rig_0007:SDK1FKRingFinger1_R
+  - first:
+      1: 100718
+    second: scaryBoy_rig_0007:SDK2FKIndexFinger1_L
+  - first:
+      1: 100720
+    second: scaryBoy_rig_0007:SDK2FKIndexFinger1_R
+  - first:
+      1: 100722
+    second: scaryBoy_rig_0007:SDK2FKPinkyFinger1_L
+  - first:
+      1: 100724
+    second: scaryBoy_rig_0007:SDK2FKPinkyFinger1_R
+  - first:
+      1: 100726
+    second: scaryBoy_rig_0007:SDK2FKRingFinger1_L
+  - first:
+      1: 100728
+    second: scaryBoy_rig_0007:SDK2FKRingFinger1_R
+  - first:
+      1: 100730
+    second: scaryBoy_rig_0007:Shark_Hood3:Group2
+  - first:
+      1: 100732
+    second: scaryBoy_rig_0007:Shoes:Group2
+  - first:
+      1: 100734
+    second: scaryBoy_rig_0007:Shoulder_L
+  - first:
+      1: 100736
+    second: scaryBoy_rig_0007:Shoulder_R
+  - first:
+      1: 100738
+    second: scaryBoy_rig_0007:ShoulderPart1_L
+  - first:
+      1: 100740
+    second: scaryBoy_rig_0007:ShoulderPart1_R
+  - first:
+      1: 100742
+    second: scaryBoy_rig_0007:ShoulderPart2_L
+  - first:
+      1: 100744
+    second: scaryBoy_rig_0007:ShoulderPart2_R
+  - first:
+      1: 100746
+    second: scaryBoy_rig_0007:Spine1_M
+  - first:
+      1: 100748
+    second: scaryBoy_rig_0007:teeth_up
+  - first:
+      1: 100750
+    second: scaryBoy_rig_0007:ThumbFinger1_L
+  - first:
+      1: 100752
+    second: scaryBoy_rig_0007:ThumbFinger1_R
+  - first:
+      1: 100754
+    second: scaryBoy_rig_0007:ThumbFinger2_L
+  - first:
+      1: 100756
+    second: scaryBoy_rig_0007:ThumbFinger2_R
+  - first:
+      1: 100758
+    second: scaryBoy_rig_0007:ThumbFinger3_L
+  - first:
+      1: 100760
+    second: scaryBoy_rig_0007:ThumbFinger3_R
+  - first:
+      1: 100762
+    second: scaryBoy_rig_0007:ThumbFinger4_L
+  - first:
+      1: 100764
+    second: scaryBoy_rig_0007:ThumbFinger4_R
+  - first:
+      1: 100766
+    second: scaryBoy_rig_0007:Toes_L
+  - first:
+      1: 100768
+    second: scaryBoy_rig_0007:Toes_R
+  - first:
+      1: 100770
+    second: scaryBoy_rig_0007:ToesEnd_L
+  - first:
+      1: 100772
+    second: scaryBoy_rig_0007:ToesEnd_R
+  - first:
+      1: 100774
+    second: scaryBoy_rig_0007:Tongue:pCube6
+  - first:
+      1: 100776
+    second: scaryBoy_rig_0007:toung
+  - first:
+      1: 100778
+    second: scaryBoy_rig_0007:TwistBalancerChest_M
+  - first:
+      1: 100780
+    second: scaryBoy_rig_0007:TwistBalancerElbow_L
+  - first:
+      1: 100782
+    second: scaryBoy_rig_0007:TwistBalancerElbow_R
+  - first:
+      1: 100784
+    second: scaryBoy_rig_0007:TwistBalancerShoulder_L
+  - first:
+      1: 100786
+    second: scaryBoy_rig_0007:TwistBalancerShoulder_R
+  - first:
+      1: 100788
+    second: scaryBoy_rig_0007:TwisterElbow0_L
+  - first:
+      1: 100790
+    second: scaryBoy_rig_0007:TwisterElbow0_R
+  - first:
+      1: 100792
+    second: scaryBoy_rig_0007:TwisterElbow1_L
+  - first:
+      1: 100794
+    second: scaryBoy_rig_0007:TwisterElbow1_R
+  - first:
+      1: 100796
+    second: scaryBoy_rig_0007:TwisterElbow2_L
+  - first:
+      1: 100798
+    second: scaryBoy_rig_0007:TwisterElbow2_R
+  - first:
+      1: 100800
+    second: scaryBoy_rig_0007:TwisterShoulder0_L
+  - first:
+      1: 100802
+    second: scaryBoy_rig_0007:TwisterShoulder0_R
+  - first:
+      1: 100804
+    second: scaryBoy_rig_0007:TwisterShoulder1_L
+  - first:
+      1: 100806
+    second: scaryBoy_rig_0007:TwisterShoulder1_R
+  - first:
+      1: 100808
+    second: scaryBoy_rig_0007:TwisterShoulder2_L
+  - first:
+      1: 100810
+    second: scaryBoy_rig_0007:TwisterShoulder2_R
+  - first:
+      1: 100812
+    second: scaryBoy_rig_0007:TwistFollowChest_M
+  - first:
+      1: 100814
+    second: scaryBoy_rig_0007:TwistFollowElbow_L
+  - first:
+      1: 100816
+    second: scaryBoy_rig_0007:TwistFollowElbow_R
+  - first:
+      1: 100818
+    second: scaryBoy_rig_0007:TwistFollowOffsetChest_M
+  - first:
+      1: 100820
+    second: scaryBoy_rig_0007:TwistFollowOffsetElbow_L
+  - first:
+      1: 100822
+    second: scaryBoy_rig_0007:TwistFollowOffsetElbow_R
+  - first:
+      1: 100824
+    second: scaryBoy_rig_0007:TwistFollowOffsetShoulder_L
+  - first:
+      1: 100826
+    second: scaryBoy_rig_0007:TwistFollowOffsetShoulder_R
+  - first:
+      1: 100828
+    second: scaryBoy_rig_0007:TwistFollowParentChest_M
+  - first:
+      1: 100830
+    second: scaryBoy_rig_0007:TwistFollowParentElbow_L
+  - first:
+      1: 100832
+    second: scaryBoy_rig_0007:TwistFollowParentElbow_R
+  - first:
+      1: 100834
+    second: scaryBoy_rig_0007:TwistFollowParentOffsetChest_M
+  - first:
+      1: 100836
+    second: scaryBoy_rig_0007:TwistFollowParentOffsetElbow_L
+  - first:
+      1: 100838
+    second: scaryBoy_rig_0007:TwistFollowParentOffsetElbow_R
+  - first:
+      1: 100840
+    second: scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_L
+  - first:
+      1: 100842
+    second: scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_R
+  - first:
+      1: 100844
+    second: scaryBoy_rig_0007:TwistFollowParentShoulder_L
+  - first:
+      1: 100846
+    second: scaryBoy_rig_0007:TwistFollowParentShoulder_R
+  - first:
+      1: 100848
+    second: scaryBoy_rig_0007:TwistFollowShoulder_L
+  - first:
+      1: 100850
+    second: scaryBoy_rig_0007:TwistFollowShoulder_R
+  - first:
+      1: 100852
+    second: scaryBoy_rig_0007:TwistSystem
+  - first:
+      1: 100854
+    second: scaryBoy_rig_0007:UnTwistChest_M
+  - first:
+      1: 100856
+    second: scaryBoy_rig_0007:UnTwistElbow_L
+  - first:
+      1: 100858
+    second: scaryBoy_rig_0007:UnTwistElbow_R
+  - first:
+      1: 100860
+    second: scaryBoy_rig_0007:UnTwistEndChest_M
+  - first:
+      1: 100862
+    second: scaryBoy_rig_0007:UnTwistEndElbow_L
+  - first:
+      1: 100864
+    second: scaryBoy_rig_0007:UnTwistEndElbow_R
+  - first:
+      1: 100866
+    second: scaryBoy_rig_0007:UnTwistEndShoulder_L
+  - first:
+      1: 100868
+    second: scaryBoy_rig_0007:UnTwistEndShoulder_R
+  - first:
+      1: 100870
+    second: scaryBoy_rig_0007:UnTwistIKChest_M
+  - first:
+      1: 100872
+    second: scaryBoy_rig_0007:UnTwistIKElbow_L
+  - first:
+      1: 100874
+    second: scaryBoy_rig_0007:UnTwistIKElbow_R
+  - first:
+      1: 100876
+    second: scaryBoy_rig_0007:UnTwistIKShoulder_L
+  - first:
+      1: 100878
+    second: scaryBoy_rig_0007:UnTwistIKShoulder_R
+  - first:
+      1: 100880
+    second: scaryBoy_rig_0007:UnTwistShoulder_L
+  - first:
+      1: 100882
+    second: scaryBoy_rig_0007:UnTwistShoulder_R
+  - first:
+      1: 100884
+    second: scaryBoy_rig_0007:Wrist_L
+  - first:
+      1: 100886
+    second: scaryBoy_rig_0007:Wrist_R
+  - first:
+      1: 100888
+    second: tweenMachineData
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: NULL
+  - first:
+      4: 400004
+    second: persp1
+  - first:
+      4: 400006
+    second: scaryBoy_rig_0007:AimEye
+  - first:
+      4: 400008
+    second: scaryBoy_rig_0007:AimFollowEye
+  - first:
+      4: 400010
+    second: scaryBoy_rig_0007:AimFollowOffEye
+  - first:
+      4: 400012
+    second: scaryBoy_rig_0007:AimFollowOnEye
+  - first:
+      4: 400014
+    second: scaryBoy_rig_0007:AimOffsetEye
+  - first:
+      4: 400016
+    second: scaryBoy_rig_0007:AimSystem
+  - first:
+      4: 400018
+    second: scaryBoy_rig_0007:AlignIKToAnkle_L
+  - first:
+      4: 400020
+    second: scaryBoy_rig_0007:AlignIKToAnkle_R
+  - first:
+      4: 400022
+    second: scaryBoy_rig_0007:Ankle_L
+  - first:
+      4: 400024
+    second: scaryBoy_rig_0007:Ankle_R
+  - first:
+      4: 400026
+    second: scaryBoy_rig_0007:back
+  - first:
+      4: 400028
+    second: scaryBoy_rig_0007:Back_jnt_wing_down
+  - first:
+      4: 400030
+    second: scaryBoy_rig_0007:Back_jnt_wing_up1
+  - first:
+      4: 400032
+    second: scaryBoy_rig_0007:Belt:Group3
+  - first:
+      4: 400034
+    second: scaryBoy_rig_0007:BendSystem
+  - first:
+      4: 400036
+    second: scaryBoy_rig_0007:cc_exp
+  - first:
+      4: 400038
+    second: scaryBoy_rig_0007:cc_exp 1
+  - first:
+      4: 400040
+    second: scaryBoy_rig_0007:cc_exp 2
+  - first:
+      4: 400042
+    second: scaryBoy_rig_0007:cc_exp 3
+  - first:
+      4: 400044
+    second: scaryBoy_rig_0007:Chest_M
+  - first:
+      4: 400046
+    second: scaryBoy_rig_0007:ConstraintSystem
+  - first:
+      4: 400048
+    second: scaryBoy_rig_0007:curve1
+  - first:
+      4: 400050
+    second: scaryBoy_rig_0007:curve1 1
+  - first:
+      4: 400052
+    second: scaryBoy_rig_0007:curve1 2
+  - first:
+      4: 400054
+    second: scaryBoy_rig_0007:curve1 3
+  - first:
+      4: 400056
+    second: scaryBoy_rig_0007:D
+  - first:
+      4: 400058
+    second: scaryBoy_rig_0007:D1
+  - first:
+      4: 400060
+    second: scaryBoy_rig_0007:D2
+  - first:
+      4: 400062
+    second: scaryBoy_rig_0007:D3
+  - first:
+      4: 400064
+    second: scaryBoy_rig_0007:D4
+  - first:
+      4: 400066
+    second: scaryBoy_rig_0007:DeformationSystem
+  - first:
+      4: 400068
+    second: scaryBoy_rig_0007:DrivingSystem
+  - first:
+      4: 400070
+    second: scaryBoy_rig_0007:DynamicSystem
+  - first:
+      4: 400072
+    second: scaryBoy_rig_0007:Elbow_L
+  - first:
+      4: 400074
+    second: scaryBoy_rig_0007:Elbow_R
+  - first:
+      4: 400076
+    second: scaryBoy_rig_0007:expression_curve:cc_exp
+  - first:
+      4: 400078
+    second: scaryBoy_rig_0007:expression_curve:curve1
+  - first:
+      4: 400080
+    second: scaryBoy_rig_0007:Eye_L
+  - first:
+      4: 400082
+    second: scaryBoy_rig_0007:Eye_R
+  - first:
+      4: 400084
+    second: scaryBoy_rig_0007:EyeEnd_L
+  - first:
+      4: 400086
+    second: scaryBoy_rig_0007:EyeEnd_R
+  - first:
+      4: 400088
+    second: scaryBoy_rig_0007:Eyes:Group2
+  - first:
+      4: 400090
+    second: scaryBoy_rig_0007:Eyes:Group3
+  - first:
+      4: 400092
+    second: scaryBoy_rig_0007:Face:Group2
+  - first:
+      4: 400094
+    second: scaryBoy_rig_0007:Feet:Group2
+  - first:
+      4: 400096
+    second: scaryBoy_rig_0007:Feet:Group3
+  - first:
+      4: 400098
+    second: scaryBoy_rig_0007:FitSkeleton
+  - first:
+      4: 400100
+    second: scaryBoy_rig_0007:FKAnkle_L
+  - first:
+      4: 400102
+    second: scaryBoy_rig_0007:FKAnkle_R
+  - first:
+      4: 400104
+    second: scaryBoy_rig_0007:FKExtraAnkle_L
+  - first:
+      4: 400106
+    second: scaryBoy_rig_0007:FKExtraAnkle_R
+  - first:
+      4: 400108
+    second: scaryBoy_rig_0007:FKExtraHip_L
+  - first:
+      4: 400110
+    second: scaryBoy_rig_0007:FKExtraHip_R
+  - first:
+      4: 400112
+    second: scaryBoy_rig_0007:FKExtraIndexFinger1_L
+  - first:
+      4: 400114
+    second: scaryBoy_rig_0007:FKExtraIndexFinger1_R
+  - first:
+      4: 400116
+    second: scaryBoy_rig_0007:FKExtraKnee_L
+  - first:
+      4: 400118
+    second: scaryBoy_rig_0007:FKExtraKnee_R
+  - first:
+      4: 400120
+    second: scaryBoy_rig_0007:FKExtraMiddleFinger1_L
+  - first:
+      4: 400122
+    second: scaryBoy_rig_0007:FKExtraMiddleFinger1_R
+  - first:
+      4: 400124
+    second: scaryBoy_rig_0007:FKExtraNeck_M
+  - first:
+      4: 400126
+    second: scaryBoy_rig_0007:FKExtraPinkyFinger1_L
+  - first:
+      4: 400128
+    second: scaryBoy_rig_0007:FKExtraPinkyFinger1_R
+  - first:
+      4: 400130
+    second: scaryBoy_rig_0007:FKExtraRingFinger1_L
+  - first:
+      4: 400132
+    second: scaryBoy_rig_0007:FKExtraRingFinger1_R
+  - first:
+      4: 400134
+    second: scaryBoy_rig_0007:FKExtraRoot_M
+  - first:
+      4: 400136
+    second: scaryBoy_rig_0007:FKExtraScapula_L
+  - first:
+      4: 400138
+    second: scaryBoy_rig_0007:FKExtraScapula_R
+  - first:
+      4: 400140
+    second: scaryBoy_rig_0007:FKExtraShoulder_L
+  - first:
+      4: 400142
+    second: scaryBoy_rig_0007:FKExtraShoulder_R
+  - first:
+      4: 400144
+    second: scaryBoy_rig_0007:FKExtraThumbFinger1_L
+  - first:
+      4: 400146
+    second: scaryBoy_rig_0007:FKExtraThumbFinger1_R
+  - first:
+      4: 400148
+    second: scaryBoy_rig_0007:FKExtraToes_L
+  - first:
+      4: 400150
+    second: scaryBoy_rig_0007:FKExtraToes_R
+  - first:
+      4: 400152
+    second: scaryBoy_rig_0007:FKHip_L
+  - first:
+      4: 400154
+    second: scaryBoy_rig_0007:FKHip_R
+  - first:
+      4: 400156
+    second: scaryBoy_rig_0007:FKIKMixElbow_L
+  - first:
+      4: 400158
+    second: scaryBoy_rig_0007:FKIKMixElbow_R
+  - first:
+      4: 400160
+    second: scaryBoy_rig_0007:FKIKParentConstraintArm_L
+  - first:
+      4: 400162
+    second: scaryBoy_rig_0007:FKIKParentConstraintArm_R
+  - first:
+      4: 400164
+    second: scaryBoy_rig_0007:FKIKParentConstraintLeg_L
+  - first:
+      4: 400166
+    second: scaryBoy_rig_0007:FKIKParentConstraintLeg_R
+  - first:
+      4: 400168
+    second: scaryBoy_rig_0007:FKIKParentConstraintSpine_M
+  - first:
+      4: 400170
+    second: scaryBoy_rig_0007:FKIKSystem
+  - first:
+      4: 400172
+    second: scaryBoy_rig_0007:FKKnee_L
+  - first:
+      4: 400174
+    second: scaryBoy_rig_0007:FKKnee_R
+  - first:
+      4: 400176
+    second: scaryBoy_rig_0007:FKOffsetAnkle_L
+  - first:
+      4: 400178
+    second: scaryBoy_rig_0007:FKOffsetAnkle_R
+  - first:
+      4: 400180
+    second: scaryBoy_rig_0007:FKOffsetHip_L
+  - first:
+      4: 400182
+    second: scaryBoy_rig_0007:FKOffsetHip_R
+  - first:
+      4: 400184
+    second: scaryBoy_rig_0007:FKOffsetIndexFinger1_L
+  - first:
+      4: 400186
+    second: scaryBoy_rig_0007:FKOffsetIndexFinger1_R
+  - first:
+      4: 400188
+    second: scaryBoy_rig_0007:FKOffsetKnee_L
+  - first:
+      4: 400190
+    second: scaryBoy_rig_0007:FKOffsetKnee_R
+  - first:
+      4: 400192
+    second: scaryBoy_rig_0007:FKOffsetMiddleFinger1_L
+  - first:
+      4: 400194
+    second: scaryBoy_rig_0007:FKOffsetMiddleFinger1_R
+  - first:
+      4: 400196
+    second: scaryBoy_rig_0007:FKOffsetNeck_M
+  - first:
+      4: 400198
+    second: scaryBoy_rig_0007:FKOffsetPinkyFinger1_L
+  - first:
+      4: 400200
+    second: scaryBoy_rig_0007:FKOffsetPinkyFinger1_R
+  - first:
+      4: 400202
+    second: scaryBoy_rig_0007:FKOffsetRingFinger1_L
+  - first:
+      4: 400204
+    second: scaryBoy_rig_0007:FKOffsetRingFinger1_R
+  - first:
+      4: 400206
+    second: scaryBoy_rig_0007:FKOffsetRoot_M
+  - first:
+      4: 400208
+    second: scaryBoy_rig_0007:FKOffsetScapula_L
+  - first:
+      4: 400210
+    second: scaryBoy_rig_0007:FKOffsetScapula_R
+  - first:
+      4: 400212
+    second: scaryBoy_rig_0007:FKOffsetShoulder_L
+  - first:
+      4: 400214
+    second: scaryBoy_rig_0007:FKOffsetShoulder_R
+  - first:
+      4: 400216
+    second: scaryBoy_rig_0007:FKOffsetThumbFinger1_L
+  - first:
+      4: 400218
+    second: scaryBoy_rig_0007:FKOffsetThumbFinger1_R
+  - first:
+      4: 400220
+    second: scaryBoy_rig_0007:FKOffsetToes_L
+  - first:
+      4: 400222
+    second: scaryBoy_rig_0007:FKOffsetToes_R
+  - first:
+      4: 400224
+    second: scaryBoy_rig_0007:FKParentConstraintToChest_M
+  - first:
+      4: 400226
+    second: scaryBoy_rig_0007:FKParentConstraintToRoot_M
+  - first:
+      4: 400228
+    second: scaryBoy_rig_0007:FKParentConstraintToScapula_L
+  - first:
+      4: 400230
+    second: scaryBoy_rig_0007:FKParentConstraintToScapula_R
+  - first:
+      4: 400232
+    second: scaryBoy_rig_0007:FKParentConstraintToWrist_L
+  - first:
+      4: 400234
+    second: scaryBoy_rig_0007:FKParentConstraintToWrist_R
+  - first:
+      4: 400236
+    second: scaryBoy_rig_0007:FKSystem
+  - first:
+      4: 400238
+    second: scaryBoy_rig_0007:FKToes_L
+  - first:
+      4: 400240
+    second: scaryBoy_rig_0007:FKToes_R
+  - first:
+      4: 400242
+    second: scaryBoy_rig_0007:FKXAnkle_L
+  - first:
+      4: 400244
+    second: scaryBoy_rig_0007:FKXAnkle_R
+  - first:
+      4: 400246
+    second: scaryBoy_rig_0007:FKXHip_L
+  - first:
+      4: 400248
+    second: scaryBoy_rig_0007:FKXHip_R
+  - first:
+      4: 400250
+    second: scaryBoy_rig_0007:FKXKnee_L
+  - first:
+      4: 400252
+    second: scaryBoy_rig_0007:FKXKnee_R
+  - first:
+      4: 400254
+    second: scaryBoy_rig_0007:FKXToes_L
+  - first:
+      4: 400256
+    second: scaryBoy_rig_0007:FKXToes_R
+  - first:
+      4: 400258
+    second: scaryBoy_rig_0007:Geometry
+  - first:
+      4: 400260
+    second: scaryBoy_rig_0007:GlobalHead_M
+  - first:
+      4: 400262
+    second: scaryBoy_rig_0007:GlobalOffsetHead_M
+  - first:
+      4: 400264
+    second: scaryBoy_rig_0007:GlobalSystem
+  - first:
+      4: 400266
+    second: scaryBoy_rig_0007:Group
+  - first:
+      4: 400268
+    second: scaryBoy_rig_0007:group1
+  - first:
+      4: 400270
+    second: scaryBoy_rig_0007:Group2
+  - first:
+      4: 400272
+    second: scaryBoy_rig_0007:group2
+  - first:
+      4: 400274
+    second: scaryBoy_rig_0007:Group2 1
+  - first:
+      4: 400276
+    second: scaryBoy_rig_0007:group3
+  - first:
+      4: 400278
+    second: scaryBoy_rig_0007:group4
+  - first:
+      4: 400280
+    second: scaryBoy_rig_0007:group5
+  - first:
+      4: 400282
+    second: scaryBoy_rig_0007:group6
+  - first:
+      4: 400284
+    second: scaryBoy_rig_0007:group7
+  - first:
+      4: 400286
+    second: scaryBoy_rig_0007:group8
+  - first:
+      4: 400288
+    second: scaryBoy_rig_0007:Hair:Group10231
+  - first:
+      4: 400290
+    second: scaryBoy_rig_0007:Half_pant:Group2
+  - first:
+      4: 400292
+    second: scaryBoy_rig_0007:Hand:Group2
+  - first:
+      4: 400294
+    second: scaryBoy_rig_0007:Hand:Group3
+  - first:
+      4: 400296
+    second: scaryBoy_rig_0007:Head_M
+  - first:
+      4: 400298
+    second: scaryBoy_rig_0007:HeadEnd_M
+  - first:
+      4: 400300
+    second: scaryBoy_rig_0007:Hip_L
+  - first:
+      4: 400302
+    second: scaryBoy_rig_0007:Hip_R
+  - first:
+      4: 400304
+    second: scaryBoy_rig_0007:Hood_part1:Group2
+  - first:
+      4: 400306
+    second: scaryBoy_rig_0007:Hood_part1:Group3
+  - first:
+      4: 400308
+    second: scaryBoy_rig_0007:IKArm_L
+  - first:
+      4: 400310
+    second: scaryBoy_rig_0007:IKArm_R
+  - first:
+      4: 400312
+    second: scaryBoy_rig_0007:IKArmHandle_L
+  - first:
+      4: 400314
+    second: scaryBoy_rig_0007:IKArmHandle_R
+  - first:
+      4: 400316
+    second: scaryBoy_rig_0007:IKCurve
+  - first:
+      4: 400318
+    second: scaryBoy_rig_0007:IKdistanceArm_L
+  - first:
+      4: 400320
+    second: scaryBoy_rig_0007:IKdistanceArm_R
+  - first:
+      4: 400322
+    second: scaryBoy_rig_0007:IKdistanceLeg_L
+  - first:
+      4: 400324
+    second: scaryBoy_rig_0007:IKdistanceLeg_R
+  - first:
+      4: 400326
+    second: scaryBoy_rig_0007:IKExtraArm_L
+  - first:
+      4: 400328
+    second: scaryBoy_rig_0007:IKExtraArm_R
+  - first:
+      4: 400330
+    second: scaryBoy_rig_0007:IKExtraLeg_L
+  - first:
+      4: 400332
+    second: scaryBoy_rig_0007:IKExtraLeg_R
+  - first:
+      4: 400334
+    second: scaryBoy_rig_0007:IKExtraSpine1_M
+  - first:
+      4: 400336
+    second: scaryBoy_rig_0007:IKExtraSpine2_M
+  - first:
+      4: 400338
+    second: scaryBoy_rig_0007:IKfake0Spine_M
+  - first:
+      4: 400340
+    second: scaryBoy_rig_0007:IKfake1Spine_M
+  - first:
+      4: 400342
+    second: scaryBoy_rig_0007:IKFake1UpLocSpine_M
+  - first:
+      4: 400344
+    second: scaryBoy_rig_0007:IKfake2Spine_M
+  - first:
+      4: 400346
+    second: scaryBoy_rig_0007:IKfake3Spine_M
+  - first:
+      4: 400348
+    second: scaryBoy_rig_0007:IKFKAlignedArm_L
+  - first:
+      4: 400350
+    second: scaryBoy_rig_0007:IKFKAlignedArm_R
+  - first:
+      4: 400352
+    second: scaryBoy_rig_0007:IKFKAlignedOffsetArm_L
+  - first:
+      4: 400354
+    second: scaryBoy_rig_0007:IKFKAlignedOffsetArm_R
+  - first:
+      4: 400356
+    second: scaryBoy_rig_0007:IKFollow
+  - first:
+      4: 400358
+    second: scaryBoy_rig_0007:IKHandle
+  - first:
+      4: 400360
+    second: scaryBoy_rig_0007:IKJoints
+  - first:
+      4: 400362
+    second: scaryBoy_rig_0007:IKMessure
+  - first:
+      4: 400364
+    second: scaryBoy_rig_0007:IKmessureConstrainToArm_L
+  - first:
+      4: 400366
+    second: scaryBoy_rig_0007:IKmessureConstrainToArm_R
+  - first:
+      4: 400368
+    second: scaryBoy_rig_0007:IKMessureFromHip_L
+  - first:
+      4: 400370
+    second: scaryBoy_rig_0007:IKMessureFromHip_R
+  - first:
+      4: 400372
+    second: scaryBoy_rig_0007:IKMessureFromShoulder_L
+  - first:
+      4: 400374
+    second: scaryBoy_rig_0007:IKMessureFromShoulder_R
+  - first:
+      4: 400376
+    second: scaryBoy_rig_0007:IKmessureLoc1Arm_L
+  - first:
+      4: 400378
+    second: scaryBoy_rig_0007:IKmessureLoc1Arm_R
+  - first:
+      4: 400380
+    second: scaryBoy_rig_0007:IKmessureLoc1Leg_L
+  - first:
+      4: 400382
+    second: scaryBoy_rig_0007:IKmessureLoc1Leg_R
+  - first:
+      4: 400384
+    second: scaryBoy_rig_0007:IKmessureLoc2Arm_L
+  - first:
+      4: 400386
+    second: scaryBoy_rig_0007:IKmessureLoc2Arm_R
+  - first:
+      4: 400388
+    second: scaryBoy_rig_0007:IKmessureLoc2Leg_L
+  - first:
+      4: 400390
+    second: scaryBoy_rig_0007:IKmessureLoc2Leg_R
+  - first:
+      4: 400392
+    second: scaryBoy_rig_0007:IKOffsetArm_L
+  - first:
+      4: 400394
+    second: scaryBoy_rig_0007:IKOffsetArm_LFollow
+  - first:
+      4: 400396
+    second: scaryBoy_rig_0007:IKOffsetArm_LFollowNoScale
+  - first:
+      4: 400398
+    second: scaryBoy_rig_0007:IKOffsetArm_LStatic
+  - first:
+      4: 400400
+    second: scaryBoy_rig_0007:IKOffsetArm_R
+  - first:
+      4: 400402
+    second: scaryBoy_rig_0007:IKOffsetArm_RFollow
+  - first:
+      4: 400404
+    second: scaryBoy_rig_0007:IKOffsetArm_RFollowNoScale
+  - first:
+      4: 400406
+    second: scaryBoy_rig_0007:IKOffsetArm_RStatic
+  - first:
+      4: 400408
+    second: scaryBoy_rig_0007:IKOffsetLeg_L
+  - first:
+      4: 400410
+    second: scaryBoy_rig_0007:IKOffsetLeg_R
+  - first:
+      4: 400412
+    second: scaryBoy_rig_0007:IKOffsetSpine1_M
+  - first:
+      4: 400414
+    second: scaryBoy_rig_0007:IKOffsetSpine2_M
+  - first:
+      4: 400416
+    second: scaryBoy_rig_0007:IKParentConstraintHip_L
+  - first:
+      4: 400418
+    second: scaryBoy_rig_0007:IKParentConstraintHip_R
+  - first:
+      4: 400420
+    second: scaryBoy_rig_0007:IKParentConstraintRoot_M
+  - first:
+      4: 400422
+    second: scaryBoy_rig_0007:IKParentConstraintShoulder_L
+  - first:
+      4: 400424
+    second: scaryBoy_rig_0007:IKParentConstraintShoulder_R
+  - first:
+      4: 400426
+    second: scaryBoy_rig_0007:IKRootConstraint
+  - first:
+      4: 400428
+    second: scaryBoy_rig_0007:IKScalerChest_M
+  - first:
+      4: 400430
+    second: scaryBoy_rig_0007:IKScalerRoot_M
+  - first:
+      4: 400432
+    second: scaryBoy_rig_0007:IKScalerSpine1_M
+  - first:
+      4: 400434
+    second: scaryBoy_rig_0007:IKSpChest_M
+  - first:
+      4: 400436
+    second: scaryBoy_rig_0007:IKSpChestFollowOffset_M
+  - first:
+      4: 400438
+    second: scaryBoy_rig_0007:IKSpine0AlignTo_M
+  - first:
+      4: 400440
+    second: scaryBoy_rig_0007:IKSpine1_M
+  - first:
+      4: 400442
+    second: scaryBoy_rig_0007:IKSpine2_M
+  - first:
+      4: 400444
+    second: scaryBoy_rig_0007:IKSpine2AlignTo_M
+  - first:
+      4: 400446
+    second: scaryBoy_rig_0007:IKSpine2AlignUnIKTwistTo_M
+  - first:
+      4: 400448
+    second: scaryBoy_rig_0007:IKSpine2AlignUnIKTwistToOffset_M
+  - first:
+      4: 400450
+    second: scaryBoy_rig_0007:IKSpineCurve_M
+  - first:
+      4: 400452
+    second: scaryBoy_rig_0007:IKSpineHandle_M
+  - first:
+      4: 400454
+    second: scaryBoy_rig_0007:IKSpineLocator0_M
+  - first:
+      4: 400456
+    second: scaryBoy_rig_0007:IKSpineLocator1_M
+  - first:
+      4: 400458
+    second: scaryBoy_rig_0007:IKSpineLocator2_M
+  - first:
+      4: 400460
+    second: scaryBoy_rig_0007:IKSpineLocator3_M
+  - first:
+      4: 400462
+    second: scaryBoy_rig_0007:IKSpRoot_M
+  - first:
+      4: 400464
+    second: scaryBoy_rig_0007:IKSpRootFollowOffset_M
+  - first:
+      4: 400466
+    second: scaryBoy_rig_0007:IKSpSpine1_M
+  - first:
+      4: 400468
+    second: scaryBoy_rig_0007:IKSpSpine1FollowOffset_M
+  - first:
+      4: 400470
+    second: scaryBoy_rig_0007:IKSpSpineOffset_M
+  - first:
+      4: 400472
+    second: scaryBoy_rig_0007:IKStatic
+  - first:
+      4: 400474
+    second: scaryBoy_rig_0007:IKStiffOrientSpine1_M
+  - first:
+      4: 400476
+    second: scaryBoy_rig_0007:IKStiffOrientSpine2_M
+  - first:
+      4: 400478
+    second: scaryBoy_rig_0007:IKSystem
+  - first:
+      4: 400480
+    second: scaryBoy_rig_0007:IKX2Chest_M
+  - first:
+      4: 400482
+    second: scaryBoy_rig_0007:IKX2Elbow_L
+  - first:
+      4: 400484
+    second: scaryBoy_rig_0007:IKX2Elbow_R
+  - first:
+      4: 400486
+    second: scaryBoy_rig_0007:IKX2Root_M
+  - first:
+      4: 400488
+    second: scaryBoy_rig_0007:IKX2Shoulder_L
+  - first:
+      4: 400490
+    second: scaryBoy_rig_0007:IKX2Shoulder_R
+  - first:
+      4: 400492
+    second: scaryBoy_rig_0007:IKX2Spine1_M
+  - first:
+      4: 400494
+    second: scaryBoy_rig_0007:IKX2Wrist_L
+  - first:
+      4: 400496
+    second: scaryBoy_rig_0007:IKX2Wrist_R
+  - first:
+      4: 400498
+    second: scaryBoy_rig_0007:IKXChest_M
+  - first:
+      4: 400500
+    second: scaryBoy_rig_0007:IKXElbow_L
+  - first:
+      4: 400502
+    second: scaryBoy_rig_0007:IKXElbow_R
+  - first:
+      4: 400504
+    second: scaryBoy_rig_0007:IKXOffsetHip_L
+  - first:
+      4: 400506
+    second: scaryBoy_rig_0007:IKXOffsetHip_R
+  - first:
+      4: 400508
+    second: scaryBoy_rig_0007:IKXOffsetRoot_M
+  - first:
+      4: 400510
+    second: scaryBoy_rig_0007:IKXOffsetShoulder_L
+  - first:
+      4: 400512
+    second: scaryBoy_rig_0007:IKXOffsetShoulder_R
+  - first:
+      4: 400514
+    second: scaryBoy_rig_0007:IKXRoot_M
+  - first:
+      4: 400516
+    second: scaryBoy_rig_0007:IKXShoulder_L
+  - first:
+      4: 400518
+    second: scaryBoy_rig_0007:IKXShoulder_R
+  - first:
+      4: 400520
+    second: scaryBoy_rig_0007:IKXSpine1_M
+  - first:
+      4: 400522
+    second: scaryBoy_rig_0007:IKXWrist_L
+  - first:
+      4: 400524
+    second: scaryBoy_rig_0007:IKXWrist_R
+  - first:
+      4: 400526
+    second: scaryBoy_rig_0007:IndexFinger1_L
+  - first:
+      4: 400528
+    second: scaryBoy_rig_0007:IndexFinger1_R
+  - first:
+      4: 400530
+    second: scaryBoy_rig_0007:IndexFinger2_L
+  - first:
+      4: 400532
+    second: scaryBoy_rig_0007:IndexFinger2_R
+  - first:
+      4: 400534
+    second: scaryBoy_rig_0007:IndexFinger3_L
+  - first:
+      4: 400536
+    second: scaryBoy_rig_0007:IndexFinger3_R
+  - first:
+      4: 400538
+    second: scaryBoy_rig_0007:IndexFinger4_L
+  - first:
+      4: 400540
+    second: scaryBoy_rig_0007:IndexFinger4_R
+  - first:
+      4: 400542
+    second: scaryBoy_rig_0007:Jaw_M
+  - first:
+      4: 400544
+    second: scaryBoy_rig_0007:JawEnd_M
+  - first:
+      4: 400546
+    second: scaryBoy_rig_0007:jnt_jacket_back
+  - first:
+      4: 400548
+    second: scaryBoy_rig_0007:jnt_teeth_down_
+  - first:
+      4: 400550
+    second: scaryBoy_rig_0007:jnt_teeth_up
+  - first:
+      4: 400552
+    second: scaryBoy_rig_0007:joint1
+  - first:
+      4: 400554
+    second: scaryBoy_rig_0007:joint2
+  - first:
+      4: 400556
+    second: scaryBoy_rig_0007:Knee_L
+  - first:
+      4: 400558
+    second: scaryBoy_rig_0007:Knee_R
+  - first:
+      4: 400560
+    second: scaryBoy_rig_0007:l_bro
+  - first:
+      4: 400562
+    second: scaryBoy_rig_0007:L_eyeBrow_jnt
+  - first:
+      4: 400564
+    second: scaryBoy_rig_0007:L_jnt_wing_down
+  - first:
+      4: 400566
+    second: scaryBoy_rig_0007:L_jnt_wing_up
+  - first:
+      4: 400568
+    second: scaryBoy_rig_0007:left
+  - first:
+      4: 400570
+    second: scaryBoy_rig_0007:LegLockConstrained
+  - first:
+      4: 400572
+    second: scaryBoy_rig_0007:Main
+  - first:
+      4: 400574
+    second: scaryBoy_rig_0007:MiddleFinger1_L
+  - first:
+      4: 400576
+    second: scaryBoy_rig_0007:MiddleFinger1_R
+  - first:
+      4: 400578
+    second: scaryBoy_rig_0007:MiddleFinger2_L
+  - first:
+      4: 400580
+    second: scaryBoy_rig_0007:MiddleFinger2_R
+  - first:
+      4: 400582
+    second: scaryBoy_rig_0007:MiddleFinger3_L
+  - first:
+      4: 400584
+    second: scaryBoy_rig_0007:MiddleFinger3_R
+  - first:
+      4: 400586
+    second: scaryBoy_rig_0007:MiddleFinger4_L
+  - first:
+      4: 400588
+    second: scaryBoy_rig_0007:MiddleFinger4_R
+  - first:
+      4: 400590
+    second: scaryBoy_rig_0007:MotionSystem
+  - first:
+      4: 400592
+    second: scaryBoy_rig_0007:Mouth_open:Group2
+  - first:
+      4: 400594
+    second: scaryBoy_rig_0007:Neck_M
+  - first:
+      4: 400596
+    second: scaryBoy_rig_0007:pCube5
+  - first:
+      4: 400598
+    second: scaryBoy_rig_0007:PinkyFinger1_L
+  - first:
+      4: 400600
+    second: scaryBoy_rig_0007:PinkyFinger1_R
+  - first:
+      4: 400602
+    second: scaryBoy_rig_0007:PinkyFinger2_L
+  - first:
+      4: 400604
+    second: scaryBoy_rig_0007:PinkyFinger2_R
+  - first:
+      4: 400606
+    second: scaryBoy_rig_0007:PinkyFinger3_L
+  - first:
+      4: 400608
+    second: scaryBoy_rig_0007:PinkyFinger3_R
+  - first:
+      4: 400610
+    second: scaryBoy_rig_0007:PinkyFinger4_L
+  - first:
+      4: 400612
+    second: scaryBoy_rig_0007:PinkyFinger4_R
+  - first:
+      4: 400614
+    second: scaryBoy_rig_0007:PoleAimLeg_L
+  - first:
+      4: 400616
+    second: scaryBoy_rig_0007:PoleAimLeg_R
+  - first:
+      4: 400618
+    second: scaryBoy_rig_0007:PoleAnnotationArm_L
+  - first:
+      4: 400620
+    second: scaryBoy_rig_0007:PoleAnnotationArm_R
+  - first:
+      4: 400622
+    second: scaryBoy_rig_0007:PoleArm_L
+  - first:
+      4: 400624
+    second: scaryBoy_rig_0007:PoleArm_R
+  - first:
+      4: 400626
+    second: scaryBoy_rig_0007:PoleExtraArm_L
+  - first:
+      4: 400628
+    second: scaryBoy_rig_0007:PoleExtraArm_R
+  - first:
+      4: 400630
+    second: scaryBoy_rig_0007:PoleExtraLeg_L
+  - first:
+      4: 400632
+    second: scaryBoy_rig_0007:PoleExtraLeg_R
+  - first:
+      4: 400634
+    second: scaryBoy_rig_0007:PoleOffsetArm_L
+  - first:
+      4: 400636
+    second: scaryBoy_rig_0007:PoleOffsetArm_LFollow
+  - first:
+      4: 400638
+    second: scaryBoy_rig_0007:PoleOffsetArm_LFollowNoScale
+  - first:
+      4: 400640
+    second: scaryBoy_rig_0007:PoleOffsetArm_LStatic
+  - first:
+      4: 400642
+    second: scaryBoy_rig_0007:PoleOffsetArm_R
+  - first:
+      4: 400644
+    second: scaryBoy_rig_0007:PoleOffsetArm_RFollow
+  - first:
+      4: 400646
+    second: scaryBoy_rig_0007:PoleOffsetArm_RFollowNoScale
+  - first:
+      4: 400648
+    second: scaryBoy_rig_0007:PoleOffsetArm_RStatic
+  - first:
+      4: 400650
+    second: scaryBoy_rig_0007:PoleOffsetLeg_L
+  - first:
+      4: 400652
+    second: scaryBoy_rig_0007:PoleOffsetLeg_LFollow
+  - first:
+      4: 400654
+    second: scaryBoy_rig_0007:PoleOffsetLeg_LFollowNoScale
+  - first:
+      4: 400656
+    second: scaryBoy_rig_0007:PoleOffsetLeg_LStatic
+  - first:
+      4: 400658
+    second: scaryBoy_rig_0007:PoleOffsetLeg_R
+  - first:
+      4: 400660
+    second: scaryBoy_rig_0007:PoleOffsetLeg_RFollow
+  - first:
+      4: 400662
+    second: scaryBoy_rig_0007:PoleOffsetLeg_RFollowNoScale
+  - first:
+      4: 400664
+    second: scaryBoy_rig_0007:PoleOffsetLeg_RStatic
+  - first:
+      4: 400666
+    second: scaryBoy_rig_0007:r_brow
+  - first:
+      4: 400668
+    second: scaryBoy_rig_0007:R_eyeBrow_jnt
+  - first:
+      4: 400670
+    second: scaryBoy_rig_0007:R_jnt_wing_down
+  - first:
+      4: 400672
+    second: scaryBoy_rig_0007:R_jnt_wing_up
+  - first:
+      4: 400674
+    second: scaryBoy_rig_0007:RingFinger1_L
+  - first:
+      4: 400676
+    second: scaryBoy_rig_0007:RingFinger1_R
+  - first:
+      4: 400678
+    second: scaryBoy_rig_0007:RingFinger2_L
+  - first:
+      4: 400680
+    second: scaryBoy_rig_0007:RingFinger2_R
+  - first:
+      4: 400682
+    second: scaryBoy_rig_0007:RingFinger3_L
+  - first:
+      4: 400684
+    second: scaryBoy_rig_0007:RingFinger3_R
+  - first:
+      4: 400686
+    second: scaryBoy_rig_0007:RingFinger4_L
+  - first:
+      4: 400688
+    second: scaryBoy_rig_0007:RingFinger4_R
+  - first:
+      4: 400690
+    second: scaryBoy_rig_0007:Root_M
+  - first:
+      4: 400692
+    second: scaryBoy_rig_0007:RootExtraX_M
+  - first:
+      4: 400694
+    second: scaryBoy_rig_0007:RootOffsetX_M
+  - first:
+      4: 400696
+    second: scaryBoy_rig_0007:RootSystem
+  - first:
+      4: 400698
+    second: scaryBoy_rig_0007:Scapula_L
+  - first:
+      4: 400700
+    second: scaryBoy_rig_0007:Scapula_R
+  - first:
+      4: 400702
+    second: scaryBoy_rig_0007:SDK1FKIndexFinger1_L
+  - first:
+      4: 400704
+    second: scaryBoy_rig_0007:SDK1FKIndexFinger1_R
+  - first:
+      4: 400706
+    second: scaryBoy_rig_0007:SDK1FKMiddleFinger1_L
+  - first:
+      4: 400708
+    second: scaryBoy_rig_0007:SDK1FKMiddleFinger1_R
+  - first:
+      4: 400710
+    second: scaryBoy_rig_0007:SDK1FKPinkyFinger1_L
+  - first:
+      4: 400712
+    second: scaryBoy_rig_0007:SDK1FKPinkyFinger1_R
+  - first:
+      4: 400714
+    second: scaryBoy_rig_0007:SDK1FKRingFinger1_L
+  - first:
+      4: 400716
+    second: scaryBoy_rig_0007:SDK1FKRingFinger1_R
+  - first:
+      4: 400718
+    second: scaryBoy_rig_0007:SDK2FKIndexFinger1_L
+  - first:
+      4: 400720
+    second: scaryBoy_rig_0007:SDK2FKIndexFinger1_R
+  - first:
+      4: 400722
+    second: scaryBoy_rig_0007:SDK2FKPinkyFinger1_L
+  - first:
+      4: 400724
+    second: scaryBoy_rig_0007:SDK2FKPinkyFinger1_R
+  - first:
+      4: 400726
+    second: scaryBoy_rig_0007:SDK2FKRingFinger1_L
+  - first:
+      4: 400728
+    second: scaryBoy_rig_0007:SDK2FKRingFinger1_R
+  - first:
+      4: 400730
+    second: scaryBoy_rig_0007:Shark_Hood3:Group2
+  - first:
+      4: 400732
+    second: scaryBoy_rig_0007:Shoes:Group2
+  - first:
+      4: 400734
+    second: scaryBoy_rig_0007:Shoulder_L
+  - first:
+      4: 400736
+    second: scaryBoy_rig_0007:Shoulder_R
+  - first:
+      4: 400738
+    second: scaryBoy_rig_0007:ShoulderPart1_L
+  - first:
+      4: 400740
+    second: scaryBoy_rig_0007:ShoulderPart1_R
+  - first:
+      4: 400742
+    second: scaryBoy_rig_0007:ShoulderPart2_L
+  - first:
+      4: 400744
+    second: scaryBoy_rig_0007:ShoulderPart2_R
+  - first:
+      4: 400746
+    second: scaryBoy_rig_0007:Spine1_M
+  - first:
+      4: 400748
+    second: scaryBoy_rig_0007:teeth_up
+  - first:
+      4: 400750
+    second: scaryBoy_rig_0007:ThumbFinger1_L
+  - first:
+      4: 400752
+    second: scaryBoy_rig_0007:ThumbFinger1_R
+  - first:
+      4: 400754
+    second: scaryBoy_rig_0007:ThumbFinger2_L
+  - first:
+      4: 400756
+    second: scaryBoy_rig_0007:ThumbFinger2_R
+  - first:
+      4: 400758
+    second: scaryBoy_rig_0007:ThumbFinger3_L
+  - first:
+      4: 400760
+    second: scaryBoy_rig_0007:ThumbFinger3_R
+  - first:
+      4: 400762
+    second: scaryBoy_rig_0007:ThumbFinger4_L
+  - first:
+      4: 400764
+    second: scaryBoy_rig_0007:ThumbFinger4_R
+  - first:
+      4: 400766
+    second: scaryBoy_rig_0007:Toes_L
+  - first:
+      4: 400768
+    second: scaryBoy_rig_0007:Toes_R
+  - first:
+      4: 400770
+    second: scaryBoy_rig_0007:ToesEnd_L
+  - first:
+      4: 400772
+    second: scaryBoy_rig_0007:ToesEnd_R
+  - first:
+      4: 400774
+    second: scaryBoy_rig_0007:Tongue:pCube6
+  - first:
+      4: 400776
+    second: scaryBoy_rig_0007:toung
+  - first:
+      4: 400778
+    second: scaryBoy_rig_0007:TwistBalancerChest_M
+  - first:
+      4: 400780
+    second: scaryBoy_rig_0007:TwistBalancerElbow_L
+  - first:
+      4: 400782
+    second: scaryBoy_rig_0007:TwistBalancerElbow_R
+  - first:
+      4: 400784
+    second: scaryBoy_rig_0007:TwistBalancerShoulder_L
+  - first:
+      4: 400786
+    second: scaryBoy_rig_0007:TwistBalancerShoulder_R
+  - first:
+      4: 400788
+    second: scaryBoy_rig_0007:TwisterElbow0_L
+  - first:
+      4: 400790
+    second: scaryBoy_rig_0007:TwisterElbow0_R
+  - first:
+      4: 400792
+    second: scaryBoy_rig_0007:TwisterElbow1_L
+  - first:
+      4: 400794
+    second: scaryBoy_rig_0007:TwisterElbow1_R
+  - first:
+      4: 400796
+    second: scaryBoy_rig_0007:TwisterElbow2_L
+  - first:
+      4: 400798
+    second: scaryBoy_rig_0007:TwisterElbow2_R
+  - first:
+      4: 400800
+    second: scaryBoy_rig_0007:TwisterShoulder0_L
+  - first:
+      4: 400802
+    second: scaryBoy_rig_0007:TwisterShoulder0_R
+  - first:
+      4: 400804
+    second: scaryBoy_rig_0007:TwisterShoulder1_L
+  - first:
+      4: 400806
+    second: scaryBoy_rig_0007:TwisterShoulder1_R
+  - first:
+      4: 400808
+    second: scaryBoy_rig_0007:TwisterShoulder2_L
+  - first:
+      4: 400810
+    second: scaryBoy_rig_0007:TwisterShoulder2_R
+  - first:
+      4: 400812
+    second: scaryBoy_rig_0007:TwistFollowChest_M
+  - first:
+      4: 400814
+    second: scaryBoy_rig_0007:TwistFollowElbow_L
+  - first:
+      4: 400816
+    second: scaryBoy_rig_0007:TwistFollowElbow_R
+  - first:
+      4: 400818
+    second: scaryBoy_rig_0007:TwistFollowOffsetChest_M
+  - first:
+      4: 400820
+    second: scaryBoy_rig_0007:TwistFollowOffsetElbow_L
+  - first:
+      4: 400822
+    second: scaryBoy_rig_0007:TwistFollowOffsetElbow_R
+  - first:
+      4: 400824
+    second: scaryBoy_rig_0007:TwistFollowOffsetShoulder_L
+  - first:
+      4: 400826
+    second: scaryBoy_rig_0007:TwistFollowOffsetShoulder_R
+  - first:
+      4: 400828
+    second: scaryBoy_rig_0007:TwistFollowParentChest_M
+  - first:
+      4: 400830
+    second: scaryBoy_rig_0007:TwistFollowParentElbow_L
+  - first:
+      4: 400832
+    second: scaryBoy_rig_0007:TwistFollowParentElbow_R
+  - first:
+      4: 400834
+    second: scaryBoy_rig_0007:TwistFollowParentOffsetChest_M
+  - first:
+      4: 400836
+    second: scaryBoy_rig_0007:TwistFollowParentOffsetElbow_L
+  - first:
+      4: 400838
+    second: scaryBoy_rig_0007:TwistFollowParentOffsetElbow_R
+  - first:
+      4: 400840
+    second: scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_L
+  - first:
+      4: 400842
+    second: scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_R
+  - first:
+      4: 400844
+    second: scaryBoy_rig_0007:TwistFollowParentShoulder_L
+  - first:
+      4: 400846
+    second: scaryBoy_rig_0007:TwistFollowParentShoulder_R
+  - first:
+      4: 400848
+    second: scaryBoy_rig_0007:TwistFollowShoulder_L
+  - first:
+      4: 400850
+    second: scaryBoy_rig_0007:TwistFollowShoulder_R
+  - first:
+      4: 400852
+    second: scaryBoy_rig_0007:TwistSystem
+  - first:
+      4: 400854
+    second: scaryBoy_rig_0007:UnTwistChest_M
+  - first:
+      4: 400856
+    second: scaryBoy_rig_0007:UnTwistElbow_L
+  - first:
+      4: 400858
+    second: scaryBoy_rig_0007:UnTwistElbow_R
+  - first:
+      4: 400860
+    second: scaryBoy_rig_0007:UnTwistEndChest_M
+  - first:
+      4: 400862
+    second: scaryBoy_rig_0007:UnTwistEndElbow_L
+  - first:
+      4: 400864
+    second: scaryBoy_rig_0007:UnTwistEndElbow_R
+  - first:
+      4: 400866
+    second: scaryBoy_rig_0007:UnTwistEndShoulder_L
+  - first:
+      4: 400868
+    second: scaryBoy_rig_0007:UnTwistEndShoulder_R
+  - first:
+      4: 400870
+    second: scaryBoy_rig_0007:UnTwistIKChest_M
+  - first:
+      4: 400872
+    second: scaryBoy_rig_0007:UnTwistIKElbow_L
+  - first:
+      4: 400874
+    second: scaryBoy_rig_0007:UnTwistIKElbow_R
+  - first:
+      4: 400876
+    second: scaryBoy_rig_0007:UnTwistIKShoulder_L
+  - first:
+      4: 400878
+    second: scaryBoy_rig_0007:UnTwistIKShoulder_R
+  - first:
+      4: 400880
+    second: scaryBoy_rig_0007:UnTwistShoulder_L
+  - first:
+      4: 400882
+    second: scaryBoy_rig_0007:UnTwistShoulder_R
+  - first:
+      4: 400884
+    second: scaryBoy_rig_0007:Wrist_L
+  - first:
+      4: 400886
+    second: scaryBoy_rig_0007:Wrist_R
+  - first:
+      4: 400888
+    second: tweenMachineData
+  - first:
+      43: 4300000
+    second: scaryBoy_rig_0007:r_brow
+  - first:
+      43: 4300002
+    second: scaryBoy_rig_0007:l_bro
+  - first:
+      43: 4300004
+    second: scaryBoy_rig_0007:Face:Group2
+  - first:
+      43: 4300006
+    second: scaryBoy_rig_0007:Eyes:Group2
+  - first:
+      43: 4300008
+    second: scaryBoy_rig_0007:Shark_Hood3:Group2
+  - first:
+      43: 4300010
+    second: scaryBoy_rig_0007:Shoes:Group2
+  - first:
+      43: 4300012
+    second: scaryBoy_rig_0007:Half_pant:Group2
+  - first:
+      43: 4300014
+    second: scaryBoy_rig_0007:Hood_part1:Group2
+  - first:
+      43: 4300016
+    second: scaryBoy_rig_0007:Hood_part1:Group3
+  - first:
+      43: 4300018
+    second: scaryBoy_rig_0007:Feet:Group2
+  - first:
+      43: 4300020
+    second: scaryBoy_rig_0007:Hair:Group10231
+  - first:
+      43: 4300022
+    second: scaryBoy_rig_0007:Feet:Group3
+  - first:
+      43: 4300024
+    second: scaryBoy_rig_0007:toung
+  - first:
+      43: 4300026
+    second: scaryBoy_rig_0007:Belt:Group3
+  - first:
+      43: 4300028
+    second: scaryBoy_rig_0007:Tongue:pCube6
+  - first:
+      43: 4300030
+    second: scaryBoy_rig_0007:teeth_up
+  - first:
+      43: 4300032
+    second: scaryBoy_rig_0007:Group2
+  - first:
+      43: 4300034
+    second: scaryBoy_rig_0007:Hand:Group3
+  - first:
+      43: 4300036
+    second: scaryBoy_rig_0007:Hand:Group2
+  - first:
+      43: 4300038
+    second: scaryBoy_rig_0007:Eyes:Group3
+  - first:
+      43: 4300040
+    second: scaryBoy_rig_0007:Group2
+  - first:
+      74: 7400000
+    second: Sharkoy
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: scaryBoy_rig_0007:Belt:Group3
+  - first:
+      137: 13700002
+    second: scaryBoy_rig_0007:Eyes:Group2
+  - first:
+      137: 13700004
+    second: scaryBoy_rig_0007:Eyes:Group3
+  - first:
+      137: 13700006
+    second: scaryBoy_rig_0007:Face:Group2
+  - first:
+      137: 13700008
+    second: scaryBoy_rig_0007:Feet:Group2
+  - first:
+      137: 13700010
+    second: scaryBoy_rig_0007:Feet:Group3
+  - first:
+      137: 13700012
+    second: scaryBoy_rig_0007:Group2
+  - first:
+      137: 13700014
+    second: scaryBoy_rig_0007:Group2 1
+  - first:
+      137: 13700016
+    second: scaryBoy_rig_0007:Hair:Group10231
+  - first:
+      137: 13700018
+    second: scaryBoy_rig_0007:Half_pant:Group2
+  - first:
+      137: 13700020
+    second: scaryBoy_rig_0007:Hand:Group2
+  - first:
+      137: 13700022
+    second: scaryBoy_rig_0007:Hand:Group3
+  - first:
+      137: 13700024
+    second: scaryBoy_rig_0007:Hood_part1:Group2
+  - first:
+      137: 13700026
+    second: scaryBoy_rig_0007:Hood_part1:Group3
+  - first:
+      137: 13700028
+    second: scaryBoy_rig_0007:l_bro
+  - first:
+      137: 13700030
+    second: scaryBoy_rig_0007:r_brow
+  - first:
+      137: 13700032
+    second: scaryBoy_rig_0007:Shark_Hood3:Group2
+  - first:
+      137: 13700034
+    second: scaryBoy_rig_0007:Shoes:Group2
+  - first:
+      137: 13700036
+    second: scaryBoy_rig_0007:teeth_up
+  - first:
+      137: 13700038
+    second: scaryBoy_rig_0007:Tongue:pCube6
+  - first:
+      137: 13700040
+    second: scaryBoy_rig_0007:toung
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scaryBoy_rig_0007_Kid
+    second: {fileID: 2100000, guid: 91cf5d5e8d99341b3b8a6069f1ab0f8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scaryBoy_rig_0007_lambert3
+    second: {fileID: 2100000, guid: 0207d4c9ee4674fa6867073a2e775160, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Sharkoy
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1
+      lastFrame: 306
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: persp1
+        weight: 1
+      - path: scaryBoy_rig_0007:back
+        weight: 1
+      - path: scaryBoy_rig_0007:Back_jnt_wing_down
+        weight: 1
+      - path: scaryBoy_rig_0007:Back_jnt_wing_up1
+        weight: 1
+      - path: scaryBoy_rig_0007:D
+        weight: 1
+      - path: scaryBoy_rig_0007:D/scaryBoy_rig_0007:D1
+        weight: 1
+      - path: scaryBoy_rig_0007:D/scaryBoy_rig_0007:D1/scaryBoy_rig_0007:D2
+        weight: 1
+      - path: scaryBoy_rig_0007:D/scaryBoy_rig_0007:D1/scaryBoy_rig_0007:D2/scaryBoy_rig_0007:D3
+        weight: 1
+      - path: scaryBoy_rig_0007:D/scaryBoy_rig_0007:D1/scaryBoy_rig_0007:D2/scaryBoy_rig_0007:D3/scaryBoy_rig_0007:D4
+        weight: 1
+      - path: scaryBoy_rig_0007:Group
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Geometry
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/NULL
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Hip_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Hip_L/scaryBoy_rig_0007:Knee_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Hip_L/scaryBoy_rig_0007:Knee_L/scaryBoy_rig_0007:Ankle_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Hip_L/scaryBoy_rig_0007:Knee_L/scaryBoy_rig_0007:Ankle_L/scaryBoy_rig_0007:Toes_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Hip_L/scaryBoy_rig_0007:Knee_L/scaryBoy_rig_0007:Ankle_L/scaryBoy_rig_0007:Toes_L/scaryBoy_rig_0007:ToesEnd_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Hip_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Hip_R/scaryBoy_rig_0007:Knee_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Hip_R/scaryBoy_rig_0007:Knee_R/scaryBoy_rig_0007:Ankle_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Hip_R/scaryBoy_rig_0007:Knee_R/scaryBoy_rig_0007:Ankle_R/scaryBoy_rig_0007:Toes_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Hip_R/scaryBoy_rig_0007:Knee_R/scaryBoy_rig_0007:Ankle_R/scaryBoy_rig_0007:Toes_R/scaryBoy_rig_0007:ToesEnd_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Neck_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Neck_M/scaryBoy_rig_0007:Head_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Neck_M/scaryBoy_rig_0007:Head_M/scaryBoy_rig_0007:Eye_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Neck_M/scaryBoy_rig_0007:Head_M/scaryBoy_rig_0007:Eye_L/scaryBoy_rig_0007:EyeEnd_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Neck_M/scaryBoy_rig_0007:Head_M/scaryBoy_rig_0007:Eye_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Neck_M/scaryBoy_rig_0007:Head_M/scaryBoy_rig_0007:Eye_R/scaryBoy_rig_0007:EyeEnd_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Neck_M/scaryBoy_rig_0007:Head_M/scaryBoy_rig_0007:HeadEnd_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Neck_M/scaryBoy_rig_0007:Head_M/scaryBoy_rig_0007:Jaw_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Neck_M/scaryBoy_rig_0007:Head_M/scaryBoy_rig_0007:Jaw_M/scaryBoy_rig_0007:JawEnd_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:IndexFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:IndexFinger1_L/scaryBoy_rig_0007:IndexFinger2_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:IndexFinger1_L/scaryBoy_rig_0007:IndexFinger2_L/scaryBoy_rig_0007:IndexFinger3_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:IndexFinger1_L/scaryBoy_rig_0007:IndexFinger2_L/scaryBoy_rig_0007:IndexFinger3_L/scaryBoy_rig_0007:IndexFinger4_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:MiddleFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:MiddleFinger1_L/scaryBoy_rig_0007:MiddleFinger2_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:MiddleFinger1_L/scaryBoy_rig_0007:MiddleFinger2_L/scaryBoy_rig_0007:MiddleFinger3_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:MiddleFinger1_L/scaryBoy_rig_0007:MiddleFinger2_L/scaryBoy_rig_0007:MiddleFinger3_L/scaryBoy_rig_0007:MiddleFinger4_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:PinkyFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:PinkyFinger1_L/scaryBoy_rig_0007:PinkyFinger2_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:PinkyFinger1_L/scaryBoy_rig_0007:PinkyFinger2_L/scaryBoy_rig_0007:PinkyFinger3_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:PinkyFinger1_L/scaryBoy_rig_0007:PinkyFinger2_L/scaryBoy_rig_0007:PinkyFinger3_L/scaryBoy_rig_0007:PinkyFinger4_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:RingFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:RingFinger1_L/scaryBoy_rig_0007:RingFinger2_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:RingFinger1_L/scaryBoy_rig_0007:RingFinger2_L/scaryBoy_rig_0007:RingFinger3_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:RingFinger1_L/scaryBoy_rig_0007:RingFinger2_L/scaryBoy_rig_0007:RingFinger3_L/scaryBoy_rig_0007:RingFinger4_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:ThumbFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:ThumbFinger1_L/scaryBoy_rig_0007:ThumbFinger2_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:ThumbFinger1_L/scaryBoy_rig_0007:ThumbFinger2_L/scaryBoy_rig_0007:ThumbFinger3_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_L/scaryBoy_rig_0007:Shoulder_L/scaryBoy_rig_0007:ShoulderPart1_L/scaryBoy_rig_0007:ShoulderPart2_L/scaryBoy_rig_0007:Elbow_L/scaryBoy_rig_0007:Wrist_L/scaryBoy_rig_0007:ThumbFinger1_L/scaryBoy_rig_0007:ThumbFinger2_L/scaryBoy_rig_0007:ThumbFinger3_L/scaryBoy_rig_0007:ThumbFinger4_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:IndexFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:IndexFinger1_R/scaryBoy_rig_0007:IndexFinger2_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:IndexFinger1_R/scaryBoy_rig_0007:IndexFinger2_R/scaryBoy_rig_0007:IndexFinger3_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:IndexFinger1_R/scaryBoy_rig_0007:IndexFinger2_R/scaryBoy_rig_0007:IndexFinger3_R/scaryBoy_rig_0007:IndexFinger4_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:MiddleFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:MiddleFinger1_R/scaryBoy_rig_0007:MiddleFinger2_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:MiddleFinger1_R/scaryBoy_rig_0007:MiddleFinger2_R/scaryBoy_rig_0007:MiddleFinger3_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:MiddleFinger1_R/scaryBoy_rig_0007:MiddleFinger2_R/scaryBoy_rig_0007:MiddleFinger3_R/scaryBoy_rig_0007:MiddleFinger4_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:PinkyFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:PinkyFinger1_R/scaryBoy_rig_0007:PinkyFinger2_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:PinkyFinger1_R/scaryBoy_rig_0007:PinkyFinger2_R/scaryBoy_rig_0007:PinkyFinger3_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:PinkyFinger1_R/scaryBoy_rig_0007:PinkyFinger2_R/scaryBoy_rig_0007:PinkyFinger3_R/scaryBoy_rig_0007:PinkyFinger4_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:RingFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:RingFinger1_R/scaryBoy_rig_0007:RingFinger2_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:RingFinger1_R/scaryBoy_rig_0007:RingFinger2_R/scaryBoy_rig_0007:RingFinger3_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:RingFinger1_R/scaryBoy_rig_0007:RingFinger2_R/scaryBoy_rig_0007:RingFinger3_R/scaryBoy_rig_0007:RingFinger4_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:ThumbFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:ThumbFinger1_R/scaryBoy_rig_0007:ThumbFinger2_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:ThumbFinger1_R/scaryBoy_rig_0007:ThumbFinger2_R/scaryBoy_rig_0007:ThumbFinger3_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:DeformationSystem/scaryBoy_rig_0007:Root_M/scaryBoy_rig_0007:Spine1_M/scaryBoy_rig_0007:Chest_M/scaryBoy_rig_0007:Scapula_R/scaryBoy_rig_0007:Shoulder_R/scaryBoy_rig_0007:ShoulderPart1_R/scaryBoy_rig_0007:ShoulderPart2_R/scaryBoy_rig_0007:Elbow_R/scaryBoy_rig_0007:Wrist_R/scaryBoy_rig_0007:ThumbFinger1_R/scaryBoy_rig_0007:ThumbFinger2_R/scaryBoy_rig_0007:ThumbFinger3_R/scaryBoy_rig_0007:ThumbFinger4_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:FitSkeleton
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:AimSystem
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:AimSystem/scaryBoy_rig_0007:AimEye
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:AimSystem/scaryBoy_rig_0007:AimEye/scaryBoy_rig_0007:AimOffsetEye
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:AimSystem/scaryBoy_rig_0007:AimEye/scaryBoy_rig_0007:AimOffsetEye/scaryBoy_rig_0007:AimFollowEye
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:AimSystem/scaryBoy_rig_0007:AimEye/scaryBoy_rig_0007:AimOffsetEye/scaryBoy_rig_0007:AimFollowOffEye
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:AimSystem/scaryBoy_rig_0007:AimEye/scaryBoy_rig_0007:AimOffsetEye/scaryBoy_rig_0007:AimFollowOnEye
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:BendSystem
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:ConstraintSystem
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:DrivingSystem
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:DynamicSystem
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKIKSystem
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKIKSystem/scaryBoy_rig_0007:FKIKParentConstraintArm_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKIKSystem/scaryBoy_rig_0007:FKIKParentConstraintArm_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKIKSystem/scaryBoy_rig_0007:FKIKParentConstraintLeg_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKIKSystem/scaryBoy_rig_0007:FKIKParentConstraintLeg_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKIKSystem/scaryBoy_rig_0007:FKIKParentConstraintSpine_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKOffsetRoot_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKOffsetRoot_M/scaryBoy_rig_0007:FKExtraRoot_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToChest_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToChest_M/scaryBoy_rig_0007:FKOffsetNeck_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToChest_M/scaryBoy_rig_0007:FKOffsetNeck_M/scaryBoy_rig_0007:FKExtraNeck_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToChest_M/scaryBoy_rig_0007:FKOffsetScapula_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToChest_M/scaryBoy_rig_0007:FKOffsetScapula_L/scaryBoy_rig_0007:FKExtraScapula_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToChest_M/scaryBoy_rig_0007:FKOffsetScapula_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToChest_M/scaryBoy_rig_0007:FKOffsetScapula_R/scaryBoy_rig_0007:FKExtraScapula_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L/scaryBoy_rig_0007:FKXHip_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L/scaryBoy_rig_0007:FKXHip_L/scaryBoy_rig_0007:FKOffsetKnee_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L/scaryBoy_rig_0007:FKXHip_L/scaryBoy_rig_0007:FKOffsetKnee_L/scaryBoy_rig_0007:FKExtraKnee_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L/scaryBoy_rig_0007:FKXHip_L/scaryBoy_rig_0007:FKOffsetKnee_L/scaryBoy_rig_0007:FKExtraKnee_L/scaryBoy_rig_0007:FKKnee_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L/scaryBoy_rig_0007:FKXHip_L/scaryBoy_rig_0007:FKOffsetKnee_L/scaryBoy_rig_0007:FKExtraKnee_L/scaryBoy_rig_0007:FKKnee_L/scaryBoy_rig_0007:FKXKnee_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L/scaryBoy_rig_0007:FKXHip_L/scaryBoy_rig_0007:FKOffsetKnee_L/scaryBoy_rig_0007:FKExtraKnee_L/scaryBoy_rig_0007:FKKnee_L/scaryBoy_rig_0007:FKXKnee_L/scaryBoy_rig_0007:FKOffsetAnkle_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L/scaryBoy_rig_0007:FKXHip_L/scaryBoy_rig_0007:FKOffsetKnee_L/scaryBoy_rig_0007:FKExtraKnee_L/scaryBoy_rig_0007:FKKnee_L/scaryBoy_rig_0007:FKXKnee_L/scaryBoy_rig_0007:FKOffsetAnkle_L/scaryBoy_rig_0007:FKExtraAnkle_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L/scaryBoy_rig_0007:FKXHip_L/scaryBoy_rig_0007:FKOffsetKnee_L/scaryBoy_rig_0007:FKExtraKnee_L/scaryBoy_rig_0007:FKKnee_L/scaryBoy_rig_0007:FKXKnee_L/scaryBoy_rig_0007:FKOffsetAnkle_L/scaryBoy_rig_0007:FKExtraAnkle_L/scaryBoy_rig_0007:FKAnkle_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L/scaryBoy_rig_0007:FKXHip_L/scaryBoy_rig_0007:FKOffsetKnee_L/scaryBoy_rig_0007:FKExtraKnee_L/scaryBoy_rig_0007:FKKnee_L/scaryBoy_rig_0007:FKXKnee_L/scaryBoy_rig_0007:FKOffsetAnkle_L/scaryBoy_rig_0007:FKExtraAnkle_L/scaryBoy_rig_0007:FKAnkle_L/scaryBoy_rig_0007:FKXAnkle_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L/scaryBoy_rig_0007:FKXHip_L/scaryBoy_rig_0007:FKOffsetKnee_L/scaryBoy_rig_0007:FKExtraKnee_L/scaryBoy_rig_0007:FKKnee_L/scaryBoy_rig_0007:FKXKnee_L/scaryBoy_rig_0007:FKOffsetAnkle_L/scaryBoy_rig_0007:FKExtraAnkle_L/scaryBoy_rig_0007:FKAnkle_L/scaryBoy_rig_0007:FKXAnkle_L/scaryBoy_rig_0007:AlignIKToAnkle_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L/scaryBoy_rig_0007:FKXHip_L/scaryBoy_rig_0007:FKOffsetKnee_L/scaryBoy_rig_0007:FKExtraKnee_L/scaryBoy_rig_0007:FKKnee_L/scaryBoy_rig_0007:FKXKnee_L/scaryBoy_rig_0007:FKOffsetAnkle_L/scaryBoy_rig_0007:FKExtraAnkle_L/scaryBoy_rig_0007:FKAnkle_L/scaryBoy_rig_0007:FKXAnkle_L/scaryBoy_rig_0007:FKOffsetToes_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L/scaryBoy_rig_0007:FKXHip_L/scaryBoy_rig_0007:FKOffsetKnee_L/scaryBoy_rig_0007:FKExtraKnee_L/scaryBoy_rig_0007:FKKnee_L/scaryBoy_rig_0007:FKXKnee_L/scaryBoy_rig_0007:FKOffsetAnkle_L/scaryBoy_rig_0007:FKExtraAnkle_L/scaryBoy_rig_0007:FKAnkle_L/scaryBoy_rig_0007:FKXAnkle_L/scaryBoy_rig_0007:FKOffsetToes_L/scaryBoy_rig_0007:FKExtraToes_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L/scaryBoy_rig_0007:FKXHip_L/scaryBoy_rig_0007:FKOffsetKnee_L/scaryBoy_rig_0007:FKExtraKnee_L/scaryBoy_rig_0007:FKKnee_L/scaryBoy_rig_0007:FKXKnee_L/scaryBoy_rig_0007:FKOffsetAnkle_L/scaryBoy_rig_0007:FKExtraAnkle_L/scaryBoy_rig_0007:FKAnkle_L/scaryBoy_rig_0007:FKXAnkle_L/scaryBoy_rig_0007:FKOffsetToes_L/scaryBoy_rig_0007:FKExtraToes_L/scaryBoy_rig_0007:FKToes_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_L/scaryBoy_rig_0007:FKExtraHip_L/scaryBoy_rig_0007:FKHip_L/scaryBoy_rig_0007:FKXHip_L/scaryBoy_rig_0007:FKOffsetKnee_L/scaryBoy_rig_0007:FKExtraKnee_L/scaryBoy_rig_0007:FKKnee_L/scaryBoy_rig_0007:FKXKnee_L/scaryBoy_rig_0007:FKOffsetAnkle_L/scaryBoy_rig_0007:FKExtraAnkle_L/scaryBoy_rig_0007:FKAnkle_L/scaryBoy_rig_0007:FKXAnkle_L/scaryBoy_rig_0007:FKOffsetToes_L/scaryBoy_rig_0007:FKExtraToes_L/scaryBoy_rig_0007:FKToes_L/scaryBoy_rig_0007:FKXToes_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R/scaryBoy_rig_0007:FKXHip_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R/scaryBoy_rig_0007:FKXHip_R/scaryBoy_rig_0007:FKOffsetKnee_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R/scaryBoy_rig_0007:FKXHip_R/scaryBoy_rig_0007:FKOffsetKnee_R/scaryBoy_rig_0007:FKExtraKnee_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R/scaryBoy_rig_0007:FKXHip_R/scaryBoy_rig_0007:FKOffsetKnee_R/scaryBoy_rig_0007:FKExtraKnee_R/scaryBoy_rig_0007:FKKnee_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R/scaryBoy_rig_0007:FKXHip_R/scaryBoy_rig_0007:FKOffsetKnee_R/scaryBoy_rig_0007:FKExtraKnee_R/scaryBoy_rig_0007:FKKnee_R/scaryBoy_rig_0007:FKXKnee_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R/scaryBoy_rig_0007:FKXHip_R/scaryBoy_rig_0007:FKOffsetKnee_R/scaryBoy_rig_0007:FKExtraKnee_R/scaryBoy_rig_0007:FKKnee_R/scaryBoy_rig_0007:FKXKnee_R/scaryBoy_rig_0007:FKOffsetAnkle_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R/scaryBoy_rig_0007:FKXHip_R/scaryBoy_rig_0007:FKOffsetKnee_R/scaryBoy_rig_0007:FKExtraKnee_R/scaryBoy_rig_0007:FKKnee_R/scaryBoy_rig_0007:FKXKnee_R/scaryBoy_rig_0007:FKOffsetAnkle_R/scaryBoy_rig_0007:FKExtraAnkle_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R/scaryBoy_rig_0007:FKXHip_R/scaryBoy_rig_0007:FKOffsetKnee_R/scaryBoy_rig_0007:FKExtraKnee_R/scaryBoy_rig_0007:FKKnee_R/scaryBoy_rig_0007:FKXKnee_R/scaryBoy_rig_0007:FKOffsetAnkle_R/scaryBoy_rig_0007:FKExtraAnkle_R/scaryBoy_rig_0007:FKAnkle_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R/scaryBoy_rig_0007:FKXHip_R/scaryBoy_rig_0007:FKOffsetKnee_R/scaryBoy_rig_0007:FKExtraKnee_R/scaryBoy_rig_0007:FKKnee_R/scaryBoy_rig_0007:FKXKnee_R/scaryBoy_rig_0007:FKOffsetAnkle_R/scaryBoy_rig_0007:FKExtraAnkle_R/scaryBoy_rig_0007:FKAnkle_R/scaryBoy_rig_0007:FKXAnkle_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R/scaryBoy_rig_0007:FKXHip_R/scaryBoy_rig_0007:FKOffsetKnee_R/scaryBoy_rig_0007:FKExtraKnee_R/scaryBoy_rig_0007:FKKnee_R/scaryBoy_rig_0007:FKXKnee_R/scaryBoy_rig_0007:FKOffsetAnkle_R/scaryBoy_rig_0007:FKExtraAnkle_R/scaryBoy_rig_0007:FKAnkle_R/scaryBoy_rig_0007:FKXAnkle_R/scaryBoy_rig_0007:AlignIKToAnkle_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R/scaryBoy_rig_0007:FKXHip_R/scaryBoy_rig_0007:FKOffsetKnee_R/scaryBoy_rig_0007:FKExtraKnee_R/scaryBoy_rig_0007:FKKnee_R/scaryBoy_rig_0007:FKXKnee_R/scaryBoy_rig_0007:FKOffsetAnkle_R/scaryBoy_rig_0007:FKExtraAnkle_R/scaryBoy_rig_0007:FKAnkle_R/scaryBoy_rig_0007:FKXAnkle_R/scaryBoy_rig_0007:FKOffsetToes_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R/scaryBoy_rig_0007:FKXHip_R/scaryBoy_rig_0007:FKOffsetKnee_R/scaryBoy_rig_0007:FKExtraKnee_R/scaryBoy_rig_0007:FKKnee_R/scaryBoy_rig_0007:FKXKnee_R/scaryBoy_rig_0007:FKOffsetAnkle_R/scaryBoy_rig_0007:FKExtraAnkle_R/scaryBoy_rig_0007:FKAnkle_R/scaryBoy_rig_0007:FKXAnkle_R/scaryBoy_rig_0007:FKOffsetToes_R/scaryBoy_rig_0007:FKExtraToes_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R/scaryBoy_rig_0007:FKXHip_R/scaryBoy_rig_0007:FKOffsetKnee_R/scaryBoy_rig_0007:FKExtraKnee_R/scaryBoy_rig_0007:FKKnee_R/scaryBoy_rig_0007:FKXKnee_R/scaryBoy_rig_0007:FKOffsetAnkle_R/scaryBoy_rig_0007:FKExtraAnkle_R/scaryBoy_rig_0007:FKAnkle_R/scaryBoy_rig_0007:FKXAnkle_R/scaryBoy_rig_0007:FKOffsetToes_R/scaryBoy_rig_0007:FKExtraToes_R/scaryBoy_rig_0007:FKToes_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToRoot_M/scaryBoy_rig_0007:FKOffsetHip_R/scaryBoy_rig_0007:FKExtraHip_R/scaryBoy_rig_0007:FKHip_R/scaryBoy_rig_0007:FKXHip_R/scaryBoy_rig_0007:FKOffsetKnee_R/scaryBoy_rig_0007:FKExtraKnee_R/scaryBoy_rig_0007:FKKnee_R/scaryBoy_rig_0007:FKXKnee_R/scaryBoy_rig_0007:FKOffsetAnkle_R/scaryBoy_rig_0007:FKExtraAnkle_R/scaryBoy_rig_0007:FKAnkle_R/scaryBoy_rig_0007:FKXAnkle_R/scaryBoy_rig_0007:FKOffsetToes_R/scaryBoy_rig_0007:FKExtraToes_R/scaryBoy_rig_0007:FKToes_R/scaryBoy_rig_0007:FKXToes_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToScapula_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToScapula_L/scaryBoy_rig_0007:FKOffsetShoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToScapula_L/scaryBoy_rig_0007:FKOffsetShoulder_L/scaryBoy_rig_0007:FKExtraShoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToScapula_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToScapula_R/scaryBoy_rig_0007:FKOffsetShoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToScapula_R/scaryBoy_rig_0007:FKOffsetShoulder_R/scaryBoy_rig_0007:FKExtraShoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetIndexFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetIndexFinger1_L/scaryBoy_rig_0007:SDK1FKIndexFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetIndexFinger1_L/scaryBoy_rig_0007:SDK1FKIndexFinger1_L/scaryBoy_rig_0007:SDK2FKIndexFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetIndexFinger1_L/scaryBoy_rig_0007:SDK1FKIndexFinger1_L/scaryBoy_rig_0007:SDK2FKIndexFinger1_L/scaryBoy_rig_0007:FKExtraIndexFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetMiddleFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetMiddleFinger1_L/scaryBoy_rig_0007:SDK1FKMiddleFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetMiddleFinger1_L/scaryBoy_rig_0007:SDK1FKMiddleFinger1_L/scaryBoy_rig_0007:FKExtraMiddleFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetPinkyFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetPinkyFinger1_L/scaryBoy_rig_0007:SDK1FKPinkyFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetPinkyFinger1_L/scaryBoy_rig_0007:SDK1FKPinkyFinger1_L/scaryBoy_rig_0007:SDK2FKPinkyFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetPinkyFinger1_L/scaryBoy_rig_0007:SDK1FKPinkyFinger1_L/scaryBoy_rig_0007:SDK2FKPinkyFinger1_L/scaryBoy_rig_0007:FKExtraPinkyFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetRingFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetRingFinger1_L/scaryBoy_rig_0007:SDK1FKRingFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetRingFinger1_L/scaryBoy_rig_0007:SDK1FKRingFinger1_L/scaryBoy_rig_0007:SDK2FKRingFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetRingFinger1_L/scaryBoy_rig_0007:SDK1FKRingFinger1_L/scaryBoy_rig_0007:SDK2FKRingFinger1_L/scaryBoy_rig_0007:FKExtraRingFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetThumbFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_L/scaryBoy_rig_0007:FKOffsetThumbFinger1_L/scaryBoy_rig_0007:FKExtraThumbFinger1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetIndexFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetIndexFinger1_R/scaryBoy_rig_0007:SDK1FKIndexFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetIndexFinger1_R/scaryBoy_rig_0007:SDK1FKIndexFinger1_R/scaryBoy_rig_0007:SDK2FKIndexFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetIndexFinger1_R/scaryBoy_rig_0007:SDK1FKIndexFinger1_R/scaryBoy_rig_0007:SDK2FKIndexFinger1_R/scaryBoy_rig_0007:FKExtraIndexFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetMiddleFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetMiddleFinger1_R/scaryBoy_rig_0007:SDK1FKMiddleFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetMiddleFinger1_R/scaryBoy_rig_0007:SDK1FKMiddleFinger1_R/scaryBoy_rig_0007:FKExtraMiddleFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetPinkyFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetPinkyFinger1_R/scaryBoy_rig_0007:SDK1FKPinkyFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetPinkyFinger1_R/scaryBoy_rig_0007:SDK1FKPinkyFinger1_R/scaryBoy_rig_0007:SDK2FKPinkyFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetPinkyFinger1_R/scaryBoy_rig_0007:SDK1FKPinkyFinger1_R/scaryBoy_rig_0007:SDK2FKPinkyFinger1_R/scaryBoy_rig_0007:FKExtraPinkyFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetRingFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetRingFinger1_R/scaryBoy_rig_0007:SDK1FKRingFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetRingFinger1_R/scaryBoy_rig_0007:SDK1FKRingFinger1_R/scaryBoy_rig_0007:SDK2FKRingFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetRingFinger1_R/scaryBoy_rig_0007:SDK1FKRingFinger1_R/scaryBoy_rig_0007:SDK2FKRingFinger1_R/scaryBoy_rig_0007:FKExtraRingFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetThumbFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:FKSystem/scaryBoy_rig_0007:FKParentConstraintToWrist_R/scaryBoy_rig_0007:FKOffsetThumbFinger1_R/scaryBoy_rig_0007:FKExtraThumbFinger1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:GlobalSystem
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:GlobalSystem/scaryBoy_rig_0007:GlobalOffsetHead_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:GlobalSystem/scaryBoy_rig_0007:GlobalOffsetHead_M/scaryBoy_rig_0007:GlobalHead_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKCurve
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKCurve/scaryBoy_rig_0007:IKSpineCurve_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKFollow
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKFollow/scaryBoy_rig_0007:IKOffsetArm_LFollow
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKFollow/scaryBoy_rig_0007:IKOffsetArm_LFollowNoScale
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKFollow/scaryBoy_rig_0007:IKOffsetArm_RFollow
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKFollow/scaryBoy_rig_0007:IKOffsetArm_RFollowNoScale
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKFollow/scaryBoy_rig_0007:PoleOffsetArm_LFollow
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKFollow/scaryBoy_rig_0007:PoleOffsetArm_LFollowNoScale
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKFollow/scaryBoy_rig_0007:PoleOffsetArm_RFollow
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKFollow/scaryBoy_rig_0007:PoleOffsetArm_RFollowNoScale
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKFollow/scaryBoy_rig_0007:PoleOffsetLeg_LFollow
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKFollow/scaryBoy_rig_0007:PoleOffsetLeg_LFollowNoScale
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKFollow/scaryBoy_rig_0007:PoleOffsetLeg_RFollow
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKFollow/scaryBoy_rig_0007:PoleOffsetLeg_RFollowNoScale
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetArm_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetArm_L/scaryBoy_rig_0007:IKExtraArm_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetArm_L/scaryBoy_rig_0007:IKExtraArm_L/scaryBoy_rig_0007:IKArm_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetArm_L/scaryBoy_rig_0007:IKExtraArm_L/scaryBoy_rig_0007:IKArm_L/scaryBoy_rig_0007:IKArmHandle_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetArm_L/scaryBoy_rig_0007:IKExtraArm_L/scaryBoy_rig_0007:IKArm_L/scaryBoy_rig_0007:IKFKAlignedOffsetArm_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetArm_L/scaryBoy_rig_0007:IKExtraArm_L/scaryBoy_rig_0007:IKArm_L/scaryBoy_rig_0007:IKFKAlignedOffsetArm_L/scaryBoy_rig_0007:IKFKAlignedArm_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetArm_L/scaryBoy_rig_0007:IKExtraArm_L/scaryBoy_rig_0007:IKArm_L/scaryBoy_rig_0007:IKmessureConstrainToArm_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetArm_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetArm_R/scaryBoy_rig_0007:IKExtraArm_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetArm_R/scaryBoy_rig_0007:IKExtraArm_R/scaryBoy_rig_0007:IKArm_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetArm_R/scaryBoy_rig_0007:IKExtraArm_R/scaryBoy_rig_0007:IKArm_R/scaryBoy_rig_0007:IKArmHandle_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetArm_R/scaryBoy_rig_0007:IKExtraArm_R/scaryBoy_rig_0007:IKArm_R/scaryBoy_rig_0007:IKFKAlignedOffsetArm_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetArm_R/scaryBoy_rig_0007:IKExtraArm_R/scaryBoy_rig_0007:IKArm_R/scaryBoy_rig_0007:IKFKAlignedOffsetArm_R/scaryBoy_rig_0007:IKFKAlignedArm_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetArm_R/scaryBoy_rig_0007:IKExtraArm_R/scaryBoy_rig_0007:IKArm_R/scaryBoy_rig_0007:IKmessureConstrainToArm_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetLeg_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetLeg_L/scaryBoy_rig_0007:IKExtraLeg_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetLeg_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKOffsetLeg_R/scaryBoy_rig_0007:IKExtraLeg_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine1_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine1_M/scaryBoy_rig_0007:IKExtraSpine1_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine1_M/scaryBoy_rig_0007:IKExtraSpine1_M/scaryBoy_rig_0007:IKSpine1_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine1_M/scaryBoy_rig_0007:IKExtraSpine1_M/scaryBoy_rig_0007:IKSpine1_M/scaryBoy_rig_0007:IKSpine0AlignTo_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine1_M/scaryBoy_rig_0007:IKExtraSpine1_M/scaryBoy_rig_0007:IKSpine1_M/scaryBoy_rig_0007:IKSpineLocator0_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine1_M/scaryBoy_rig_0007:IKExtraSpine1_M/scaryBoy_rig_0007:IKSpine1_M/scaryBoy_rig_0007:IKStiffOrientSpine1_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine1_M/scaryBoy_rig_0007:IKExtraSpine1_M/scaryBoy_rig_0007:IKSpine1_M/scaryBoy_rig_0007:IKStiffOrientSpine1_M/scaryBoy_rig_0007:IKSpineLocator1_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine2_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine2_M/scaryBoy_rig_0007:IKExtraSpine2_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine2_M/scaryBoy_rig_0007:IKExtraSpine2_M/scaryBoy_rig_0007:IKSpine2_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine2_M/scaryBoy_rig_0007:IKExtraSpine2_M/scaryBoy_rig_0007:IKSpine2_M/scaryBoy_rig_0007:IKSpine2AlignTo_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine2_M/scaryBoy_rig_0007:IKExtraSpine2_M/scaryBoy_rig_0007:IKSpine2_M/scaryBoy_rig_0007:IKSpine2AlignUnIKTwistToOffset_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine2_M/scaryBoy_rig_0007:IKExtraSpine2_M/scaryBoy_rig_0007:IKSpine2_M/scaryBoy_rig_0007:IKSpine2AlignUnIKTwistToOffset_M/scaryBoy_rig_0007:IKSpine2AlignUnIKTwistTo_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine2_M/scaryBoy_rig_0007:IKExtraSpine2_M/scaryBoy_rig_0007:IKSpine2_M/scaryBoy_rig_0007:IKSpineLocator3_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine2_M/scaryBoy_rig_0007:IKExtraSpine2_M/scaryBoy_rig_0007:IKSpine2_M/scaryBoy_rig_0007:IKStiffOrientSpine2_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKRootConstraint/scaryBoy_rig_0007:IKOffsetSpine2_M/scaryBoy_rig_0007:IKExtraSpine2_M/scaryBoy_rig_0007:IKSpine2_M/scaryBoy_rig_0007:IKStiffOrientSpine2_M/scaryBoy_rig_0007:IKSpineLocator2_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKScalerChest_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKScalerRoot_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKScalerSpine1_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:IKSpineHandle_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:PoleAimLeg_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:PoleAimLeg_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:PoleOffsetArm_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:PoleOffsetArm_L/scaryBoy_rig_0007:PoleExtraArm_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:PoleOffsetArm_L/scaryBoy_rig_0007:PoleExtraArm_L/scaryBoy_rig_0007:PoleArm_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:PoleOffsetArm_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:PoleOffsetArm_R/scaryBoy_rig_0007:PoleExtraArm_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:PoleOffsetArm_R/scaryBoy_rig_0007:PoleExtraArm_R/scaryBoy_rig_0007:PoleArm_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:PoleOffsetLeg_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:PoleOffsetLeg_L/scaryBoy_rig_0007:PoleExtraLeg_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:PoleOffsetLeg_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKHandle/scaryBoy_rig_0007:PoleOffsetLeg_R/scaryBoy_rig_0007:PoleExtraLeg_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintHip_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintHip_L/scaryBoy_rig_0007:IKMessureFromHip_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintHip_L/scaryBoy_rig_0007:IKXOffsetHip_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintHip_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintHip_R/scaryBoy_rig_0007:IKMessureFromHip_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintHip_R/scaryBoy_rig_0007:IKXOffsetHip_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKfake0Spine_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKfake0Spine_M/scaryBoy_rig_0007:IKfake1Spine_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKfake0Spine_M/scaryBoy_rig_0007:IKfake1Spine_M/scaryBoy_rig_0007:IKFake1UpLocSpine_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKfake0Spine_M/scaryBoy_rig_0007:IKfake1Spine_M/scaryBoy_rig_0007:IKfake2Spine_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKfake0Spine_M/scaryBoy_rig_0007:IKfake1Spine_M/scaryBoy_rig_0007:IKfake2Spine_M/scaryBoy_rig_0007:IKfake3Spine_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKfake0Spine_M/scaryBoy_rig_0007:IKSpSpine1_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKfake0Spine_M/scaryBoy_rig_0007:IKSpSpine1_M/scaryBoy_rig_0007:IKSpChest_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKfake0Spine_M/scaryBoy_rig_0007:IKSpSpine1_M/scaryBoy_rig_0007:IKSpChest_M/scaryBoy_rig_0007:IKSpChestFollowOffset_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKfake0Spine_M/scaryBoy_rig_0007:IKSpSpine1_M/scaryBoy_rig_0007:IKSpSpine1FollowOffset_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKXOffsetRoot_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKXOffsetRoot_M/scaryBoy_rig_0007:IKXRoot_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKXOffsetRoot_M/scaryBoy_rig_0007:IKXRoot_M/scaryBoy_rig_0007:IKX2Root_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKXOffsetRoot_M/scaryBoy_rig_0007:IKXRoot_M/scaryBoy_rig_0007:IKXSpine1_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKXOffsetRoot_M/scaryBoy_rig_0007:IKXRoot_M/scaryBoy_rig_0007:IKXSpine1_M/scaryBoy_rig_0007:IKX2Spine1_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKXOffsetRoot_M/scaryBoy_rig_0007:IKXRoot_M/scaryBoy_rig_0007:IKXSpine1_M/scaryBoy_rig_0007:IKXChest_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintRoot_M/scaryBoy_rig_0007:IKXOffsetRoot_M/scaryBoy_rig_0007:IKXRoot_M/scaryBoy_rig_0007:IKXSpine1_M/scaryBoy_rig_0007:IKXChest_M/scaryBoy_rig_0007:IKX2Chest_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_L/scaryBoy_rig_0007:IKMessureFromShoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_L/scaryBoy_rig_0007:IKXOffsetShoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_L/scaryBoy_rig_0007:IKXOffsetShoulder_L/scaryBoy_rig_0007:IKXShoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_L/scaryBoy_rig_0007:IKXOffsetShoulder_L/scaryBoy_rig_0007:IKXShoulder_L/scaryBoy_rig_0007:IKX2Shoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_L/scaryBoy_rig_0007:IKXOffsetShoulder_L/scaryBoy_rig_0007:IKXShoulder_L/scaryBoy_rig_0007:IKXElbow_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_L/scaryBoy_rig_0007:IKXOffsetShoulder_L/scaryBoy_rig_0007:IKXShoulder_L/scaryBoy_rig_0007:IKXElbow_L/scaryBoy_rig_0007:IKX2Elbow_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_L/scaryBoy_rig_0007:IKXOffsetShoulder_L/scaryBoy_rig_0007:IKXShoulder_L/scaryBoy_rig_0007:IKXElbow_L/scaryBoy_rig_0007:IKXWrist_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_L/scaryBoy_rig_0007:IKXOffsetShoulder_L/scaryBoy_rig_0007:IKXShoulder_L/scaryBoy_rig_0007:IKXElbow_L/scaryBoy_rig_0007:IKXWrist_L/scaryBoy_rig_0007:IKX2Wrist_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_L/scaryBoy_rig_0007:IKXOffsetShoulder_L/scaryBoy_rig_0007:IKXShoulder_L/scaryBoy_rig_0007:IKXElbow_L/scaryBoy_rig_0007:PoleAnnotationArm_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_R/scaryBoy_rig_0007:IKMessureFromShoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_R/scaryBoy_rig_0007:IKXOffsetShoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_R/scaryBoy_rig_0007:IKXOffsetShoulder_R/scaryBoy_rig_0007:IKXShoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_R/scaryBoy_rig_0007:IKXOffsetShoulder_R/scaryBoy_rig_0007:IKXShoulder_R/scaryBoy_rig_0007:IKX2Shoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_R/scaryBoy_rig_0007:IKXOffsetShoulder_R/scaryBoy_rig_0007:IKXShoulder_R/scaryBoy_rig_0007:IKXElbow_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_R/scaryBoy_rig_0007:IKXOffsetShoulder_R/scaryBoy_rig_0007:IKXShoulder_R/scaryBoy_rig_0007:IKXElbow_R/scaryBoy_rig_0007:IKX2Elbow_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_R/scaryBoy_rig_0007:IKXOffsetShoulder_R/scaryBoy_rig_0007:IKXShoulder_R/scaryBoy_rig_0007:IKXElbow_R/scaryBoy_rig_0007:IKXWrist_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_R/scaryBoy_rig_0007:IKXOffsetShoulder_R/scaryBoy_rig_0007:IKXShoulder_R/scaryBoy_rig_0007:IKXElbow_R/scaryBoy_rig_0007:IKXWrist_R/scaryBoy_rig_0007:IKX2Wrist_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKParentConstraintShoulder_R/scaryBoy_rig_0007:IKXOffsetShoulder_R/scaryBoy_rig_0007:IKXShoulder_R/scaryBoy_rig_0007:IKXElbow_R/scaryBoy_rig_0007:PoleAnnotationArm_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKSpSpineOffset_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKSpSpineOffset_M/scaryBoy_rig_0007:IKSpRoot_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKJoints/scaryBoy_rig_0007:IKSpSpineOffset_M/scaryBoy_rig_0007:IKSpRoot_M/scaryBoy_rig_0007:IKSpRootFollowOffset_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKMessure
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKMessure/scaryBoy_rig_0007:IKdistanceArm_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKMessure/scaryBoy_rig_0007:IKdistanceArm_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKMessure/scaryBoy_rig_0007:IKdistanceLeg_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKMessure/scaryBoy_rig_0007:IKdistanceLeg_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKMessure/scaryBoy_rig_0007:IKmessureLoc1Arm_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKMessure/scaryBoy_rig_0007:IKmessureLoc1Arm_L/scaryBoy_rig_0007:IKmessureLoc2Arm_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKMessure/scaryBoy_rig_0007:IKmessureLoc1Arm_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKMessure/scaryBoy_rig_0007:IKmessureLoc1Arm_R/scaryBoy_rig_0007:IKmessureLoc2Arm_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKMessure/scaryBoy_rig_0007:IKmessureLoc1Leg_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKMessure/scaryBoy_rig_0007:IKmessureLoc1Leg_L/scaryBoy_rig_0007:IKmessureLoc2Leg_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKMessure/scaryBoy_rig_0007:IKmessureLoc1Leg_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKMessure/scaryBoy_rig_0007:IKmessureLoc1Leg_R/scaryBoy_rig_0007:IKmessureLoc2Leg_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKStatic
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKStatic/scaryBoy_rig_0007:IKOffsetArm_LStatic
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKStatic/scaryBoy_rig_0007:IKOffsetArm_RStatic
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKStatic/scaryBoy_rig_0007:PoleOffsetArm_LStatic
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKStatic/scaryBoy_rig_0007:PoleOffsetArm_RStatic
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKStatic/scaryBoy_rig_0007:PoleOffsetLeg_LStatic
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:IKSystem/scaryBoy_rig_0007:IKStatic/scaryBoy_rig_0007:PoleOffsetLeg_RStatic
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:RootSystem
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:RootSystem/scaryBoy_rig_0007:LegLockConstrained
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:RootSystem/scaryBoy_rig_0007:RootOffsetX_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:RootSystem/scaryBoy_rig_0007:RootOffsetX_M/scaryBoy_rig_0007:RootExtraX_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:FKIKMixElbow_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:FKIKMixElbow_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetChest_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetChest_M/scaryBoy_rig_0007:TwistFollowChest_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetChest_M/scaryBoy_rig_0007:TwistFollowChest_M/scaryBoy_rig_0007:UnTwistIKChest_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetElbow_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetElbow_L/scaryBoy_rig_0007:TwistFollowElbow_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetElbow_L/scaryBoy_rig_0007:TwistFollowElbow_L/scaryBoy_rig_0007:UnTwistIKElbow_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetElbow_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetElbow_R/scaryBoy_rig_0007:TwistFollowElbow_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetElbow_R/scaryBoy_rig_0007:TwistFollowElbow_R/scaryBoy_rig_0007:UnTwistIKElbow_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetShoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetShoulder_L/scaryBoy_rig_0007:TwistFollowShoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetShoulder_L/scaryBoy_rig_0007:TwistFollowShoulder_L/scaryBoy_rig_0007:UnTwistIKShoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetShoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetShoulder_R/scaryBoy_rig_0007:TwistFollowShoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowOffsetShoulder_R/scaryBoy_rig_0007:TwistFollowShoulder_R/scaryBoy_rig_0007:UnTwistIKShoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetChest_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetChest_M/scaryBoy_rig_0007:TwistFollowParentChest_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetChest_M/scaryBoy_rig_0007:TwistFollowParentChest_M/scaryBoy_rig_0007:UnTwistChest_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetChest_M/scaryBoy_rig_0007:TwistFollowParentChest_M/scaryBoy_rig_0007:UnTwistChest_M/scaryBoy_rig_0007:TwistBalancerChest_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetChest_M/scaryBoy_rig_0007:TwistFollowParentChest_M/scaryBoy_rig_0007:UnTwistChest_M/scaryBoy_rig_0007:UnTwistEndChest_M
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_L/scaryBoy_rig_0007:TwistFollowParentElbow_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_L/scaryBoy_rig_0007:TwistFollowParentElbow_L/scaryBoy_rig_0007:UnTwistElbow_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_L/scaryBoy_rig_0007:TwistFollowParentElbow_L/scaryBoy_rig_0007:UnTwistElbow_L/scaryBoy_rig_0007:TwistBalancerElbow_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_L/scaryBoy_rig_0007:TwistFollowParentElbow_L/scaryBoy_rig_0007:UnTwistElbow_L/scaryBoy_rig_0007:TwisterElbow0_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_L/scaryBoy_rig_0007:TwistFollowParentElbow_L/scaryBoy_rig_0007:UnTwistElbow_L/scaryBoy_rig_0007:TwisterElbow1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_L/scaryBoy_rig_0007:TwistFollowParentElbow_L/scaryBoy_rig_0007:UnTwistElbow_L/scaryBoy_rig_0007:TwisterElbow2_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_L/scaryBoy_rig_0007:TwistFollowParentElbow_L/scaryBoy_rig_0007:UnTwistElbow_L/scaryBoy_rig_0007:UnTwistEndElbow_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_R/scaryBoy_rig_0007:TwistFollowParentElbow_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_R/scaryBoy_rig_0007:TwistFollowParentElbow_R/scaryBoy_rig_0007:UnTwistElbow_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_R/scaryBoy_rig_0007:TwistFollowParentElbow_R/scaryBoy_rig_0007:UnTwistElbow_R/scaryBoy_rig_0007:TwistBalancerElbow_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_R/scaryBoy_rig_0007:TwistFollowParentElbow_R/scaryBoy_rig_0007:UnTwistElbow_R/scaryBoy_rig_0007:TwisterElbow0_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_R/scaryBoy_rig_0007:TwistFollowParentElbow_R/scaryBoy_rig_0007:UnTwistElbow_R/scaryBoy_rig_0007:TwisterElbow1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_R/scaryBoy_rig_0007:TwistFollowParentElbow_R/scaryBoy_rig_0007:UnTwistElbow_R/scaryBoy_rig_0007:TwisterElbow2_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetElbow_R/scaryBoy_rig_0007:TwistFollowParentElbow_R/scaryBoy_rig_0007:UnTwistElbow_R/scaryBoy_rig_0007:UnTwistEndElbow_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_L/scaryBoy_rig_0007:TwistFollowParentShoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_L/scaryBoy_rig_0007:TwistFollowParentShoulder_L/scaryBoy_rig_0007:UnTwistShoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_L/scaryBoy_rig_0007:TwistFollowParentShoulder_L/scaryBoy_rig_0007:UnTwistShoulder_L/scaryBoy_rig_0007:TwistBalancerShoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_L/scaryBoy_rig_0007:TwistFollowParentShoulder_L/scaryBoy_rig_0007:UnTwistShoulder_L/scaryBoy_rig_0007:TwisterShoulder0_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_L/scaryBoy_rig_0007:TwistFollowParentShoulder_L/scaryBoy_rig_0007:UnTwistShoulder_L/scaryBoy_rig_0007:TwisterShoulder1_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_L/scaryBoy_rig_0007:TwistFollowParentShoulder_L/scaryBoy_rig_0007:UnTwistShoulder_L/scaryBoy_rig_0007:TwisterShoulder2_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_L/scaryBoy_rig_0007:TwistFollowParentShoulder_L/scaryBoy_rig_0007:UnTwistShoulder_L/scaryBoy_rig_0007:UnTwistEndShoulder_L
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_R/scaryBoy_rig_0007:TwistFollowParentShoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_R/scaryBoy_rig_0007:TwistFollowParentShoulder_R/scaryBoy_rig_0007:UnTwistShoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_R/scaryBoy_rig_0007:TwistFollowParentShoulder_R/scaryBoy_rig_0007:UnTwistShoulder_R/scaryBoy_rig_0007:TwistBalancerShoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_R/scaryBoy_rig_0007:TwistFollowParentShoulder_R/scaryBoy_rig_0007:UnTwistShoulder_R/scaryBoy_rig_0007:TwisterShoulder0_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_R/scaryBoy_rig_0007:TwistFollowParentShoulder_R/scaryBoy_rig_0007:UnTwistShoulder_R/scaryBoy_rig_0007:TwisterShoulder1_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_R/scaryBoy_rig_0007:TwistFollowParentShoulder_R/scaryBoy_rig_0007:UnTwistShoulder_R/scaryBoy_rig_0007:TwisterShoulder2_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group/scaryBoy_rig_0007:Main/scaryBoy_rig_0007:MotionSystem/scaryBoy_rig_0007:TwistSystem/scaryBoy_rig_0007:TwistFollowParentOffsetShoulder_R/scaryBoy_rig_0007:TwistFollowParentShoulder_R/scaryBoy_rig_0007:UnTwistShoulder_R/scaryBoy_rig_0007:UnTwistEndShoulder_R
+        weight: 1
+      - path: scaryBoy_rig_0007:Group2
+        weight: 1
+      - path: scaryBoy_rig_0007:group3
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Belt:Group3
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Eyes:Group2
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Eyes:Group3
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Face:Group2
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Feet:Group2
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Feet:Group3
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Group2 1
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Hair:Group10231
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Half_pant:Group2
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Hand:Group2
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Hand:Group3
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Hood_part1:Group2
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Hood_part1:Group3
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:l_bro
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:r_brow
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Shark_Hood3:Group2
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Shoes:Group2
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:teeth_up
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:Tongue:pCube6
+        weight: 1
+      - path: scaryBoy_rig_0007:group3/scaryBoy_rig_0007:toung
+        weight: 1
+      - path: scaryBoy_rig_0007:group4
+        weight: 1
+      - path: scaryBoy_rig_0007:group4/scaryBoy_rig_0007:expression_curve:curve1
+        weight: 1
+      - path: scaryBoy_rig_0007:group4/scaryBoy_rig_0007:expression_curve:curve1/scaryBoy_rig_0007:expression_curve:cc_exp
+        weight: 1
+      - path: scaryBoy_rig_0007:group5
+        weight: 1
+      - path: scaryBoy_rig_0007:group5/scaryBoy_rig_0007:curve1
+        weight: 1
+      - path: scaryBoy_rig_0007:group5/scaryBoy_rig_0007:curve1/scaryBoy_rig_0007:cc_exp
+        weight: 1
+      - path: scaryBoy_rig_0007:group6
+        weight: 1
+      - path: scaryBoy_rig_0007:group6/scaryBoy_rig_0007:curve1 1
+        weight: 1
+      - path: scaryBoy_rig_0007:group6/scaryBoy_rig_0007:curve1 1/scaryBoy_rig_0007:cc_exp
+          1
+        weight: 1
+      - path: scaryBoy_rig_0007:group7
+        weight: 1
+      - path: scaryBoy_rig_0007:group7/scaryBoy_rig_0007:curve1 2
+        weight: 1
+      - path: scaryBoy_rig_0007:group7/scaryBoy_rig_0007:curve1 2/scaryBoy_rig_0007:cc_exp
+          2
+        weight: 1
+      - path: scaryBoy_rig_0007:group8
+        weight: 1
+      - path: scaryBoy_rig_0007:group8/scaryBoy_rig_0007:curve1 3
+        weight: 1
+      - path: scaryBoy_rig_0007:group8/scaryBoy_rig_0007:curve1 3/scaryBoy_rig_0007:cc_exp
+          3
+        weight: 1
+      - path: scaryBoy_rig_0007:jnt_jacket_back
+        weight: 1
+      - path: scaryBoy_rig_0007:jnt_teeth_down_
+        weight: 1
+      - path: scaryBoy_rig_0007:jnt_teeth_up
+        weight: 1
+      - path: scaryBoy_rig_0007:joint1
+        weight: 1
+      - path: scaryBoy_rig_0007:joint2
+        weight: 1
+      - path: scaryBoy_rig_0007:L_eyeBrow_jnt
+        weight: 1
+      - path: scaryBoy_rig_0007:L_jnt_wing_down
+        weight: 1
+      - path: scaryBoy_rig_0007:L_jnt_wing_up
+        weight: 1
+      - path: scaryBoy_rig_0007:left
+        weight: 1
+      - path: scaryBoy_rig_0007:Mouth_open:Group2
+        weight: 1
+      - path: scaryBoy_rig_0007:pCube5
+        weight: 1
+      - path: scaryBoy_rig_0007:pCube5/scaryBoy_rig_0007:group1
+        weight: 1
+      - path: scaryBoy_rig_0007:pCube5/scaryBoy_rig_0007:group2
+        weight: 1
+      - path: scaryBoy_rig_0007:R_eyeBrow_jnt
+        weight: 1
+      - path: scaryBoy_rig_0007:R_jnt_wing_down
+        weight: 1
+      - path: scaryBoy_rig_0007:R_jnt_wing_up
+        weight: 1
+      - path: tweenMachineData
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: scaryboy
+  assetBundleVariant: 
