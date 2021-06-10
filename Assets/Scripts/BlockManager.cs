@@ -347,12 +347,12 @@ public class BlockManager : MonoBehaviour
         //newObj.GetComponent<RectTransform>().anchorMax = new Vector2(0f, 1f);
         //newObj.GetComponent<RectTransform>().pivot = new Vector2(0f, 1f);
         // RectTransform의 PosX, PosY, PosZ 변경 방법
-        posY += 438f;
-        newObj.GetComponent<RectTransform>().position = new Vector3(posX, posY, posZ);
-        posY -= 438f;
+        //posY += 438f;
+        newObj.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(posX, posY, posZ);
+        //posY -= 438f;
 
         Debug.Log(posX + " " + posY + " " + posZ);
-        posY -= 65f; // 다음 블럭 y좌표 조정
+        posY -= 40f; // 다음 블럭 y좌표 조정
                       // ht 연결리스트 헤드를 받아서 화면에 출력
     }
         public void showBlocks()
@@ -391,7 +391,7 @@ public class BlockManager : MonoBehaviour
     void Start()
     {
         initlist();
-        posX += 389.5f;
+        //posX += 389.5f;
         //posZ -= 379f;
         // (tg) 동작 확인을 위해 스타트 함수에서 실행
         //verifiAlgorithm();
