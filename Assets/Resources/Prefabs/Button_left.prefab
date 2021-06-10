@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 4935839411666229645}
   m_Layer: 5
   m_Name: Button_left
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

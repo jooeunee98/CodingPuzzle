@@ -333,10 +333,6 @@ public class BlockManager : MonoBehaviour
         // 블루존(코딩존)에 생성할 프리펩 인스턴스화
         GameObject newObj = Instantiate(prefab) as GameObject;
         newObj.name = designObjName;
-        newObj.GetComponent<Image>().sprite = Resources.Load(imgResource, typeof(Sprite)) as Sprite;
-
-        // Tag를 Block으로 변경
-        newObj.gameObject.tag = "Block";
 
         // Image가 보이도록 부모를 Panel로 변경 
         newObj.transform.SetParent(GameObject.Find("CodePanel").transform);
