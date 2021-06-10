@@ -19,7 +19,8 @@ public class BlockManager : MonoBehaviour
     public float posX = 0f;
     public float posY = 0f;
     public float posZ = 0f;
-
+    
+    
     public class Block
     {
         internal Block prev;
@@ -351,7 +352,7 @@ public class BlockManager : MonoBehaviour
         newObj.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(posX, posY, posZ);
         //posY -= 438f;
 
-        Debug.Log(posX + " " + posY + " " + posZ);
+        //Debug.Log(posX + " " + posY + " " + posZ);
         posY -= 40f; // 다음 블럭 y좌표 조정
                       // ht 연결리스트 헤드를 받아서 화면에 출력
     }
@@ -388,6 +389,30 @@ public class BlockManager : MonoBehaviour
         //deleteBlocks("Block");
     }
 
+        public void characterMove()
+    {
+        Block LL = head.next;
+        while (!isTail(LL))
+        {
+            
+            
+            string whatis = LL.direction.Split(':')[0]; // 클릭된 블럭이 무엇인지 판단
+            if (whatis.Equals("Button_left"))       // 좌회전 버튼이면
+            {
+                GameObject Character = GameObject.FindWithTag("Character");
+            }
+            else if (whatis.Equals("Button_forward"))       // 직진 버튼이면
+            {
+                
+            }
+            else
+            {   // 둘 다 아니면 우회전 버튼이므로
+                
+            }
+            LL = LL.next;
+        }
+    }
+
     void Start()
     {
         initlist();
@@ -399,7 +424,6 @@ public class BlockManager : MonoBehaviour
 
     void Update()
     {
-
     }
 
     /*  (tg) 단일 연결리스트 코드
