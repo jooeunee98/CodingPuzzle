@@ -39,6 +39,7 @@ public class CharacterMotion : MonoBehaviour
                 Debug.Log("좌회전!");
                 go_forward = false;
                 turn_left = true;
+                turn_right = false;
                 turnDegree = 0;
                 // 도는건 얼마 안걸리니까 waitTime -> 1 로 변경
                 waitTime = 2f;
@@ -47,6 +48,7 @@ public class CharacterMotion : MonoBehaviour
                 Debug.Log("우회전!");
                 go_forward = false;
                 turn_right = true;
+                turn_left = false;
                 turnDegree = 0;
                 // 도는건 얼마 안걸리니까 waitTime -> 1 로 변경
                 waitTime = 2f;
@@ -85,7 +87,7 @@ public class CharacterMotion : MonoBehaviour
         {
             if (turnDegree < 90)
             {
-                GameObject.Find("Character").gameObject.transform.Rotate(0, -2, 0);
+                GameObject.Find("Character").transform.Rotate(0, -2, 0);
                 turnDegree += 2;
             }
         }

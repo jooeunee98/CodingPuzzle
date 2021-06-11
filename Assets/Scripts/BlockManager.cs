@@ -351,7 +351,7 @@ public class BlockManager : MonoBehaviour
         //posY -= 438f;
 
         //Debug.Log(posX + " " + posY + " " + posZ);
-        posY -= 40f; // 다음 블럭 y좌표 조정
+        posY -= 100f; // 다음 블럭 y좌표 조정
                       // ht 연결리스트 헤드를 받아서 화면에 출력
     }
         public void showBlocks()
