@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
     public int stageNum;                    // 현재 스테이지 번호
     public bool isAction;                   // 대화창을 띄웠는지 판단
     public int talkIndex;
+    static private string prev_scene;       // 이전 씬의 정보
 
     private void Start()
     {
@@ -97,5 +99,42 @@ public class GameManager : MonoBehaviour
         string delButtonName = deleteButton.name;               // 삭제하는 블럭의 이름
         Debug.Log("Delete this button : " + delButtonName);     // 동작 확인
         blockManager.deleteNode(delButtonName);                 // 블루존에서 블럭 삭제
+    }
+
+    // (tg) Scene 변경
+    public void SceneChange()
+    {
+        // 버튼을 눌러서 이동할 씬 이름 받아옴
+        string called = EventSystem.current.currentSelectedGameObject.name;
+        Debug.Log("SceneChange() called");
+
+        // 만약 close 버튼이 눌러지면 이전 씬으로 이동
+        // 메인 -> 스테이지 -> 설정
+        // 위와 같이 가정할 때 설정 씬에서 close 버튼을 누르면 스테이지로 이동
+        if (called.Equals("Button_Close"))
+        {
+            Debug.Log("Button_close was pressed");
+            Debug.Log(prev_scene);
+            SceneManager.LoadScene(prev_scene);
+            prev_scene = null;
+        }
+        // 그 외의 버튼이 눌러졌을 경우
+        else
+        {
+            // 돌아갈 씬의 정보를 갱신
+            prev_scene = SceneManager.GetActiveScene().name;
+            Debug.Log(prev_scene);
+            
+            // 버튼에 따라 씬 이동
+            switch (called)
+            {
+                case "Button_Setting":
+                    SceneManager.LoadScene("GameSetting");
+                    break;
+                case "Button_Stage_1":
+                    SceneManager.LoadScene("20210603ty1");
+                    break;
+            }
+        }
     }
 }

@@ -187,107 +187,6 @@ public class BlockManager : MonoBehaviour
         printList();
     }
 
-    /* (tg) 아래에 블럭생성 통합코드를 작성했으므로 삭제 요청합니당! ㅎㅅㅎ
-    // ht 블럭 생성
-    public void createForwardBlock(string id)
-    {
-        GameObject newObj = new GameObject();
-        GameObject layerObj = new GameObject();
-        newObj.name = "ForwardBlock";
-        layerObj.name = "BlockDelete";
-        newObj.AddComponent<CanvasRenderer>();
-        newObj.AddComponent<Button>();
-        newObj.AddComponent<Image>();
-        layerObj.AddComponent<CanvasRenderer>();
-        layerObj.AddComponent<Button>();
-        layerObj.AddComponent<Image>();
-
-        // Tag를 Block으로 변경
-        newObj.gameObject.tag = "Block";
-        
-        // 이미지 변경
-        newObj.GetComponent<Image>().sprite = Resources.Load("images/Forward", typeof(Sprite)) as Sprite;
-        layerObj.GetComponent<Image>().sprite = Resources.Load("images/Button_blockDelete", typeof(Sprite)) as Sprite;
-
-        // Image가 보이도록 부모를 Panel로 변경 
-        newObj.transform.SetParent(GameObject.Find("CodePanel").transform);
-        layerObj.transform.SetParent(GameObject.Find("CodePanel").transform);
-
-        // 생성위치를 좌상단으로 지정
-        newObj.GetComponent<RectTransform>().anchorMin = new Vector2(0f, 1f);
-        newObj.GetComponent<RectTransform>().anchorMax = new Vector2(0f, 1f);
-        newObj.GetComponent<RectTransform>().pivot = new Vector2(0f, 1f);
-
-        layerObj.GetComponent<RectTransform>().anchorMin = new Vector2(0f, 1f);
-        layerObj.GetComponent<RectTransform>().anchorMax = new Vector2(0f, 1f);
-        layerObj.GetComponent<RectTransform>().pivot = new Vector2(0f, 1f);
-        // RectTransform의 PosX, PosY, PosZ 변경 방법
-        newObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(posX, posY);
-        layerObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(posX, posY);
-        posY -= 100f; // 다음 블럭 y좌표 조정
-
-        layerObj.GetComponent<RectTransform>().localScale = new Vector2(1,1);
-        //Debug.Log("Created");
-
-    }
-    // ht 좌회전 블럭 생성
-    public void createLeftBlock(string id)
-    {
-        GameObject newObj = new GameObject();
-        newObj.name = "LeftBlock";
-        newObj.AddComponent<CanvasRenderer>();
-        newObj.AddComponent<Button>();
-        newObj.AddComponent<Image>();
-
-        // Tag를 Block으로 변경
-        newObj.gameObject.tag = "Block";
-
-        // 이미지 변경
-        newObj.GetComponent<Image>().sprite = Resources.Load("images/Left", typeof(Sprite)) as Sprite;
-
-        // Image가 보이도록 부모를 Panel로 변경 
-        newObj.transform.SetParent(GameObject.Find("CodePanel").transform);
-
-        // 생성위치를 좌상단으로 지정
-        newObj.GetComponent<RectTransform>().anchorMin = new Vector2(0f, 1f);
-        newObj.GetComponent<RectTransform>().anchorMax = new Vector2(0f, 1f);
-        newObj.GetComponent<RectTransform>().pivot = new Vector2(0f, 1f);
-        // RectTransform의 PosX, PosY, PosZ 변경 방법
-        newObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(posX, posY);
-        posY -= 100f; // 다음 블럭 y좌표 조정
-        //Debug.Log("Created");
-
-    }
-    // ht 우회전 블럭 생성
-    public void createRightBlock(string id)
-    {
-        GameObject newObj = new GameObject();
-        newObj.name = "RightBlock:"+id;
-        newObj.AddComponent<CanvasRenderer>();
-        newObj.AddComponent<Button>();
-        newObj.AddComponent<Image>();
-
-        // Tag를 Block으로 변경
-        newObj.gameObject.tag = "Block";
-
-        // 이미지 변경
-        newObj.GetComponent<Image>().sprite = Resources.Load("images/Right", typeof(Sprite)) as Sprite;
-
-        // Image가 보이도록 부모를 Panel로 변경 
-        newObj.transform.SetParent(GameObject.Find("CodePanel").transform);
-
-        // 생성위치를 좌상단으로 지정
-        newObj.GetComponent<RectTransform>().anchorMin = new Vector2(0f, 1f);
-        newObj.GetComponent<RectTransform>().anchorMax = new Vector2(0f, 1f);
-        newObj.GetComponent<RectTransform>().pivot = new Vector2(0f, 1f);
-        // RectTransform의 PosX, PosY, PosZ 변경 방법
-        newObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(posX, posY);
-        posY -= 100f; // 다음 블럭 y좌표 조정
-        //Debug.Log("Created");
-
-    }
-    -여기까지-
-    */
     // ht 만들었던 블럭들 삭제
     public void deleteBlocks(string target)
     {
@@ -354,7 +253,7 @@ public class BlockManager : MonoBehaviour
         posY -= 100f; // 다음 블럭 y좌표 조정
                       // ht 연결리스트 헤드를 받아서 화면에 출력
     }
-        public void showBlocks()
+    public void showBlocks()
     {
         // head 부터 tail까지 돌면서 블럭생성
         Block LL = head.next;
@@ -364,30 +263,14 @@ public class BlockManager : MonoBehaviour
         {
             // (tg) 코드 중복을 최소화 하기 위해서 아래의 코드를 함수 하나로 처리
             // 각 노드가 어떤 블럭인지 판단후 해당 블럭 생성하는 함수 실행
-            /*string[] direction_temp = LL.direction.Split(':');
-            if (direction_temp[0].Equals("Button_forward"))
-            {
-                createForwardBlock(direction_temp[1]); // 전진 블럭인 경우 (일단 모든 노드가 전진블럭이라고 가정)
-            }
-            else if (direction_temp[0].Equals("Button_left"))
-            {
-                createLeftBlock(direction_temp[1]); // 좌회전 블럭인 경우
-
-            }
-            else if (direction_temp[0].Equals("Button_right"))
-            {
-                createRightBlock(direction_temp[1]); // 우회전 블럭인 경우
-            }
-            */
             createBlock(LL.direction);
             LL = LL.next;
         }
-
         // (tg) 만들었던 블럭들 삭제
         //deleteBlocks("Block");
     }
 
-        public void characterMove()
+    public void characterMove()
     {
         Block LL = head.next;
         while (!isTail(LL))
