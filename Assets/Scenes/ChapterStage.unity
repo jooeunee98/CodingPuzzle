@@ -740,7 +740,7 @@ GameObject:
   - component: {fileID: 567221998}
   - component: {fileID: 567221997}
   m_Layer: 5
-  m_Name: Button_Setting
+  m_Name: Button_GameSetting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1655,7 +1655,7 @@ GameObject:
   - component: {fileID: 898048955}
   - component: {fileID: 898048954}
   m_Layer: 5
-  m_Name: Button_Stage_1
+  m_Name: Button_20210603ty1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3170,7 +3170,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2089302139}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2036769254}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SceneChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2089302139
 MonoBehaviour:
   m_ObjectHideFlags: 0
