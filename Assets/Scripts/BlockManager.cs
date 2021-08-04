@@ -11,9 +11,8 @@ using UnityEngine.UI;
 
 public class BlockManager : MonoBehaviour
 {
-    public GameObject selectBlock;
-    public Text blockText;          // (tg) 블럭 오브젝트 내에 Text를 연결
     public int listId = 0;          // (tg) 블럭 id
+    public int loopNum = 0;            // (tg) 반복문 반복 횟수
     // ht 블럭 위치 조정용 변수
     public float posX = 0f;
     public float posY = 0f;
@@ -47,14 +46,26 @@ public class BlockManager : MonoBehaviour
     // (tg) 반복문 블럭(수정될 수 있음)
     public class ForBlock : Block
     {
-        int turn;
+        internal int turn;
+        internal Block loop;
+
+        public ForBlock() : base()
+        {
+            turn = 0;
+            loop = null;
+        }
+        public ForBlock(int turn) : base("ForBlock")
+        {
+            this.turn = turn;
+            loop = null;
+        }
     }
     // (tg) 조건문 블럭(수정될 수 있음)
     public class IfBlock : Block
     {
         string condition;
     }
-
+    
     // (tg) 리스트 head 및 tail, middle(리스트 중간에 삽입할 위치를 가리키는 포인터)
     public Block head, tail, middle;
 
@@ -70,6 +81,7 @@ public class BlockManager : MonoBehaviour
         tail.prev = head;
         middle = null;
     }
+    
     // (tg) 현재 블럭이 끝이면 true 아니면 false 반환
     public bool isTail(Block b)
     {
@@ -108,10 +120,11 @@ public class BlockManager : MonoBehaviour
         head.next = newBlock;
         return 1;
     }
-    // (tg) 중간삽입     개발 중.. 드래그 앤 드랍했을 때 어떤 노드들 사이에 들어가는지 알 수 있어야 함
+    // (tg) 중간삽입
     public void setMiddle(string prevNode)
     {
         string idValue = prevNode.Split(':')[1];
+        // middle에 리스트 중간 위치 저장
         middle = getNode(idValue);
     }
     // (tg) 클릭한 블럭을 생성해서 리스트 맨 뒤에 삽입
@@ -120,7 +133,15 @@ public class BlockManager : MonoBehaviour
         //direction = "test node";       // (tg) 테스트용
         // ht Debug.Log("Here i am");
         listId++;                                       // id값 증가
-        Block newBlock = new Block(direction, listId);  // 노드 생성
+        Block newBlock = null;
+
+        if (direction.Equals("ForBlock"))
+            newBlock = new ForBlock(loopNum);
+        else if (direction.Equals("IfBlock"))
+            newBlock = new IfBlock();
+        else
+            newBlock = new Block(direction, listId);  // 노드 생성
+        // middle값이 null 아니라면, 리스트 중간에 insert를 수행
         if (middle != null)
         {
             newBlock.prev = middle;
@@ -275,8 +296,6 @@ public class BlockManager : MonoBehaviour
         Block LL = head.next;
         while (!isTail(LL))
         {
-            
-            
             string whatis = LL.direction.Split(':')[0]; // 클릭된 블럭이 무엇인지 판단
             if (whatis.Equals("Button_left"))       // 좌회전 버튼이면
             {
@@ -296,7 +315,7 @@ public class BlockManager : MonoBehaviour
 
     void Start()
     {
-
+        int turn = 0;
         initlist();
         //posX += 389.5f;
         //posZ -= 379f;
