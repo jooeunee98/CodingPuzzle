@@ -10,6 +10,7 @@ TagManager:
   - ChapterButton2
   - ChapterButton3
   - ChapterButton4
+  - ClearCanvas
   layers:
   - Default
   - TransparentFX
