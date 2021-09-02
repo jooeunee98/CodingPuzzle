@@ -373,7 +373,7 @@ GameObject:
   - component: {fileID: 336410016}
   - component: {fileID: 336410015}
   m_Layer: 5
-  m_Name: stageNum1 (1)
+  m_Name: stageNum2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -448,7 +448,7 @@ GameObject:
   - component: {fileID: 453751825}
   - component: {fileID: 453751824}
   m_Layer: 5
-  m_Name: stageNum1 (2)
+  m_Name: stageNum3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -643,9 +643,10 @@ GameObject:
   - component: {fileID: 659895358}
   - component: {fileID: 659895357}
   - component: {fileID: 659895356}
+  - component: {fileID: 659895359}
   m_Layer: 5
   m_Name: ChapterButton2
-  m_TagString: Untagged
+  m_TagString: ChapterButton2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -712,7 +713,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 659895357}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 659895359}
+        m_TargetAssemblyTypeName: ChapterManager, Assembly-CSharp
+        m_MethodName: pushUpdate
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &659895357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -751,6 +764,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659895354}
   m_CullTransparentMesh: 1
+--- !u!114 &659895359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659895354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3969a92af57b8094795f0399a9afc1b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &823318981
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,6 +944,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &977834892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 977834894}
+  - component: {fileID: 977834893}
+  m_Layer: 0
+  m_Name: ChapterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &977834893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977834892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3969a92af57b8094795f0399a9afc1b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &977834894
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977834892}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1107.092, y: -151.21306, z: -2370.4253}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &998502087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,7 +1277,7 @@ GameObject:
   - component: {fileID: 1258359165}
   - component: {fileID: 1258359164}
   m_Layer: 5
-  m_Name: stageNum1 (5)
+  m_Name: stageNum6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1508,7 +1576,7 @@ GameObject:
   - component: {fileID: 1389336924}
   - component: {fileID: 1389336923}
   m_Layer: 5
-  m_Name: stageNum1 (4)
+  m_Name: stageNum5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1703,7 +1771,7 @@ GameObject:
   - component: {fileID: 1578809405}
   - component: {fileID: 1578809404}
   m_Layer: 5
-  m_Name: stageNum1 (3)
+  m_Name: stageNum4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1853,9 +1921,10 @@ GameObject:
   - component: {fileID: 1767589188}
   - component: {fileID: 1767589187}
   - component: {fileID: 1767589186}
+  - component: {fileID: 1767589189}
   m_Layer: 5
   m_Name: ChapterButton4
-  m_TagString: Untagged
+  m_TagString: ChapterButton4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1922,7 +1991,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1767589187}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1767589189}
+        m_TargetAssemblyTypeName: ChapterManager, Assembly-CSharp
+        m_MethodName: pushUpdate
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1767589187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1961,6 +2042,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767589184}
   m_CullTransparentMesh: 1
+--- !u!114 &1767589189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767589184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3969a92af57b8094795f0399a9afc1b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1797388248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1973,9 +2066,10 @@ GameObject:
   - component: {fileID: 1797388252}
   - component: {fileID: 1797388251}
   - component: {fileID: 1797388250}
+  - component: {fileID: 1797388253}
   m_Layer: 5
   m_Name: ChapterButton1
-  m_TagString: Untagged
+  m_TagString: ChapterButton1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2042,7 +2136,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1797388251}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1797388253}
+        m_TargetAssemblyTypeName: ChapterManager, Assembly-CSharp
+        m_MethodName: pushUpdate
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1797388251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2081,6 +2187,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797388248}
   m_CullTransparentMesh: 1
+--- !u!114 &1797388253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797388248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3969a92af57b8094795f0399a9afc1b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1829964029
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,9 +2211,10 @@ GameObject:
   - component: {fileID: 1829964033}
   - component: {fileID: 1829964032}
   - component: {fileID: 1829964031}
+  - component: {fileID: 1829964034}
   m_Layer: 5
   m_Name: ChapterButton3
-  m_TagString: Untagged
+  m_TagString: ChapterButton3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2162,7 +2281,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1829964032}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1829964034}
+        m_TargetAssemblyTypeName: ChapterManager, Assembly-CSharp
+        m_MethodName: pushUpdate
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1829964032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2201,6 +2332,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829964029}
   m_CullTransparentMesh: 1
+--- !u!114 &1829964034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829964029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3969a92af57b8094795f0399a9afc1b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1847332086
 GameObject:
   m_ObjectHideFlags: 0

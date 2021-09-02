@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Block
   - Character
+  - ChapterButton1
+  - ChapterButton2
+  - ChapterButton3
+  - ChapterButton4
   layers:
   - Default
   - TransparentFX
