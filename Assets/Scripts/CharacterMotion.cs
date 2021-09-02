@@ -26,48 +26,98 @@ public class CharacterMotion : MonoBehaviour
 
     public IEnumerator readCommand(float waitTime)
     {
-        BlockManager call = GameObject.Find("BlockManager").GetComponent<BlockManager>();
+        // loopBlock을 만나면 스택에 푸쉬 & 반복 횟수 확인
+        // 반복 횟수만큼 해당 리스트 출력
+        // 반복 횟수가 0에 도달하면, 스택에서 팝
+        string kindOf = null;
+        int num = 0;
+        BlockSystemTest call = GameObject.Find("BlockSystemTest").GetComponent<BlockSystemTest>();
+        BlockSystemTest.Block print = call.getRoot();
+        BlockSystemTest.BStack blockStack = new BlockSystemTest.BStack();
+        Debug.Log("Print list");
 
-        BlockManager.Block LL = call.head.next;
-
-        while (!call.isTail(LL))
+        blockStack.push(print);
+        while (!blockStack.isEmpty())
         {
-            //Debug.Log(LL.direction.Split(':')[0]);
-
-            if (LL.direction.Split(':')[0].Equals("Button_left"))
+            kindOf = print.getInfo().Split(':')[0];
+            // loop or if문일 경우 스택에 저장해서 체크포인트 생성
+            if (kindOf.Equals("Button_loop") || kindOf.Equals("Button_if"))
             {
-                Debug.Log("좌회전!");
-                go_forward = false;
-                turn_left = true;
-                turn_right = false;
-                turnDegree = 0;
-                // 도는건 얼마 안걸리니까 waitTime -> 1 로 변경
-                waitTime = 2f;
-            } else if (LL.direction.Split(':')[0].Equals("Button_right"))
-            {
-                Debug.Log("우회전!");
-                go_forward = false;
-                turn_right = true;
-                turn_left = false;
-                turnDegree = 0;
-                // 도는건 얼마 안걸리니까 waitTime -> 1 로 변경
-                waitTime = 2f;
+                blockStack.push(print);
+                // 반복문 유효성 평가
+                if (call.loopValidate(print, num))
+                {
+                    // true이면 반복문 내부 블럭 출력
+                    print = blockStack.peek().left;
+                    Debug.Log("Loop is validated");
+                    num++;
+                }
+                else
+                {
+                    // 아니면 반복문을 건너뜀
+                    print = blockStack.pop().right;
+                    num = 0;
+                }
             }
+            // 현재 노드가 leaf or subLeaf이면 단말노드까지 도달한 것이므로 스택에 저장된 체크포인트로 돌아감
+            else if (call.isLeaf(print))
+            {
+                print = blockStack.pop();
+            }
+            // 그 외는 기본 블럭이므로 출력을 위해 노드 변경
             else
             {
-                Debug.Log("직진!");
-                waitTime = 1.0f;
-                go_forward = true;
+                print = print.right;
             }
-
-            LL = LL.next;
-
+            Debug.Log(print.getInfo());
+            switch (kindOf)
+            {
+                case "Button_left":
+                    {
+                        Debug.Log("좌회전!");
+                        go_forward = false;
+                        turn_left = true;
+                        turn_right = false;
+                        turnDegree = 0;
+                        // 도는건 얼마 안걸리니까 waitTime -> 1 로 변경
+                        waitTime = 1f;
+                        break;
+                    }
+                case "Button_right":
+                    {
+                        Debug.Log("우회전!");
+                        go_forward = false;
+                        turn_right = true;
+                        turn_left = false;
+                        turnDegree = 0;
+                        // 도는건 얼마 안걸리니까 waitTime -> 1 로 변경
+                        waitTime = 1f;
+                        break;
+                    }
+                case "Button_forward":
+                    {
+                        Debug.Log("직진!");
+                        waitTime = 1f;
+                        go_forward = true;
+                        break;
+                    }
+                default:
+                    {
+                        waitTime = 0f;
+                        go_forward = false;
+                        turn_right = false;
+                        turn_left = false;
+                        turnDegree = 0;
+                        break;
+                    }
+            }
             yield return new WaitForSeconds(waitTime);
         }
         animator.SetBool("theEnd", false);
 
         go_forward = false;
     }
+
     // Update is called once per frame
     void Update()
     {

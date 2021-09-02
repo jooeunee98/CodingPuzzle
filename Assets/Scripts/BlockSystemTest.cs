@@ -30,7 +30,8 @@ using UnityEngine.UI;
 public class BlockSystemTest : MonoBehaviour
 {
     int listId = 0;             // 블럭을 구별하는 id값
-    public int loopNum = 1;     // 반복문의 loopNum 기본값
+    //public int setLoopNum;
+    public int initLoopNum;     // 반복문의 loopNum 기본값
     BStack blockStack;          // 분기점을 저장하는 스택
     Block checkPoint = null;    // 선택된 분기점 저장
     Block root, prev, leaf;
@@ -124,7 +125,7 @@ public class BlockSystemTest : MonoBehaviour
 
         public LoopBlock() : base()
         {
-            loopNum = 0;
+            this.loopNum = 0;
             Block subRoot = new Block("subRoot");
             Block subLeaf = new Block("subLeaf");
             base.left = subRoot;
@@ -140,15 +141,15 @@ public class BlockSystemTest : MonoBehaviour
         }
         public int getLoopNum()
         {
-            return loopNum;
+            return this.loopNum;
         }
         public void setLoopNum(int num)
         {
-            loopNum = num;
+            this.loopNum = num;
         }
         public void deductNum()
         {
-            loopNum--;
+            this.loopNum--;
         }
     }
 
@@ -170,6 +171,11 @@ public class BlockSystemTest : MonoBehaviour
         }
     }
 
+    public Block getRoot()
+    {
+        return root;
+    }
+
     // Tree 초기화
     public void initTree()
     {
@@ -189,7 +195,8 @@ public class BlockSystemTest : MonoBehaviour
         {
             case "Button_loop":
                 // loopNum 초기화하는 방법 생각하기
-                newBlock = new LoopBlock(1, listId);
+                newBlock = new LoopBlock(initLoopNum, listId);
+                Debug.Log("initLoopNum : " + ((LoopBlock)newBlock).getLoopNum().ToString());
                 break;
             case "Button_if":
                 newBlock = new IfBlock();
@@ -364,15 +371,25 @@ public class BlockSystemTest : MonoBehaviour
         showBlocks();
     }
 
+    // 모든 노드 삭제
+    public void deleteAll()
+    {
+        listId = 0;
+        deleteBlocks("Block");
+        root.right = leaf;
+        checkPoint = root;
+        Debug.Log("Reset tree");
+    }
+
     // 반복문의 loopNum 값을 확인해서 반복할 수 있는지 아닌지 확인
-    public bool loopValidate(Block bInfo)
+    public bool loopValidate(Block bInfo, int num)
     {
         LoopBlock loopBlock = (LoopBlock)bInfo;
         int loopNum = loopBlock.getLoopNum();
-        if (loopNum > 0)
+        if (loopNum - num> 0)
         {
-            Debug.Log(loopNum);
-            loopBlock.setLoopNum(--loopNum);
+            Debug.Log(loopNum - num);
+            //loopBlock.setLoopNum(--loopNum);
             return true;
         }
         return false;
@@ -384,6 +401,7 @@ public class BlockSystemTest : MonoBehaviour
         // 반복 횟수만큼 해당 리스트 출력
         // 반복 횟수가 0에 도달하면, 스택에서 팝
         string kindOf = null;
+        int num = 0;
         Block print = root;
         Debug.Log("Print list");
 
@@ -396,16 +414,18 @@ public class BlockSystemTest : MonoBehaviour
             {
                 blockStack.push(print);
                 // 반복문 유효성 평가
-                if (loopValidate(print))
+                if (loopValidate(print, num))
                 {
                     // true이면 반복문 내부 블럭 출력
                     print = blockStack.peek().left;
                     Debug.Log("Loop is validated");
+                    num++;
                 }
                 else
                 {
                     // 아니면 반복문을 건너뜀
                     print = blockStack.pop().right;
+                    num = 0;
                 }
             }
             // 현재 노드가 leaf or subLeaf이면 단말노드까지 도달한 것이므로 스택에 저장된 체크포인트로 돌아감
@@ -423,11 +443,12 @@ public class BlockSystemTest : MonoBehaviour
     }
 
     // 블럭 object를 프리펩을 통해서 생성
-    public void createBlock(string info)
+    public void createBlock(Block binfo)
     {
         string prefResource = null;
         string imgResource = null;
-        string kindOf = info.Split(':')[0];
+        string numResource = null;
+        string kindOf = binfo.getInfo().Split(':')[0];
 
         // 프리펩 하나로 통합시키고, 컴퍼넌트를 직접 수정하는거로 고치기
         // 이름 및 이미지 지정
@@ -435,26 +456,28 @@ public class BlockSystemTest : MonoBehaviour
         {
             case "Button_left":
                 {
-                    imgResource = "images/Left";
+                    imgResource = "images_renewal/Button_left";
                     prefResource = "Prefabs/Button_left";
                     break;
                 }
             case "Button_forward":
                 {
-                    imgResource = "images/Forward";
+                    imgResource = "images_renewal/Button_forward";
                     prefResource = "Prefabs/Button_forward";
                     break;
                 }
             case "Button_right":
                 {
-                    imgResource = "images/Right";
+                    imgResource = "images_renewal/Button_right";
                     prefResource = "Prefabs/Button_right";
                     break;
                 }
             case "Button_loop":
                 {
-                    imgResource = "images/For";
+                    imgResource = "images_renewal/Button_for";
                     prefResource = "Prefabs/Button_loop";
+                    numResource += "Images/Image_stage_" + initLoopNum.ToString();
+                    Debug.Log("numResource : " + numResource);
                     break;
                 }
             case "subRoot":
@@ -483,14 +506,20 @@ public class BlockSystemTest : MonoBehaviour
         {
             posY -= 50f;
         }
-        Debug.Log("Create block at blue zone : " + info);
+        Debug.Log("Create block at blue zone : " + binfo.getInfo());
         Debug.Log("posX : " + posX + " posY : " + posY);
         // 프리펩 호출
         GameObject prefab = Resources.Load(prefResource) as GameObject;
         // 블루존(코딩존)에 생성할 프리펩 인스턴스화
         GameObject newObj = Instantiate(prefab) as GameObject;
-        newObj.name = info;
+        newObj.name = binfo.getInfo();
         newObj.GetComponent<Image>().sprite = Resources.Load(imgResource, typeof(Sprite)) as Sprite;
+        if (kindOf.Equals("Button_loop"))
+        {
+            GameObject child = newObj.transform.Find("Image_loopNum").gameObject;
+            Debug.Log(child);
+            child.GetComponent<Image>().sprite = Resources.Load(numResource, typeof(Sprite)) as Sprite;
+        }
         // Tag를 Block으로 변경
         newObj.gameObject.tag = "Block";
         // mage가 보이도록 부모를 Panel로 변경
@@ -499,7 +528,7 @@ public class BlockSystemTest : MonoBehaviour
         newObj.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(posX, posY, posZ);
     }
 
-    // 유저가 선택한 블럭 화면상에 출력
+    // 유저가 선택한 블럭을 화면상에 출력
     public void showBlocks()
     {
         // root, subroot, leaf, subleaf가 아닐 때 출력
@@ -518,7 +547,7 @@ public class BlockSystemTest : MonoBehaviour
         {
             search = s1.pop();
             Debug.Log("============" + search.getInfo());
-            createBlock(search.getInfo());
+            createBlock(search);
             if (!isLeaf(search.right, true))
             {
                 s1.push(search.right);
@@ -588,6 +617,7 @@ public class BlockSystemTest : MonoBehaviour
     {
         blockStack = new BStack();
         initTree();
+        //initLoopNum = setLoopNum;
     }
 
     // Update is called once per frame
