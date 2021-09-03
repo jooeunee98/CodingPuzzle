@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterMotion : MonoBehaviour
 {
@@ -30,11 +31,11 @@ public class CharacterMotion : MonoBehaviour
         // 반복 횟수만큼 해당 리스트 출력
         // 반복 횟수가 0에 도달하면, 스택에서 팝
         string kindOf = null;
+        string numResource = "Images/Image_stage_";
         int num = 0;
         BlockSystemTest call = GameObject.Find("BlockSystemTest").GetComponent<BlockSystemTest>();
         BlockSystemTest.Block print = call.getRoot();
         BlockSystemTest.BStack blockStack = new BlockSystemTest.BStack();
-        Debug.Log("Print list");
 
         blockStack.push(print);
         while (!blockStack.isEmpty())
@@ -45,11 +46,10 @@ public class CharacterMotion : MonoBehaviour
             {
                 blockStack.push(print);
                 // 반복문 유효성 평가
-                if (call.loopValidate(print, num))
+                if (call.testValidate(print))
                 {
                     // true이면 반복문 내부 블럭 출력
                     print = blockStack.peek().left;
-                    Debug.Log("Loop is validated");
                     num++;
                 }
                 else
@@ -62,7 +62,18 @@ public class CharacterMotion : MonoBehaviour
             // 현재 노드가 leaf or subLeaf이면 단말노드까지 도달한 것이므로 스택에 저장된 체크포인트로 돌아감
             else if (call.isLeaf(print))
             {
+                // subLeaf일 때는 반복문을 1회 수행한 것이므로, 반복문 횟수 감소
+                if (GameObject.Find(blockStack.peek().getInfo()) != null)
+                {
+                    BlockSystemTest.Block temp = blockStack.peek();
+                    //GameObject parent = GameObject.Find(temp.getInfo()).gameObject;
+                    GameObject child = GameObject.Find(temp.getInfo()).gameObject.transform.Find("Image_loopNum").gameObject;
+                    Debug.Log("**numResource** : " + numResource);
+                    child.GetComponent<Image>().sprite = Resources.Load(numResource + ((BlockSystemTest.LoopBlock)temp).getLoopNum(), typeof(Sprite)) as Sprite;
+                }
                 print = blockStack.pop();
+                
+                //Debug.Log(blockStack.peek().getInfo());
             }
             // 그 외는 기본 블럭이므로 출력을 위해 노드 변경
             else

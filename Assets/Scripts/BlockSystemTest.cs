@@ -395,6 +395,20 @@ public class BlockSystemTest : MonoBehaviour
         return false;
     }
 
+    public bool testValidate(Block binfo)
+    {
+        LoopBlock loopBlock = (LoopBlock)binfo;
+        int loopNum = loopBlock.getLoopNum();
+        bool vali = false;
+        if (loopNum > 0)
+        {
+            Debug.Log(loopNum);
+            loopBlock.setLoopNum(--loopNum);
+            vali = true;
+        }
+        return vali;
+    }
+
     public void printList()
     {
         // loopBlock을 만나면 스택에 푸쉬 & 반복 횟수 확인
@@ -477,7 +491,6 @@ public class BlockSystemTest : MonoBehaviour
                     imgResource = "images_renewal/Button_for";
                     prefResource = "Prefabs/Button_loop";
                     numResource += "Images/Image_stage_" + initLoopNum.ToString();
-                    Debug.Log("numResource : " + numResource);
                     break;
                 }
             case "subRoot":
@@ -506,8 +519,6 @@ public class BlockSystemTest : MonoBehaviour
         {
             posY -= 50f;
         }
-        Debug.Log("Create block at blue zone : " + binfo.getInfo());
-        Debug.Log("posX : " + posX + " posY : " + posY);
         // 프리펩 호출
         GameObject prefab = Resources.Load(prefResource) as GameObject;
         // 블루존(코딩존)에 생성할 프리펩 인스턴스화
@@ -517,7 +528,6 @@ public class BlockSystemTest : MonoBehaviour
         if (kindOf.Equals("Button_loop"))
         {
             GameObject child = newObj.transform.Find("Image_loopNum").gameObject;
-            Debug.Log(child);
             child.GetComponent<Image>().sprite = Resources.Load(numResource, typeof(Sprite)) as Sprite;
         }
         // Tag를 Block으로 변경
