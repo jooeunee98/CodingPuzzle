@@ -73,9 +73,9 @@
     <Compile Include="Assets\Scripts\CodeCamMov.cs" />
     <Compile Include="Assets\Scripts\TalkManager.cs" />
     <Compile Include="Assets\Scripts\clear.cs" />
+    <Compile Include="Assets\Scripts\BlockSystemTest.cs" />
     <Compile Include="Assets\Scripts\BlockManager.cs" />
     <Compile Include="Assets\Scripts\AudioPlay.cs" />
-    <Compile Include="Assets\Scripts\BlockSystemTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\CasualGameBGM05\ReadMe.txt" />
