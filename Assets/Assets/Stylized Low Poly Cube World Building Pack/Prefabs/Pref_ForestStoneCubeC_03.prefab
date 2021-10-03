@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8257070112579909720}
   - component: {fileID: 6157536475534658706}
   - component: {fileID: 5627113227387652845}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pref_ForestStoneCubeC_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,6 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -80,6 +81,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &5627113227387652845
 BoxCollider:
   m_ObjectHideFlags: 0

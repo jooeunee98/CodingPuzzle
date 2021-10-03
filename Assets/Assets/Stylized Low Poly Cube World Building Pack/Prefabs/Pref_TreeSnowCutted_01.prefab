@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7541456955628020821}
   - component: {fileID: 5714034854271357087}
   - component: {fileID: 408225085754571358}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pref_TreeSnowCutted_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,6 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -80,6 +81,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &408225085754571358
 BoxCollider:
   m_ObjectHideFlags: 0

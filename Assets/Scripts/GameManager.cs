@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    BlockManager blockManager;              // 블록 매니저
+    //BlockManager blockManager;              // 블록 매니저
+    BlockSystemTest testManager;
     public TalkManager talkManager;         // 대화 매니저
     public GameObject talkPanel;            // 대화창 판넬
     public Image portraitImg;               // 대화창 초상화
@@ -15,11 +17,13 @@ public class GameManager : MonoBehaviour
     public int stageNum;                    // 현재 스테이지 번호
     public bool isAction;                   // 대화창을 띄웠는지 판단
     public int talkIndex;
+    static private string prev_scene;       // 이전 씬의 정보
 
     private void Start()
     {
-        blockManager = BlockManager.FindObjectOfType<BlockManager>();
-
+        Debug.Log("System start");
+        //blockManager = BlockManager.FindObjectOfType<BlockManager>();
+        testManager = BlockSystemTest.FindObjectOfType<BlockSystemTest>();
     }
 
     public void Action(int sNumber)  // 대화 시작
@@ -77,8 +81,9 @@ public class GameManager : MonoBehaviour
     {
         //Debug.Log("Some button was clicked");
         string clicked = EventSystem.current.currentSelectedGameObject.name;    // 클릭된 버튼이 어느 건지알아옴
-        //Debug.Log("button : " + clicked);
-        blockManager.insertLast(clicked);                                       // 클릭된 버튼 노드 생성
+        Debug.Log("button : " + clicked);
+        //blockManager.insertLast(clicked);                                       // 클릭된 버튼 노드 생성
+        testManager.insertNode(clicked);
     }
     // (tg) 기존의 블럭들 사이에 새로운 블럭 삽입
     // 임의의 블럭(A)을 선택하고 레드존의 블럭(B)을 누르면, A 뒤에 B를 삽입
@@ -86,7 +91,16 @@ public class GameManager : MonoBehaviour
     {
         string prevBlockName = EventSystem.current.currentSelectedGameObject.name;
         Debug.Log("Insert new block at next : " + prevBlockName);
-        blockManager.setMiddle(prevBlockName);
+        //blockManager.setMiddle(prevBlockName);
+        string kindOf = prevBlockName.Split(':')[0];
+        if (kindOf.Equals("Button_loop"))
+        {
+            testManager.setCheckPoint(prevBlockName);
+        }
+        else
+        {
+            testManager.setPrevNode(prevBlockName);
+        }
     }
     // (tg) 블루존에 있는 코드블럭을 제거
     public void ClickDelete()
@@ -96,6 +110,36 @@ public class GameManager : MonoBehaviour
         GameObject deleteButton = EventSystem.current.currentSelectedGameObject.transform.parent.gameObject;
         string delButtonName = deleteButton.name;               // 삭제하는 블럭의 이름
         Debug.Log("Delete this button : " + delButtonName);     // 동작 확인
-        blockManager.deleteNode(delButtonName);                 // 블루존에서 블럭 삭제
+        //blockManager.deleteNode(delButtonName);                 // 블루존에서 블럭 삭제
+        testManager.deleteNode(delButtonName);
+    }
+
+    // (tg) Scene 변경
+    public void SceneChange()
+    {
+        // 버튼을 눌러서 이동할 씬 이름 받아옴
+        string called = EventSystem.current.currentSelectedGameObject.name;
+        Debug.Log("SceneChange() called");
+
+        // 만약 close 버튼이 눌러지면 이전 씬으로 이동
+        // 메인 -> 스테이지 -> 설정
+        // 위와 같이 가정할 때 설정 씬에서 close 버튼을 누르면 스테이지로 이동
+        if (called.Equals("Button_Close"))
+        {
+            Debug.Log("Button_close was pressed");
+            Debug.Log(prev_scene);
+            SceneManager.LoadScene(prev_scene);
+            prev_scene = null;
+        }
+        // 그 외의 버튼이 눌러졌을 경우
+        else
+        {
+            // 돌아갈 씬의 정보를 갱신
+            prev_scene = SceneManager.GetActiveScene().name;
+            Debug.Log(prev_scene);
+            called = called.Split('_')[1];
+            // 버튼에 따라 씬 이동
+            SceneManager.LoadScene(called);
+        }
     }
 }
