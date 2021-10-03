@@ -1,10 +1,3 @@
-# Icons
-This directory contains the icons for the Collaborate UI.
-Dark and light theme icons are prefixed with `-dark` and `-light` respectively.
-HDPI icons are prefixed with `@2x` for 32x32px for two times the width and height of the normal 16x16px.
-Individual icon's `Texture Type` should be set as `Editor GUI and Legacy GUI` in the Unity Editor to ensure scaling is done correctly and alpha is respected.
-
-## Icon colours
-The basic colours of icons in Collaborate are as follows:\
-Dark Theme: #C4C4C4 100% alpha\
-Light Theme: #555555 100% alpha
+version https://git-lfs.github.com/spec/v1
+oid sha256:041d8fa6ea4086b2618aea75816104eb3b96afa952a63efe50bea3220ef18224
+size 559

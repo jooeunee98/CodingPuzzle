@@ -1,2 +1,3 @@
-# Unity Collaborate Settings
-This directory contains implementations and bindings for the Unity Settings package. All settings for the package are managed in this directory.
+version https://git-lfs.github.com/spec/v1
+oid sha256:b2056c9bdf94d3b765227d6324403c199bb91ee3e81583400ac155c39d848f33
+size 176
