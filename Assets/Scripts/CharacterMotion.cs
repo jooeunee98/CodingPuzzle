@@ -17,11 +17,17 @@ using UnityEngine.UI;
 public class CharacterMotion : MonoBehaviour
 {
     // Start is called before the first frame update
+    [SerializeField]
+    private float forceMagnitude;   // 캐릭터가 Object에 가하는 힘
+    private float MaxDistance = 7f;
+    RaycastHit hit;
+
     private Animator animator;
     private IEnumerator coroutine;
     bool go_forward = false;
     bool turn_right = false;
     bool turn_left = false;
+    string hitTag;
     float stRotationY;
     int turnDegree = 0;
     void Start()
@@ -35,7 +41,22 @@ public class CharacterMotion : MonoBehaviour
         StartCoroutine(coroutine);
 
     }
+    /*
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Rigidbody rigidbody = hit.collider.attachedRigidbody;
 
+        if (rigidbody != null)
+        {
+            Vector3 ForceDirection = hit.gameObject.transform.position - transform.position;
+            ForceDirection.y = 0;
+            ForceDirection.Normalize();
+
+            rigidbody.AddForceAtPosition(ForceDirection * forceMagnitude, transform.position, ForceMode.Impulse);
+        }
+        gameObject.GetComponent<CharacterMotion>().forceMagnitude
+    }
+    */
     public IEnumerator readCommand(float waitTime)
     {
         // loopBlock을 만나면 스택에 푸쉬 & 반복 횟수 확인
@@ -53,7 +74,7 @@ public class CharacterMotion : MonoBehaviour
         {
             kindOf = print.getInfo().Split(':')[0];
             // loop or if문일 경우 스택에 저장해서 체크포인트 생성
-            if (kindOf.Equals("Button_loop") || kindOf.Equals("Button_if"))
+            if (kindOf.Equals("Button_loop"))
             {
                 blockStack.push(print);
                 // 반복문 유효성 평가
@@ -74,6 +95,19 @@ public class CharacterMotion : MonoBehaviour
                     num = 0;
                 }
             }
+            else if (kindOf.Equals("Button_if"))
+            {
+                Debug.Log("Shot ray");
+                switch (hitTag) {
+                    case "SnowBall":
+                        Debug.Log("There is SnowBall in front of the object");
+                        break;
+                    default:
+                        Debug.Log("There is no any object");
+                        break;
+                }
+                print = print.right;
+            }
             // 현재 노드가 leaf or subLeaf이면 단말노드까지 도달한 것이므로 스택에 저장된 체크포인트로 돌아감
             else if (call.isLeaf(print))
             {
@@ -87,7 +121,7 @@ public class CharacterMotion : MonoBehaviour
                     child.GetComponent<Image>().sprite = Resources.Load(numResource + ((BlockSystemTest.LoopBlock)temp).getLoopNum(), typeof(Sprite)) as Sprite;
                 }
                 print = blockStack.pop();
-                
+
                 //Debug.Log(blockStack.peek().getInfo());
             }
             // 그 외는 기본 블럭이므로 출력을 위해 노드 변경
@@ -167,5 +201,28 @@ public class CharacterMotion : MonoBehaviour
                 turnDegree += 2;
             }
         }
+
+        /* 캐릭터 앞에 눈덩이 있는지 확인하는거 실험
+        directionToTarget = transform.position - GameObject.Find("Pref_TreeCutted (2)").transform.position;
+        float angle = Vector3.Angle(transform.forward, directionToTarget);
+        float distance = directionToTarget.magnitude;
+
+        if (distance < 10)
+            Debug.Log("target is in front of me");
+        */
+    }
+
+    private void FixedUpdate()
+    {
+        Vector3 fwd = transform.TransformDirection(Vector3.forward);
+        if (Physics.Raycast(transform.position, fwd, out hit, MaxDistance))
+        {
+            //Debug.Log("There is SnowBall in front of the object");
+            //if (hit.transform.tag.Equals("SnowBall"))
+            hit.transform.GetComponent<MeshRenderer>().material.color = Color.red;
+            hitTag = hit.transform.name;
+        }
+        else
+        Debug.DrawRay(transform.position, transform.forward * MaxDistance, Color.blue, 10000f);
     }
 }

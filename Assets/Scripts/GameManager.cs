@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
     {
         //Debug.Log("Some button was clicked");
         string clicked = EventSystem.current.currentSelectedGameObject.name;    // 클릭된 버튼이 어느 건지알아옴
-        //Debug.Log("button : " + clicked);
+        Debug.Log("button : " + clicked);
         //blockManager.insertLast(clicked);                                       // 클릭된 버튼 노드 생성
         testManager.insertNode(clicked);
     }

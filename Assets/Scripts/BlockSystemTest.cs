@@ -36,7 +36,8 @@ public class BlockSystemTest : MonoBehaviour
     Block checkPoint = null;    // 선택된 분기점 저장
     Block root, prev, leaf;
     FuncLists funcLists = new FuncLists();   // 함수 리스트 저장
-
+    RaycastHit hit;
+    
     // ht 블럭 위치 조정용 변수
     bool moveX = false;
     public float posX = 0f;
@@ -219,7 +220,7 @@ public class BlockSystemTest : MonoBehaviour
         }
         public bool Validation()
         {
-
+            
             return true;
         }
     }
@@ -571,7 +572,7 @@ public class BlockSystemTest : MonoBehaviour
                 }
             case "Button_if":
                 {
-                    imgResource = "images/If";
+                    imgResource = "images/이프버튼";
                     prefResource = "Prefabs/Button_if";
                     break;
                 }
@@ -721,6 +722,6 @@ public class BlockSystemTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }
