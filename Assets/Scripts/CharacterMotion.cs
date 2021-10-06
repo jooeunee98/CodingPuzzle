@@ -3,6 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// 28 ~ 136행 중
+/*  
+    60 ~ 65행
+    // 아니면 반복문을 건너뜀
+    if (!blockStack.isEmpty())
+    {
+        ((BlockSystemTest.LoopBlock)blockStack.peek()).setLoopNum(2);
+    }
+    print = blockStack.pop().right; 
+*/
+
 public class CharacterMotion : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -31,7 +42,7 @@ public class CharacterMotion : MonoBehaviour
         // 반복 횟수만큼 해당 리스트 출력
         // 반복 횟수가 0에 도달하면, 스택에서 팝
         string kindOf = null;
-        string numResource = "Images/Image_stage_";
+        string numResource = "Images/클리어넘버타이틀";
         int num = 0;
         BlockSystemTest call = GameObject.Find("BlockSystemTest").GetComponent<BlockSystemTest>();
         BlockSystemTest.Block print = call.getRoot();
@@ -46,7 +57,7 @@ public class CharacterMotion : MonoBehaviour
             {
                 blockStack.push(print);
                 // 반복문 유효성 평가
-                if (call.testValidate(print))
+                if (call.loopValidate(print))
                 {
                     // true이면 반복문 내부 블럭 출력
                     print = blockStack.peek().left;
@@ -55,6 +66,10 @@ public class CharacterMotion : MonoBehaviour
                 else
                 {
                     // 아니면 반복문을 건너뜀
+                    if (!blockStack.isEmpty())
+                    {
+                        ((BlockSystemTest.LoopBlock)blockStack.peek()).setLoopNum(2);
+                    }
                     print = blockStack.pop().right;
                     num = 0;
                 }
@@ -68,7 +83,7 @@ public class CharacterMotion : MonoBehaviour
                     BlockSystemTest.Block temp = blockStack.peek();
                     //GameObject parent = GameObject.Find(temp.getInfo()).gameObject;
                     GameObject child = GameObject.Find(temp.getInfo()).gameObject.transform.Find("Image_loopNum").gameObject;
-                    Debug.Log("**numResource** : " + numResource);
+                    //Debug.Log("**numResource** : " + numResource);
                     child.GetComponent<Image>().sprite = Resources.Load(numResource + ((BlockSystemTest.LoopBlock)temp).getLoopNum(), typeof(Sprite)) as Sprite;
                 }
                 print = blockStack.pop();

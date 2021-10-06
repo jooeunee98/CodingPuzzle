@@ -22,7 +22,7 @@ using UnityEngine.UI;
  * 조건문의 경우 조건절로 주어진 식의 참/거짓을 판별, 참이면 분기해서 동작
  * 이들은 각각 동작이 유효한지 판단을 수행하는 메소드를 활용
  * 
- * setCheckPoint() 수정 요망
+ * setCheckPoint() 가독성이 좋게 수정 요망
  * 
  * 
  */
@@ -35,6 +35,8 @@ public class BlockSystemTest : MonoBehaviour
     BStack blockStack;          // 분기점을 저장하는 스택
     Block checkPoint = null;    // 선택된 분기점 저장
     Block root, prev, leaf;
+    FuncLists funcLists = new FuncLists();   // 함수 리스트 저장
+
     // ht 블럭 위치 조정용 변수
     bool moveX = false;
     public float posX = 0f;
@@ -88,11 +90,49 @@ public class BlockSystemTest : MonoBehaviour
         }
     }
 
+    // ============================================================================================
+    // 함수 기능
+    // 입력되는 여러 개의 함수 root를 리스트화 하고 이를 관리하기 위함.
+    public class InfoComparer : IComparer
+    {
+        public int Compare(object x, object y)
+        {
+            var xb = (Block)x;
+            var yb = (Block)y;
+            return xb.info.CompareTo(yb.info);
+        }
+    }
+    // Custom ArrayList인 FuncLists
+    public class FuncLists
+    {
+        ArrayList AllFuncs;
+        IComparer infoComparer = new InfoComparer();
+
+        public FuncLists()
+        {
+            AllFuncs = new ArrayList();
+        }
+        // 요소 추가
+        public void Add(Block bInfo)
+        {
+            AllFuncs.Add(bInfo);
+        }
+        // AllFuncs에서 bInfo와 일치하는 func list 탐색 및 반환
+        public Block GetFuncList(string bInfo)
+        {
+            // Binary Search를 실행하기 위해 정렬
+            AllFuncs.Sort(infoComparer);
+            int idx = AllFuncs.BinarySearch(new Block { info = bInfo }, infoComparer);
+            return (Block)(AllFuncs[idx]);
+        }
+    }
+    // ============================================================================================
+
     public class Block
     {
         internal Block left;
         internal Block right;
-        string info;
+        internal string info { get; set; }
 
         public Block()
         {
@@ -158,16 +198,29 @@ public class BlockSystemTest : MonoBehaviour
         private string condition;
 
         public IfBlock() : base()
-        { }
-        public IfBlock(int num) : base("ifBLock", num)
-        { }
-        public void setCondition(string condition)
+        {
+            this.condition = "NULL";
+            Block subRoot = new Block("subRoot");
+            Block subLeaf = new Block("subLeaf");
+            base.left = subRoot;
+            subRoot.right = subLeaf;
+        }
+        public IfBlock(string condition, int num) : base("Button_if", num)
         {
             this.condition = condition;
+            Block subRoot = new Block("subRoot");
+            Block subLeaf = new Block("subLeaf");
+            base.left = subRoot;
+            subRoot.right = subLeaf;
         }
         public string getCondition()
         {
             return condition;
+        }
+        public bool Validation()
+        {
+
+            return true;
         }
     }
 
@@ -196,10 +249,15 @@ public class BlockSystemTest : MonoBehaviour
             case "Button_loop":
                 // loopNum 초기화하는 방법 생각하기
                 newBlock = new LoopBlock(initLoopNum, listId);
-                Debug.Log("initLoopNum : " + ((LoopBlock)newBlock).getLoopNum().ToString());
+
+                //Debug.Log("initLoopNum : " + ((LoopBlock)newBlock).getLoopNum().ToString());
                 break;
             case "Button_if":
-                newBlock = new IfBlock();
+                newBlock = new IfBlock(bInfo, listId);
+                break;
+            case "Button_func":
+                newBlock = new Block(bInfo, listId);    // main list에 연결하는 함수 블럭
+                funcLists.Add(new Block(bInfo, listId)); // 위와 동일 정보로 funcList에 저장 즉, 함수 블럭은 2개의 node로 운용
                 break;
             default:
                 newBlock = new Block(bInfo, listId);
@@ -229,10 +287,10 @@ public class BlockSystemTest : MonoBehaviour
                 itis = true;
             }
         }
-            return itis;
+        return itis;
     }
 
-    // 노드를 삽입할 위치를 탐색
+    // 새로운 노드를 삽입할 위치를 탐색
     public Block getInsertPos(Block block)
     {
         while (!isLeaf(block.right))
@@ -241,10 +299,10 @@ public class BlockSystemTest : MonoBehaviour
     }
 
     // mode false : 임의 선택된 노드 탐색값 반환
-    // mode true : 임의 선택된 노드의 이전 노드 탐색값 반환(단일 연결리스트이기 때문에 이전 노드값 필요)
+    // mode true : 임의 선택된 노드의 이전 노드 반환(단일 연결리스트이기 때문에 이전 노드값 필요)
     public Block findNode(string bInfo, bool mode = false)
     {
-        Debug.Log("Find some node about : " + bInfo);
+        //Debug.Log("Find some node about : " + bInfo);
         Block search = null;
         Block searchPrev = null;
         BStack s1 = new BStack();
@@ -267,6 +325,7 @@ public class BlockSystemTest : MonoBehaviour
                 s1.push(search.right);
                 s2.push(search);
             }
+            // 반복문, 조건문 등의 분기점 발견 시
             if (search.left != null)
             {
                 s1.push(search.left);
@@ -276,12 +335,12 @@ public class BlockSystemTest : MonoBehaviour
         }
         if (mode == false)
         {
-            Debug.Log("Found node : " + search.getInfo());
+            //Debug.Log("Found node : " + search.getInfo());
             return search;
         }
         else
         {
-            Debug.Log("Found previous node: " + searchPrev.getInfo());
+            //Debug.Log("Found previous node: " + searchPrev.getInfo());
             return searchPrev;
         }
     }
@@ -289,7 +348,7 @@ public class BlockSystemTest : MonoBehaviour
     // 노드를 중간에 삽입하기 위해 이전 노드의 위치를 알아냄
     public void setPrevNode(string bInfo)
     {
-        Debug.Log("Set previous node");
+        //Debug.Log("Set previous node");
         prev = findNode(bInfo);
     }
 
@@ -297,23 +356,30 @@ public class BlockSystemTest : MonoBehaviour
     // 삽입 등의 동작을 위해서 체크 포인트를 지정함
     public void setCheckPoint(string bInfo)
     {
-        string kindOf = checkPoint.getInfo();
-        Debug.Log("Set check point at " + bInfo);
+        string prev = checkPoint.getInfo().Split(':')[0];    // 현재 checkPoint
+        string chosen = null;                                   // 지정한 checkPoint
+        Debug.Log("Set check point at " + prev);
         checkPoint = findNode(bInfo);
 
         // 분기점 설정
-        if (kindOf.Equals("root"))
+        if (prev.Equals("root"))
         {
-            Debug.Log("bInfo's left : " + checkPoint.left.getInfo());
-            checkPoint = checkPoint.left;
+            chosen = checkPoint.getInfo().Split(':')[0];
+            switch (chosen)
+            {
+                // 분기점 설정
+                case "Button_loop":
+                    Debug.Log("binfo's left : " + checkPoint.left.getInfo());
+                    checkPoint = checkPoint.left;
+                    break;
+                case "Button_func":
+
+                    break;
+            }
         }
         // 분기점 초기화
         else
             checkPoint = root;
-        //if (checkPoint == null)
-        //    checkPoint = findNode(bInfo);
-        //else
-        //    checkPoint = null;
     }
 
     // 노드 삽입
@@ -329,7 +395,7 @@ public class BlockSystemTest : MonoBehaviour
             prev.right = newBlock;
             prev = null;
         }
-        // 유저가 선택한 라인 끝에 삽입하길 원한다면
+        // 유저가 선택한 라인(main, loop 등) 끝에 삽입하길 원한다면
         else
         {
             // checkPoint 값이 root이면 main list 끝에 삽입
@@ -382,20 +448,7 @@ public class BlockSystemTest : MonoBehaviour
     }
 
     // 반복문의 loopNum 값을 확인해서 반복할 수 있는지 아닌지 확인
-    public bool loopValidate(Block bInfo, int num)
-    {
-        LoopBlock loopBlock = (LoopBlock)bInfo;
-        int loopNum = loopBlock.getLoopNum();
-        if (loopNum - num> 0)
-        {
-            Debug.Log(loopNum - num);
-            //loopBlock.setLoopNum(--loopNum);
-            return true;
-        }
-        return false;
-    }
-
-    public bool testValidate(Block binfo)
+    public bool loopValidate(Block binfo)
     {
         LoopBlock loopBlock = (LoopBlock)binfo;
         int loopNum = loopBlock.getLoopNum();
@@ -408,12 +461,29 @@ public class BlockSystemTest : MonoBehaviour
         }
         return vali;
     }
+    public void createFunc()
+    {
+        Block f1 = new Block("f1");
+        Block f2 = new Block("f2");
+        Block f3 = new Block("f3");
+
+        funcLists.Add(f3);
+        funcLists.Add(f2);
+        funcLists.Add(f1);
+        Block obj = new Block();
+        //funcLists.Sort(obj);
+        Debug.Log(funcLists.GetFuncList("f1").info);
+        /*foreach (Block temp in funcLists)
+        {
+            Debug.Log(temp.getInfo());
+        }*/
+    }
 
     public void printList()
     {
         // loopBlock을 만나면 스택에 푸쉬 & 반복 횟수 확인
         // 반복 횟수만큼 해당 리스트 출력
-        // 반복 횟수가 0에 도달하면, 스택에서 팝
+        // 반복 횟수가 0에 도달하면, 해당 loopBlock을 스택에서 팝
         string kindOf = null;
         int num = 0;
         Block print = root;
@@ -423,27 +493,33 @@ public class BlockSystemTest : MonoBehaviour
         while (!blockStack.isEmpty())
         {
             kindOf = print.getInfo().Split(':')[0];
-            // loop or if문일 경우 스택에 저장해서 체크포인트 생성
-            if (kindOf.Equals("Button_loop") || kindOf.Equals("Button_if"))
+            switch (kindOf)
             {
-                blockStack.push(print);
-                // 반복문 유효성 평가
-                if (loopValidate(print, num))
-                {
-                    // true이면 반복문 내부 블럭 출력
-                    print = blockStack.peek().left;
-                    Debug.Log("Loop is validated");
-                    num++;
-                }
-                else
-                {
-                    // 아니면 반복문을 건너뜀
-                    print = blockStack.pop().right;
-                    num = 0;
-                }
+                // loop or if문일 경우 스택에 저장해서 체크포인트 생성
+                case "Button_loop":
+                case "Button_if":
+                    blockStack.push(print);
+                    // 반복문 유효성 평가
+                    if (loopValidate(print))
+                    {
+                        // true이면 반복문 내부 블럭 저장
+                        print = print.left;
+                    }
+                    else
+                    {
+                        // 아니면 반복문을 건너뜀
+                        print = blockStack.pop().right;
+                    }
+                    break;
+                case "Button_func":     // main list에서 func list로 넘어감
+                    // main list로 돌아오기 위한 check point
+                    blockStack.push(print);
+                    // func block과 동일한 정보를 지니는 노드를 funcList에서 가져옴
+                    print = funcLists.GetFuncList(print.info);
+                    break;
             }
             // 현재 노드가 leaf or subLeaf이면 단말노드까지 도달한 것이므로 스택에 저장된 체크포인트로 돌아감
-            else if (isLeaf(print))
+            if (isLeaf(print))
             {
                 print = blockStack.pop();
             }
@@ -470,27 +546,39 @@ public class BlockSystemTest : MonoBehaviour
         {
             case "Button_left":
                 {
-                    imgResource = "images_renewal/Button_left";
+                    imgResource = "images/Left";
                     prefResource = "Prefabs/Button_left";
                     break;
                 }
             case "Button_forward":
                 {
-                    imgResource = "images_renewal/Button_forward";
+                    imgResource = "images/Forward";
                     prefResource = "Prefabs/Button_forward";
                     break;
                 }
             case "Button_right":
                 {
-                    imgResource = "images_renewal/Button_right";
+                    imgResource = "images/Right";
                     prefResource = "Prefabs/Button_right";
                     break;
                 }
             case "Button_loop":
                 {
-                    imgResource = "images_renewal/Button_for";
+                    imgResource = "images/For";
                     prefResource = "Prefabs/Button_loop";
-                    numResource += "Images/Image_stage_" + initLoopNum.ToString();
+                    numResource += "Images/클리어넘버타이틀" + initLoopNum.ToString();
+                    break;
+                }
+            case "Button_if":
+                {
+                    imgResource = "images/If";
+                    prefResource = "Prefabs/Button_if";
+                    break;
+                }
+            case "Button_push":
+                {
+                    imgResource = "images/Push";
+                    prefResource = "Prefabs/Button_push";
                     break;
                 }
             case "subRoot":
@@ -509,7 +597,7 @@ public class BlockSystemTest : MonoBehaviour
                     return;
                 }
         }
-        
+
         // 다음 블럭 y좌표 조정
         if (moveX)
         {
@@ -556,7 +644,7 @@ public class BlockSystemTest : MonoBehaviour
         while (!s1.isEmpty())
         {
             search = s1.pop();
-            Debug.Log("============" + search.getInfo());
+            //Debug.Log("============" + search.getInfo());
             createBlock(search);
             if (!isLeaf(search.right, true))
             {
@@ -633,6 +721,6 @@ public class BlockSystemTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

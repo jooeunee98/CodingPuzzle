@@ -81,13 +81,13 @@ public class GameManager : MonoBehaviour
     {
         //Debug.Log("Some button was clicked");
         string clicked = EventSystem.current.currentSelectedGameObject.name;    // 클릭된 버튼이 어느 건지알아옴
-        Debug.Log("button : " + clicked);
+        //Debug.Log("button : " + clicked);
         //blockManager.insertLast(clicked);                                       // 클릭된 버튼 노드 생성
         testManager.insertNode(clicked);
     }
     // (tg) 기존의 블럭들 사이에 새로운 블럭 삽입
     // 임의의 블럭(A)을 선택하고 레드존의 블럭(B)을 누르면, A 뒤에 B를 삽입
-    public void ClickInsert()
+    public void MidInsert()
     {
         string prevBlockName = EventSystem.current.currentSelectedGameObject.name;
         Debug.Log("Insert new block at next : " + prevBlockName);
@@ -119,15 +119,15 @@ public class GameManager : MonoBehaviour
     {
         // 버튼을 눌러서 이동할 씬 이름 받아옴
         string called = EventSystem.current.currentSelectedGameObject.name;
-        Debug.Log("SceneChange() called");
+        //Debug.Log("SceneChange() called");
 
         // 만약 close 버튼이 눌러지면 이전 씬으로 이동
         // 메인 -> 스테이지 -> 설정
         // 위와 같이 가정할 때 설정 씬에서 close 버튼을 누르면 스테이지로 이동
         if (called.Equals("Button_Close"))
         {
-            Debug.Log("Button_close was pressed");
-            Debug.Log(prev_scene);
+            //Debug.Log("Button_close was pressed");
+            //Debug.Log(prev_scene);
             SceneManager.LoadScene(prev_scene);
             prev_scene = null;
         }
