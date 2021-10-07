@@ -470,25 +470,26 @@ public class BlockSystemTest : MonoBehaviour
         {
             case "Button_left":
                 {
-                    imgResource = "images_renewal/Button_left";
+                    imgResource = "images/images_renewal/Button_left";
+                    Debug.Log(imgResource);
                     prefResource = "Prefabs/Button_left";
                     break;
                 }
             case "Button_forward":
                 {
-                    imgResource = "images_renewal/Button_forward";
+                    imgResource = "images/images_renewal/Button_forward";
                     prefResource = "Prefabs/Button_forward";
                     break;
                 }
             case "Button_right":
                 {
-                    imgResource = "images_renewal/Button_right";
+                    imgResource = "images/images_renewal/Button_right";
                     prefResource = "Prefabs/Button_right";
                     break;
                 }
             case "Button_loop":
                 {
-                    imgResource = "images_renewal/Button_for";
+                    imgResource = "images/images_renewal/Button_for";
                     prefResource = "Prefabs/Button_loop";
                     numResource += "Images/Image_stage_" + initLoopNum.ToString();
                     break;

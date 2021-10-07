@@ -33,7 +33,8 @@ public class CharacterMotion : MonoBehaviour
         string kindOf = null;
         string numResource = "Images/Image_stage_";
         int num = 0;
-        BlockSystemTest call = GameObject.Find("BlockSystemTest").GetComponent<BlockSystemTest>();
+        BlockSystemTest call = GameObject.Find("BlockManager").GetComponent<BlockSystemTest>();
+        Debug.Log(call);
         BlockSystemTest.Block print = call.getRoot();
         BlockSystemTest.BStack blockStack = new BlockSystemTest.BStack();
 
