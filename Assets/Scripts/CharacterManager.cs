@@ -19,6 +19,8 @@ public class CharacterManager : MonoBehaviour
         character.transform.localPosition = new Vector3(0, 8, 0);
         character.name = "Character";
 
+        GameObject SNOWBALL = GameObject.Find("Pref_SnowBall");
+        SNOWBALL.AddComponent<SnowBallMove>();
 
        
        
