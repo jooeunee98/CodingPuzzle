@@ -62,9 +62,8 @@ public class SnowBallMove : MonoBehaviour
         if (GO == true)
         {
             
-            gameObject.transform.Translate(new Vector3(BALL_X, BALL_Y, BALL_Z) * Time.deltaTime * 5.0f, Space.World);
-            
-            gameObject.transform.Rotate(0.6f, 0, 0);
+            gameObject.transform.Translate(new Vector3(BALL_X, BALL_Y, BALL_Z) * Time.deltaTime * 5.75f, Space.World); 
+
         }
     }
 }
