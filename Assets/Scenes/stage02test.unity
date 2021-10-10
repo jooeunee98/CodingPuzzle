@@ -3980,6 +3980,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1757842710}
   - component: {fileID: 1757842709}
+  - component: {fileID: 1757842711}
   m_Layer: 0
   m_Name: BlockManager
   m_TagString: Untagged
@@ -4018,6 +4019,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1757842711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757842708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5e0ee9202c060f42a0f5e8444ec7ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initLoopNum: 0
+  posX: 0
+  posY: 0
+  posZ: 0
 --- !u!1 &1780107152
 GameObject:
   m_ObjectHideFlags: 0

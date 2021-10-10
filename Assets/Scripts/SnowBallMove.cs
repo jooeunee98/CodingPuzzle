@@ -63,7 +63,7 @@ public class SnowBallMove : MonoBehaviour
         {
             Debug.Log(BALL_X + " " + BALL_Y + " " + BALL_Z);
             gameObject.transform.Translate(new Vector3(BALL_X, BALL_Y, BALL_Z) * Time.deltaTime * 5.75f, Space.World);
-            gameObject.transform.Rotate(3.0f, 0, 0);
+            gameObject.transform.Rotate(0.6f, 0, 0);
         }
     }
 }
