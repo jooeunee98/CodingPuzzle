@@ -19,11 +19,16 @@ public class CharacterManager : MonoBehaviour
         character.transform.localPosition = new Vector3(5.75f, 8, 0);
         character.name = "Character";
 
-        GameObject SNOWBALL = GameObject.FindWithTag("SnowBall");
-        SNOWBALL.AddComponent<SnowBallMove>();
+        
 
        
        
+    }
+
+    public void SET_SNOWBALLMOVE_SCRIPT()
+    {
+        GameObject SNOWBALL = GameObject.FindWithTag("SnowBall");
+        SNOWBALL.AddComponent<SnowBallMove>();
     }
 
     // Update is called once per frame

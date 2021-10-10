@@ -16,11 +16,11 @@ public class SnowBallMove : MonoBehaviour
     {
 
         GameObject Boy = GameObject.Find("Character");
-        if (gameObject.transform.position.x - Boy.transform.position.x != 0)
+        if (gameObject.transform.position.x - Boy.transform.position.x > 1 || gameObject.transform.position.x - Boy.transform.position.x <= -1)
         {
             BALL_X = 1; BALL_Y = 0; BALL_Z = 0;
         }
-        else if (gameObject.transform.position.z - Boy.transform.position.z != 0)
+        else if (gameObject.transform.position.z - Boy.transform.position.z > 1 || gameObject.transform.position.z - Boy.transform.position.z <= -1)
         {
             BALL_X = 0; BALL_Y = 0; BALL_Z = 1;
         }
@@ -49,7 +49,7 @@ public class SnowBallMove : MonoBehaviour
 
             yield return new WaitForSeconds(waitTime);
 
-            //Destroy(gameObject.GetComponent<SnowBallMove>());
+            Destroy(gameObject.GetComponent<SnowBallMove>());
 
         }
         GO = false;
@@ -61,8 +61,9 @@ public class SnowBallMove : MonoBehaviour
 
         if (GO == true)
         {
+            Debug.Log(BALL_X + " " + BALL_Y + " " + BALL_Z);
             gameObject.transform.Translate(new Vector3(BALL_X, BALL_Y, BALL_Z) * Time.deltaTime * 5.75f, Space.World);
-            gameObject.transform.Rotate(0.6f, 0, 0);
+            gameObject.transform.Rotate(3.0f, 0, 0);
         }
     }
 }
