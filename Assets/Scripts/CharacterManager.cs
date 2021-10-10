@@ -16,7 +16,7 @@ public class CharacterManager : MonoBehaviour
         // mapBlocks 밑에다가 생성
         character.transform.SetParent(GameObject.Find("mapBlocks").transform);
         // 첫번째 블록 위에서 생성
-        character.transform.localPosition = new Vector3(0, 8, 0);
+        character.transform.localPosition = new Vector3(5.75f, 8, 0);
         character.name = "Character";
 
         GameObject SNOWBALL = GameObject.FindWithTag("SnowBall");

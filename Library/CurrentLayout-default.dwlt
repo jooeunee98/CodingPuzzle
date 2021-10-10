@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 304
+  controlID: 82
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 373
+  controlID: 38
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 305
+  controlID: 83
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 192}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 299
+  controlID: 166
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -673,9 +673,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0a420000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8255f2ff4e57f2ff1c5bf2ff16fafaff9a47fbfff24fffffe064ffff9a68ffffb27affffde7bffff7081ffffd882fffff483ffff52fbffff868e0000928f0000a48f000014900000109d0000389e00004a9e0000ba9e00005ea100006aa200007ca20000eca2000028b0000050b1000062b10000d2b10000e4e70000f0e8000002e9000072e9000092ec0000baed0000cced00003cee000064ee000070ef000082ef0000f2ef0000
+      m_ExpandedIDs: 96f2ffffdc460000e8470000fa4700006a480000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -738,22 +738,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Prefabs
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\GitHub\GitHub\CodingPuzzle
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 473}
-    m_SelectedIDs: 70410000
-    m_LastClickedID: 16752
-    m_ExpandedIDs: 00000000a23f0000a43f0000a63f0000a83f0000aa3f0000ac3f0000ae3f0000b03f0000c03f00007641000000ca9a3b
+    scrollPos: {x: 0, y: 345}
+    m_SelectedIDs: fc4a0000
+    m_LastClickedID: 19196
+    m_ExpandedIDs: 000000002a4900002c4900002e490000304900003249000034490000364900003849000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -781,7 +781,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a23f0000a43f0000a63f0000a83f0000aa3f0000ac3f0000ae3f0000b03f000000ca9a3b
+    m_ExpandedIDs: 000000002a4900002c4900002e4900003049000032490000344900003649000038490000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -833,7 +833,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 211}
+    m_ScrollPosition: {x: 0, y: 583}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 182
