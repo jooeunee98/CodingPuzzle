@@ -49,7 +49,7 @@ public class SnowBallMove : MonoBehaviour
 
             yield return new WaitForSeconds(waitTime);
 
-            Destroy(gameObject.GetComponent<SnowBallMove>());
+            //Destroy(gameObject.GetComponent<SnowBallMove>());
 
         }
         GO = false;

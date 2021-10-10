@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -483,6 +483,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 136999200}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &156331866 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7441529010361871368, guid: 3c576b21bca3f8c4ba6354500a6fbaed,
+    type: 3}
+  m_PrefabInstance: {fileID: 556756018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &156331867
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156331866}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.21771696
+  m_Center: {x: 0, y: 0.10939874, z: -0.000015258789}
 --- !u!1001 &168292326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -818,6 +837,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pref_SnowBall
       objectReference: {fileID: 0}
+    - target: {fileID: 7441529010361871368, guid: 3c576b21bca3f8c4ba6354500a6fbaed,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnowBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441529010361871368, guid: 3c576b21bca3f8c4ba6354500a6fbaed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7786248327989982898, guid: 3c576b21bca3f8c4ba6354500a6fbaed,
         type: 3}
       propertyPath: m_RootOrder
@@ -841,7 +870,7 @@ PrefabInstance:
     - target: {fileID: 7786248327989982898, guid: 3c576b21bca3f8c4ba6354500a6fbaed,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.89
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 7786248327989982898, guid: 3c576b21bca3f8c4ba6354500a6fbaed,
         type: 3}
@@ -851,7 +880,7 @@ PrefabInstance:
     - target: {fileID: 7786248327989982898, guid: 3c576b21bca3f8c4ba6354500a6fbaed,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.4
+      value: 5.9
       objectReference: {fileID: 0}
     - target: {fileID: 7786248327989982898, guid: 3c576b21bca3f8c4ba6354500a6fbaed,
         type: 3}
