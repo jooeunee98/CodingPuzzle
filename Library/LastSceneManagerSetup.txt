@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/stage03_capture.unity
+- path: Assets/Scenes/BlockSystemTest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

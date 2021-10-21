@@ -39,8 +39,8 @@ public class BlockSystemTest : MonoBehaviour
     RaycastHit hit;
     
     // ht 블럭 위치 조정용 변수
-    bool moveX = false;
-    public float posX = 0f;
+    bool moveY = false;
+    public float posX = -50f;
     public float posY = 0f;
     public float posZ = 0f;
 
@@ -370,12 +370,13 @@ public class BlockSystemTest : MonoBehaviour
             {
                 // 분기점 설정
                 case "Button_loop":
+                case "Button_if":
                     Debug.Log("binfo's left : " + checkPoint.left.getInfo());
                     checkPoint = checkPoint.left;
                     break;
                 case "Button_func":
 
-                    break;
+                    break;                    
             }
         }
         // 분기점 초기화
@@ -568,29 +569,33 @@ public class BlockSystemTest : MonoBehaviour
                     imgResource = "images/For";
                     prefResource = "Prefabs/Button_loop";
                     numResource += "Images/클리어넘버타이틀" + initLoopNum.ToString();
+                    moveY = true;
+                    posX = 0;
                     break;
                 }
             case "Button_if":
                 {
                     imgResource = "images/이프버튼";
                     prefResource = "Prefabs/Button_if";
+                    moveY = true;
                     break;
                 }
             case "Button_push":
                 {
-                    imgResource = "images/Push";
+                    imgResource = "images/image_renewal/눈밀기";
                     prefResource = "Prefabs/Button_push";
                     break;
                 }
             case "subRoot":
                 {
-                    moveX = true;
+                    //moveY = true;
                     return;
                 }
             case "subLeaf":
                 {
-                    moveX = false;
-                    posX = 0f;
+                    moveY = false;
+                    posY -= 50f;
+                    posX -= 50;
                     return;
                 }
             default:
@@ -600,13 +605,14 @@ public class BlockSystemTest : MonoBehaviour
         }
 
         // 다음 블럭 y좌표 조정
-        if (moveX)
+        if (moveY)
         {
-            posX += 50f;
+            posY -= 50f;
+            moveY = false;
         }
         else
         {
-            posY -= 50f;
+            posX += 50f;
         }
         // 프리펩 호출
         GameObject prefab = Resources.Load(prefResource) as GameObject;

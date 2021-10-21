@@ -27,12 +27,13 @@ public class CharacterMotion : MonoBehaviour
     bool go_forward = false;
     bool turn_right = false;
     bool turn_left = false;
-    string hitTag;
+    bool roll_snow = false;
+    public static string hitTag;
     float stRotationY;
     int turnDegree = 0;
     void Start()
     {
-        
+        hitTag = "Noting";
     }
     public void Coru()
     {
@@ -41,22 +42,6 @@ public class CharacterMotion : MonoBehaviour
         StartCoroutine(coroutine);
 
     }
-    /*
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        Rigidbody rigidbody = hit.collider.attachedRigidbody;
-
-        if (rigidbody != null)
-        {
-            Vector3 ForceDirection = hit.gameObject.transform.position - transform.position;
-            ForceDirection.y = 0;
-            ForceDirection.Normalize();
-
-            rigidbody.AddForceAtPosition(ForceDirection * forceMagnitude, transform.position, ForceMode.Impulse);
-        }
-        gameObject.GetComponent<CharacterMotion>().forceMagnitude
-    }
-    */
     public IEnumerator readCommand(float waitTime)
     {
         // loopBlock을 만나면 스택에 푸쉬 & 반복 횟수 확인
@@ -73,10 +58,9 @@ public class CharacterMotion : MonoBehaviour
         while (!blockStack.isEmpty())
         {
             kindOf = print.getInfo().Split(':')[0];
-            // loop or if문일 경우 스택에 저장해서 체크포인트 생성
             if (kindOf.Equals("Button_loop"))
             {
-                blockStack.push(print);
+                blockStack.push(print); // loop or if문일 경우 스택에 저장해서 체크포인트 생성
                 // 반복문 유효성 평가
                 if (call.loopValidate(print))
                 {
@@ -97,27 +81,31 @@ public class CharacterMotion : MonoBehaviour
             }
             else if (kindOf.Equals("Button_if"))
             {
-                Debug.Log("Shot ray");
-                switch (hitTag) {
+                blockStack.push(print); // loop or if문일 경우 스택에 저장해서 체크포인트 생성
+                // 사용된 조건문에 따라 다르게 동작
+                switch (hitTag)
+                {
                     case "SnowBall":
-                        Debug.Log("There is SnowBall in front of the object");
+                        Debug.Log("There is " + hitTag + " in front of the Baby");
+                        print = blockStack.peek().left;
+                        hitTag = "theOther";
                         break;
                     default:
                         Debug.Log("There is no any object");
+                        print = blockStack.pop().right;
                         break;
                 }
-                print = print.right;
+
             }
             // 현재 노드가 leaf or subLeaf이면 단말노드까지 도달한 것이므로 스택에 저장된 체크포인트로 돌아감
             else if (call.isLeaf(print))
             {
                 // subLeaf일 때는 반복문을 1회 수행한 것이므로, 반복문 횟수 감소
-                if (GameObject.Find(blockStack.peek().getInfo()) != null)
+                if (blockStack.peek().getInfo().Split(':')[0].Equals("Button_loop"))
                 {
                     BlockSystemTest.Block temp = blockStack.peek();
                     //GameObject parent = GameObject.Find(temp.getInfo()).gameObject;
                     GameObject child = GameObject.Find(temp.getInfo()).gameObject.transform.Find("Image_loopNum").gameObject;
-                    //Debug.Log("**numResource** : " + numResource);
                     child.GetComponent<Image>().sprite = Resources.Load(numResource + ((BlockSystemTest.LoopBlock)temp).getLoopNum(), typeof(Sprite)) as Sprite;
                 }
                 print = blockStack.pop();
@@ -138,6 +126,7 @@ public class CharacterMotion : MonoBehaviour
                         go_forward = false;
                         turn_left = true;
                         turn_right = false;
+                        roll_snow = false;
                         turnDegree = 0;
                         // 도는건 얼마 안걸리니까 waitTime -> 1 로 변경
                         waitTime = 1f;
@@ -149,6 +138,7 @@ public class CharacterMotion : MonoBehaviour
                         go_forward = false;
                         turn_right = true;
                         turn_left = false;
+                        roll_snow = false;
                         turnDegree = 0;
                         // 도는건 얼마 안걸리니까 waitTime -> 1 로 변경
                         waitTime = 1f;
@@ -161,12 +151,22 @@ public class CharacterMotion : MonoBehaviour
                         go_forward = true;
                         break;
                     }
+                case "Button_push":
+                    {
+                        Debug.Log("굴리기!");
+                        waitTime = 1f;
+                        go_forward = false;
+                        roll_snow = true;
+                        //GameObject.Find("Character").transform.rotation = Quaternion.LookRotation(Vector3.forward, Vector3.up);
+                        break;
+                    }
                 default:
                     {
                         waitTime = 0f;
                         go_forward = false;
                         turn_right = false;
                         turn_left = false;
+                        roll_snow = false;
                         turnDegree = 0;
                         break;
                     }
@@ -201,28 +201,10 @@ public class CharacterMotion : MonoBehaviour
                 turnDegree += 2;
             }
         }
-
-        /* 캐릭터 앞에 눈덩이 있는지 확인하는거 실험
-        directionToTarget = transform.position - GameObject.Find("Pref_TreeCutted (2)").transform.position;
-        float angle = Vector3.Angle(transform.forward, directionToTarget);
-        float distance = directionToTarget.magnitude;
-
-        if (distance < 10)
-            Debug.Log("target is in front of me");
-        */
-    }
-
-    private void FixedUpdate()
-    {
-        Vector3 fwd = transform.TransformDirection(Vector3.forward);
-        if (Physics.Raycast(transform.position, fwd, out hit, MaxDistance))
+        else if (roll_snow == true)
         {
-            //Debug.Log("There is SnowBall in front of the object");
-            //if (hit.transform.tag.Equals("SnowBall"))
-            hit.transform.GetComponent<MeshRenderer>().material.color = Color.red;
-            hitTag = hit.transform.name;
+            GameObject.Find("SnowBall").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
+
         }
-        else
-        Debug.DrawRay(transform.position, transform.forward * MaxDistance, Color.blue, 10000f);
     }
 }

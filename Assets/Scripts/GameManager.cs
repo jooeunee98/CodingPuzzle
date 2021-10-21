@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Insert new block at next : " + prevBlockName);
         //blockManager.setMiddle(prevBlockName);
         string kindOf = prevBlockName.Split(':')[0];
-        if (kindOf.Equals("Button_loop"))
+        if (kindOf.Equals("Button_loop") || kindOf.Equals("Button_if"))
         {
             testManager.setCheckPoint(prevBlockName);
         }
