@@ -76,6 +76,22 @@ public class CharacterMotion : MonoBehaviour
                     animator.SetBool("Success", false);
                     animator.SetBool("Fail", false);
                 }
+            } else if (beforeAction == "Button_push")
+            {
+                if (kindOf == "Button_left" || kindOf == "Button_right" || kindOf == "Button_forward")
+                {
+                    animator.SetBool("Idle", false);
+                    animator.SetBool("Walking", true);
+                    animator.SetBool("Push", false);
+                    animator.SetBool("Plant Tree", false);
+                    animator.SetBool("Picking up", false);
+                    animator.SetBool("Success", false);
+                    animator.SetBool("Fail", false);
+                }
+                else
+                {
+                    
+                }
             } else
             {
 
@@ -178,6 +194,7 @@ public class CharacterMotion : MonoBehaviour
                 case "Button_push":
                     {
                         Debug.Log("±¼¸®±â!");
+                        animator.SetBool("Push", true);
                         waitTime = 1f;
                         go_forward = false;
                         roll_snow = true;
@@ -227,7 +244,9 @@ public class CharacterMotion : MonoBehaviour
         }
         else if (roll_snow == true)
         {
+            GameObject.Find("Character").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
             GameObject.Find("SnowBall").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
+            GameObject.Find("SnowBall").transform.transform.Rotate(Vector3.right * 130.0f * Time.deltaTime);
 
         }
     }
