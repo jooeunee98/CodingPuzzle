@@ -82,11 +82,31 @@ public class CharacterMotion : MonoBehaviour
             else if (kindOf.Equals("Button_if"))
             {
                 blockStack.push(print); // loop or if문일 경우 스택에 저장해서 체크포인트 생성
-                // 사용된 조건문에 따라 다르게 동작
-                switch (hitTag)
+
+                if (((BlockSystemTest.IfBlock)print).Validation(hitTag))
+                    print = blockStack.peek().left;
+                else
+                {
+                    print = blockStack.pop();
+                    ((BlockSystemTest.IfBlock)print).setWorkOut();
+                    print = print.right;
+                }
+                /*
+                switch (hitTag)         // 사용된 조건문에 따라 다르게 동작
+
                 {
                     case "SnowBall":
                         Debug.Log("There is " + hitTag + " in front of the Baby");
+                        print = blockStack.peek().left;
+                        hitTag = "theOther";
+                        break;
+                    case "TakeFruits":
+                        Debug.Log("Character can pick up a fruit");
+                        print = blockStack.peek().left;
+                        hitTag = "theOther";
+                        break;
+                    case "PlantTrees":
+                        Debug.Log("He can plant a tree here");
                         print = blockStack.peek().left;
                         hitTag = "theOther";
                         break;
@@ -95,7 +115,7 @@ public class CharacterMotion : MonoBehaviour
                         print = blockStack.pop().right;
                         break;
                 }
-
+                */
             }
             // 현재 노드가 leaf or subLeaf이면 단말노드까지 도달한 것이므로 스택에 저장된 체크포인트로 돌아감
             else if (call.isLeaf(print))
@@ -158,6 +178,29 @@ public class CharacterMotion : MonoBehaviour
                         go_forward = false;
                         roll_snow = true;
                         //GameObject.Find("Character").transform.rotation = Quaternion.LookRotation(Vector3.forward, Vector3.up);
+                        break;
+                    }
+                case "Button_fruit":
+                    {
+                        Debug.Log("과일줍기");
+                        waitTime = 1;
+                        go_forward = false;
+                        CollisionDetector.pickUp = true;
+                        break;
+                    }
+                case "Button_plant":
+                    {
+                        Debug.Log("나무심기");
+                        waitTime = 1;
+                        go_forward = false;
+                        CollisionDetector.delCuttedTree = true;
+                        GameObject prefab = Resources.Load("Prefabs/Pref_Tree_02") as GameObject;
+                        GameObject tree = Instantiate(prefab) as GameObject;
+                        tree.gameObject.name = "PlantedTree";
+                        tree.transform.SetParent(GameObject.Find("testmap").transform);
+                        tree.transform.localPosition = GameObject.Find("Character").transform.localPosition;
+                        tree.GetComponent<BoxCollider>().isTrigger = true;
+                        tree.GetComponent<Transform>().localScale = new Vector3(3, 3, 3);
                         break;
                     }
                 default:
