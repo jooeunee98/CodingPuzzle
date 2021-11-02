@@ -142,4 +142,10 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(called);
         }
     }
+
+    public void getScore()
+    {
+        int score = testManager.evaluation();
+        Debug.Log("You got the stars : " + score);
+    }
 }

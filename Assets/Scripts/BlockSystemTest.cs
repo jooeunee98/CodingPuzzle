@@ -812,6 +812,30 @@ public class BlockSystemTest : MonoBehaviour
         }
     }
 
+    public int evaluation()
+    {
+        int score = 0;
+        BStack s1 = new BStack();
+        Block block = root.right;
+        s1.push(block);
+
+        while (!s1.isEmpty())
+        {
+            block = s1.pop();
+            if (!isLeaf(block.right))
+            {
+                if (block.getInfo() != "subRoot" || block.getInfo() != "subLeaf")
+                    score++;
+                s1.push(block.right);
+            }
+            if (block.left != null)
+            {
+                s1.push(block.left);
+            }
+        }
+        return score;
+    }
+
     public void treeTest()
     {
         Block[] arr = new Block[10];
