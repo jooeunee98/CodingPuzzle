@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":-1274.3170166015625,"y":17.138879776000978,"z":-2020.998046875},"rotation":{"x":-0.09466049075126648,"y":0.8864377737045288,"z":-0.4005085527896881,"w":-0.2111615687608719},"size":0.13582158088684083,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":-1285.321533203125,"y":9.400224685668946,"z":-2031.7015380859375},"rotation":{"x":-0.02581903524696827,"y":0.771115779876709,"z":-0.03274586424231529,"w":-0.6351363658905029},"size":9.783248901367188,"orthographic":false}
+>>>>>>> origin/TY_ANIMATION_2

@@ -16,6 +16,8 @@ using UnityEngine.UI;
 
 public class CharacterMotion : MonoBehaviour
 {
+    string beforeAction;
+
     // Start is called before the first frame update
     [SerializeField]
     private float forceMagnitude;   // 캐릭터가 Object에 가하는 힘
@@ -57,7 +59,44 @@ public class CharacterMotion : MonoBehaviour
         blockStack.push(print);
         while (!blockStack.isEmpty())
         {
+            beforeAction = kindOf;
             kindOf = print.getInfo().Split(':')[0];
+            if (beforeAction == "Button_left" || beforeAction == "Button_right" || beforeAction == "Button_forward")
+            {
+                if(kindOf == "Button_left" || kindOf == "Button_right" || kindOf == "Button_forward")
+                {
+
+                } else
+                {
+                    animator.SetBool("Idle", true);
+                    animator.SetBool("Walking", false);
+                    animator.SetBool("Push", false);
+                    animator.SetBool("Plant Tree", false);
+                    animator.SetBool("Picking up", false);
+                    animator.SetBool("Success", false);
+                    animator.SetBool("Fail", false);
+                }
+            } else if (beforeAction == "Button_push")
+            {
+                if (kindOf == "Button_left" || kindOf == "Button_right" || kindOf == "Button_forward")
+                {
+                    animator.SetBool("Idle", false);
+                    animator.SetBool("Walking", true);
+                    animator.SetBool("Push", false);
+                    animator.SetBool("Plant Tree", false);
+                    animator.SetBool("Picking up", false);
+                    animator.SetBool("Success", false);
+                    animator.SetBool("Fail", false);
+                }
+                else
+                {
+                    
+                }
+            } else
+            {
+
+            }
+            
             if (kindOf.Equals("Button_loop"))
             {
                 blockStack.push(print); // loop or if문일 경우 스택에 저장해서 체크포인트 생성
@@ -167,6 +206,7 @@ public class CharacterMotion : MonoBehaviour
                 case "Button_forward":
                     {
                         Debug.Log("직진!");
+                        animator.SetBool("Walking", true);
                         waitTime = 1f;
                         go_forward = true;
                         break;
@@ -174,6 +214,7 @@ public class CharacterMotion : MonoBehaviour
                 case "Button_push":
                     {
                         Debug.Log("굴리기!");
+                        animator.SetBool("Push", true);
                         waitTime = 1f;
                         go_forward = false;
                         roll_snow = true;
@@ -246,7 +287,9 @@ public class CharacterMotion : MonoBehaviour
         }
         else if (roll_snow == true)
         {
+            GameObject.Find("Character").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
             GameObject.Find("SnowBall").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
+            GameObject.Find("SnowBall").transform.transform.Rotate(Vector3.right * 130.0f * Time.deltaTime);
 
         }
     }
