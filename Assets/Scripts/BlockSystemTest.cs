@@ -610,8 +610,10 @@ public class BlockSystemTest : MonoBehaviour
                     posY = local.y - 50f;
                 }
                 */
-                posX = local.x + 50f;
-                posY = local.y - 50f;
+                posX = local.x;
+                posY = local.y;
+                posX = posX + 50f;
+                posY = posY - 50f;
 
                 break;
             }
