@@ -37,10 +37,11 @@ public class BlockSystemTest : MonoBehaviour
     Block root, prev, leaf;
     FuncLists funcLists = new FuncLists();   // 함수 리스트 저장
     RaycastHit hit;
-    
+
     // ht 블럭 위치 조정용 변수
-    bool moveY = false;
-    public float posX = -50f;
+    //bool moveY = false;
+    bool flagPos = false;
+    public float posX = 0f;
     public float posY = 0f;
     public float posZ = 0f;
 
@@ -88,6 +89,10 @@ public class BlockSystemTest : MonoBehaviour
         public Block peek()
         {
             return array[top];
+        }
+        public int countElement()
+        {
+            return top + 1;
         }
     }
 
@@ -197,6 +202,7 @@ public class BlockSystemTest : MonoBehaviour
     public class IfBlock : Block
     {
         private string condition;
+        private bool workOut;
 
         public IfBlock() : base()
         {
@@ -205,23 +211,57 @@ public class BlockSystemTest : MonoBehaviour
             Block subLeaf = new Block("subLeaf");
             base.left = subRoot;
             subRoot.right = subLeaf;
+            this.workOut = true;
         }
-        public IfBlock(string condition, int num) : base("Button_if", num)
+        public IfBlock(string condition, int num) : base(condition, num)
         {
             this.condition = condition;
             Block subRoot = new Block("subRoot");
             Block subLeaf = new Block("subLeaf");
             base.left = subRoot;
             subRoot.right = subLeaf;
+            this.workOut = true;
+        }
+        public bool getWorkOut()
+        {
+            return workOut;
+        }
+        public void setWorkOut()
+        {
+            workOut = true;
         }
         public string getCondition()
         {
             return condition;
         }
-        public bool Validation()
+        public bool Validation(string tagInfo)
         {
-            
-            return true;
+
+            if (workOut)
+            {
+                switch (tagInfo)
+                {
+                    case "SnowBall":
+                        Debug.Log("There is " + tagInfo + " in front of the Baby");
+                        break;
+                    case "TakeFruits":
+                        Debug.Log("Character can pick up a fruit");
+                        break;
+                    case "PlantTrees":
+                        Debug.Log("He can plant a tree here");
+                        break;
+                    default:
+                        Debug.Log("There is no any object");
+                        break;
+                }
+                workOut = false;
+                return true;
+            }
+            else
+            {
+                workOut = true;
+                return false;
+            }
         }
     }
 
@@ -237,7 +277,7 @@ public class BlockSystemTest : MonoBehaviour
         leaf = new Block("leaf");
         root.right = leaf;
         checkPoint = root;
-        Debug.Log("Tree initialize");
+        //Debug.Log("Tree initialize");
     }
 
     // 플레이어가 선택한 블럭을 생성하고 반환
@@ -254,6 +294,7 @@ public class BlockSystemTest : MonoBehaviour
                 //Debug.Log("initLoopNum : " + ((LoopBlock)newBlock).getLoopNum().ToString());
                 break;
             case "Button_if":
+            case "Button_else":
                 newBlock = new IfBlock(bInfo, listId);
                 break;
             case "Button_func":
@@ -264,7 +305,7 @@ public class BlockSystemTest : MonoBehaviour
                 newBlock = new Block(bInfo, listId);
                 break;
         }
-        Debug.Log("Create Node : " + newBlock.getInfo());
+        //Debug.Log("Create Node : " + newBlock.getInfo());
         return newBlock;
     }
 
@@ -359,7 +400,7 @@ public class BlockSystemTest : MonoBehaviour
     {
         string prev = checkPoint.getInfo().Split(':')[0];    // 현재 checkPoint
         string chosen = null;                                   // 지정한 checkPoint
-        Debug.Log("Set check point at " + prev);
+        //Debug.Log("Set check point at " + prev);
         checkPoint = findNode(bInfo);
 
         // 분기점 설정
@@ -371,12 +412,12 @@ public class BlockSystemTest : MonoBehaviour
                 // 분기점 설정
                 case "Button_loop":
                 case "Button_if":
-                    Debug.Log("binfo's left : " + checkPoint.left.getInfo());
+                    //Debug.Log("binfo's left : " + checkPoint.left.getInfo());
                     checkPoint = checkPoint.left;
                     break;
                 case "Button_func":
 
-                    break;                    
+                    break;
             }
         }
         // 분기점 초기화
@@ -410,6 +451,11 @@ public class BlockSystemTest : MonoBehaviour
             {
                 insertPos = getInsertPos(checkPoint);
             }
+            if (bInfo.Equals("Button_else") && (insertPos.getInfo().Split(':')[0] != "Button_if"))
+            {
+                Debug.Log("유효하지 않은 동작");
+                return;
+            }
             newBlock.right = insertPos.right;
             insertPos.right = newBlock;
         }
@@ -422,18 +468,21 @@ public class BlockSystemTest : MonoBehaviour
     public void deleteNode(string bInfo)
     {
         Block delPrev = findNode(bInfo, true);
-        Debug.Log("Previous node of delete : " + delPrev.getInfo());
+        //Debug.Log("Previous node of delete : " + delPrev.getInfo());
         Block delete = findNode(bInfo);
-        Debug.Log("Delete node : " + delete.getInfo());
+        string kindOf;
+        //Debug.Log("Delete node : " + delete.getInfo());
 
         if (isLeaf(delete))
             Debug.Log("A block that does not exist.");
         else
         {
-            Debug.Log("Delete node");
+            //Debug.Log("Delete node");
             delPrev.right = delete.right;
         }
-
+        kindOf = bInfo.Split(':')[0];
+        if (kindOf.Equals("Button_loop") || kindOf.Equals("Button_if"))
+            checkPoint = root;
         // ht 리스트에서 노드가 삭제되었으므로 이전에 있던 블럭들을 지우고 새로 랜더링
         deleteBlocks("Block");
         showBlocks();
@@ -457,7 +506,7 @@ public class BlockSystemTest : MonoBehaviour
         bool vali = false;
         if (loopNum > 0)
         {
-            Debug.Log(loopNum);
+            //Debug.Log(loopNum);
             loopBlock.setLoopNum(--loopNum);
             vali = true;
         }
@@ -487,7 +536,6 @@ public class BlockSystemTest : MonoBehaviour
         // 반복 횟수만큼 해당 리스트 출력
         // 반복 횟수가 0에 도달하면, 해당 loopBlock을 스택에서 팝
         string kindOf = null;
-        int num = 0;
         Block print = root;
         Debug.Log("Print list");
 
@@ -534,6 +582,48 @@ public class BlockSystemTest : MonoBehaviour
         }
     }
 
+    public void displayPos()
+    {
+        Vector3 local = GameObject.Find(blockStack.peek().getInfo()).GetComponent<RectTransform>().anchoredPosition;
+        //Debug.Log("Top of Stack : " + blockStack.peek().getInfo());
+        Block search;
+        BStack s1 = new BStack();
+        search = blockStack.peek().left;
+
+        s1.push(search);
+        while (!s1.isEmpty())
+        {
+            search = s1.pop();
+            string kindOf = search.getInfo().Split(':')[0];
+            if (kindOf.Equals("Button_loop") || kindOf.Equals("Button_if"))
+            {
+
+                if (search.right.getInfo().Equals("subLeaf"))
+                {
+                    //Debug.Log("case 1");
+                    notEnter = true;
+                }
+                /*
+                else
+                {
+                    Debug.Log("case 2");
+                    posY = local.y - 50f;
+                }
+                */
+                posX = local.x + 50f;
+                posY = local.y - 50f;
+
+                break;
+            }
+            if (!isLeaf(search.right))
+            {
+                s1.push(search.right);
+            }
+
+        }
+    }
+    int loopCount = 0;
+    bool notEnter = false;
     // 블럭 object를 프리펩을 통해서 생성
     public void createBlock(Block binfo)
     {
@@ -568,21 +658,63 @@ public class BlockSystemTest : MonoBehaviour
                 {
                     imgResource = "images/For";
                     prefResource = "Prefabs/Button_loop";
-                    numResource += "Images/클리어넘버타이틀" + initLoopNum.ToString();
-                    moveY = true;
-                    posX = 0;
+                    numResource += "images/클리어넘버타이틀" + initLoopNum.ToString();
+                    if (blockStack.isEmpty())
+                    {
+                        //Debug.Log("stack is empty");
+                        blockStack.push(binfo);
+                        posX = -50f;
+                        posY -= 50f;
+                    }
+                    else
+                    {
+                        //Debug.Log("stack is not empty");
+                        loopCount++;
+                        flagPos = true;
+                    }
                     break;
                 }
             case "Button_if":
                 {
-                    imgResource = "images/이프버튼";
+                    imgResource = "images/image_renewal/조건";
                     prefResource = "Prefabs/Button_if";
-                    moveY = true;
+                    if (blockStack.isEmpty())
+                    {
+                        //Debug.Log("stack is empty");
+                        blockStack.push(binfo);
+                        posX = -50f;
+                        posY -= 50f;
+                    }
+                    else
+                    {
+                        //Debug.Log("stack is not empty");
+                        loopCount++;
+                        flagPos = true;
+                    }
+                    break;
+                }
+            case "Button_else":
+                {
+                    imgResource = "images/image_renewal/예외";
+                    prefResource = "Prefabs/Button_if";
+                    flagPos = true;
                     break;
                 }
             case "Button_push":
                 {
                     imgResource = "images/image_renewal/눈밀기";
+                    prefResource = "Prefabs/Button_push";
+                    break;
+                }
+            case "Button_plant":
+                {
+                    imgResource = "images/image_renewal/나무심기";
+                    prefResource = "Prefabs/Button_push";
+                    break;
+                }
+            case "Button_fruit":
+                {
+                    imgResource = "images/image_renewal/과일줍기";
                     prefResource = "Prefabs/Button_push";
                     break;
                 }
@@ -593,9 +725,13 @@ public class BlockSystemTest : MonoBehaviour
                 }
             case "subLeaf":
                 {
-                    moveY = false;
+                    posX = GameObject.Find(blockStack.pop().getInfo()).GetComponent<RectTransform>().anchoredPosition.x - 50f;
+                    if (loopCount > 0 && notEnter)
+                    {
+                        notEnter = false;
+                        posY += 50f;
+                    }
                     posY -= 50f;
-                    posX -= 50;
                     return;
                 }
             default:
@@ -605,15 +741,17 @@ public class BlockSystemTest : MonoBehaviour
         }
 
         // 다음 블럭 y좌표 조정
-        if (moveY)
+        if (flagPos)
         {
-            posY -= 50f;
-            moveY = false;
+            displayPos();
+            blockStack.push(binfo);
+            flagPos = false;
         }
         else
         {
             posX += 50f;
         }
+        //Debug.Log("posX : " + posX + " posY : " + posY);
         // 프리펩 호출
         GameObject prefab = Resources.Load(prefResource) as GameObject;
         // 블루존(코딩존)에 생성할 프리펩 인스턴스화
@@ -645,7 +783,7 @@ public class BlockSystemTest : MonoBehaviour
         Block search = null;
         BStack s1 = new BStack();
         posY = 0f;
-        posX = 0f;
+        posX = -50f;
 
         s1.push(root);
         while (!s1.isEmpty())
@@ -672,6 +810,30 @@ public class BlockSystemTest : MonoBehaviour
         {
             Destroy(objects[i]);
         }
+    }
+
+    public int evaluation()
+    {
+        int score = 0;
+        BStack s1 = new BStack();
+        Block block = root.right;
+        s1.push(block);
+
+        while (!s1.isEmpty())
+        {
+            block = s1.pop();
+            if (!isLeaf(block.right))
+            {
+                if (block.getInfo() != "subRoot" || block.getInfo() != "subLeaf")
+                    score++;
+                s1.push(block.right);
+            }
+            if (block.left != null)
+            {
+                s1.push(block.left);
+            }
+        }
+        return score;
     }
 
     public void treeTest()
@@ -728,6 +890,6 @@ public class BlockSystemTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
