@@ -7,7 +7,7 @@ public class EffectSystem : MonoBehaviour
 {
     double timer;
     double waitingTime;
-    int stageNo = 4;
+    int stageNo = 5;
     int check = 0;
 
     // Start is called before the first frame update
