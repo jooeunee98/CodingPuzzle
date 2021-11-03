@@ -138,6 +138,7 @@ public class GameManager : MonoBehaviour
             prev_scene = SceneManager.GetActiveScene().name;
             Debug.Log(prev_scene);
             called = called.Split('_')[1];
+            Debug.Log("++++++++++++" + called + "++++++++++++++");
             // 버튼에 따라 씬 이동
             SceneManager.LoadScene(called);
         }

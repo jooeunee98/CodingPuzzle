@@ -11,10 +11,16 @@ public class AudioPlay : MonoBehaviour
     void Start()
     {
         sound = gameObject.AddComponent<AudioSource>();
+        
     }
 
     public void BGMOnOff(bool onOff)
     {
         sound.mute = !onOff;
+    }
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(transform.gameObject);
     }
 }
