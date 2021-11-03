@@ -491,7 +491,7 @@ GameObject:
   - component: {fileID: 81757206}
   - component: {fileID: 81757205}
   m_Layer: 0
-  m_Name: BlockSystemTest
+  m_Name: BlockSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
