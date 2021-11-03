@@ -37,6 +37,7 @@ public class BlockSystem : MonoBehaviour
     Block root, prev, leaf;
     FuncLists funcLists = new FuncLists();   // 함수 리스트 저장
     RaycastHit hit;
+    const float MOVE = 50f;
 
     // ht 블럭 위치 조정용 변수
     //bool moveY = false;
@@ -180,7 +181,7 @@ public class BlockSystem : MonoBehaviour
         public LoopBlock(int loopNum, int num) : base("Button_loop", num)
         {
             this.loopNum = loopNum;
-            Block subRoot = new Block("subRoot");
+            Block subRoot = new Block("subRoot", num);
             Block subLeaf = new Block("subLeaf");
             base.left = subRoot;
             subRoot.right = subLeaf;
@@ -284,12 +285,13 @@ public class BlockSystem : MonoBehaviour
     {
         listId++;
         Block newBlock = null;
+        Block search = root;
         switch (bInfo)
         {
             case "Button_loop":
                 // loopNum 초기화하는 방법 생각하기
                 newBlock = new LoopBlock(initLoopNum, listId);
-
+                
                 //Debug.Log("initLoopNum : " + ((LoopBlock)newBlock).getLoopNum().ToString());
                 break;
             case "Button_if":
@@ -424,12 +426,55 @@ public class BlockSystem : MonoBehaviour
             checkPoint = root;
     }
 
+    // 제어문의 중첩을 제한하기 위한 함수
+    // 2개까지 제한하도록 설계했지만 작동하지 않아서 보류
+    /*
+    public bool nestingCheck()
+    {
+        Block search = root;
+        BStack buffer = new BStack();
+        BStack nesting = new BStack();
+        int count = 0;
+        buffer.push(search);
+
+        while (!buffer.isEmpty())
+        {
+            search = buffer.pop();
+            if (search.getInfo().Equals(checkPoint.getInfo()))
+            {
+                while (!nesting.isEmpty())
+                {
+                    Block temp = nesting.pop();
+                    if(temp.getInfo().Split(':')[0].Equals("Butten_loop"));
+                    {
+                        Debug.Log("nesting fuc : " + temp.getInfo());
+                        count++;
+                    }
+                }
+                Debug.Log("number of nesting loop : "+ count);
+                return (count%3) >= 2 ? true : false;
+            }
+            if (!isLeaf(search.right))
+            {
+                buffer.push(search.right);
+            }
+            if (search.left != null)
+            {
+                buffer.push(search.left);
+                nesting.push(search);
+            }
+        }
+        return false;
+    }
+    */
+
     // 노드 삽입
     public void insertNode(string bInfo)
     {
         Block newBlock = createNode(bInfo);
         Block insertPos = null;
-
+        Block search = root;
+        int count = 0;
         // 유저가 중간삽입을 원한다면
         if (prev != null)
         {
@@ -456,7 +501,12 @@ public class BlockSystem : MonoBehaviour
             }
             // checkPoint 값이 root가 아니면 sub list 끝에 삽입
             else
-            {
+            {/*
+                if (bInfo.Equals("Button_loop"))
+                {
+                    if (nestingCheck())
+                        return;
+                }*/
                 insertPos = getInsertPos(checkPoint);
             }
             if (bInfo.Equals("Button_else") && (insertPos.getInfo().Split(':')[0] != "Button_if"))
@@ -603,6 +653,7 @@ public class BlockSystem : MonoBehaviour
         }
     }
 
+    // 제어문을 중첩할 때 줄 바꾸기를 담당하는 함수
     public void displayBlock()
     {
         Vector3 local = GameObject.Find(blockStack.peek().getInfo()).GetComponent<RectTransform>().anchoredPosition;
@@ -610,7 +661,7 @@ public class BlockSystem : MonoBehaviour
         Block search;
         BStack s1 = new BStack();
         search = blockStack.peek().left;
-
+        Debug.Log(blockStack.peek().getInfo());
         s1.push(search);
         while (!s1.isEmpty())
         {
@@ -623,9 +674,17 @@ public class BlockSystem : MonoBehaviour
                     //Debug.Log("case 1");
                     notEnter = true;
                 }
-                posX = local.x + 50f;
-                posY = local.y - 50f;
-
+                // 중첩문 줄바꾸기 조절
+                if (posY + local.y <= -100)
+                {
+                    posX = local.x + MOVE;
+                    posY = posY - MOVE;
+                }
+                else
+                {
+                    posX = local.x + MOVE;
+                    posY = local.y - MOVE;
+                }
                 break;
             }
             if (!isLeaf(search.right))
@@ -635,7 +694,8 @@ public class BlockSystem : MonoBehaviour
 
         }
     }
-    int loopCount = 0;
+
+    int loopCount = 1;
     bool notEnter = false;
     // 블럭 object를 프리펩을 통해서 생성
     public void createBlock(Block binfo)
@@ -676,8 +736,8 @@ public class BlockSystem : MonoBehaviour
                     {
                         //Debug.Log("stack is empty");
                         blockStack.push(binfo);
-                        posX = -50f;
-                        posY -= 50f;
+                        posX = -MOVE;
+                        posY -= MOVE;
                     }
                     else
                     {
@@ -695,8 +755,8 @@ public class BlockSystem : MonoBehaviour
                     {
                         //Debug.Log("stack is empty");
                         blockStack.push(binfo);
-                        posX = -50f;
-                        posY -= 50f;
+                        posX = -MOVE;
+                        posY -= MOVE;
                     }
                     else
                     {
@@ -738,13 +798,16 @@ public class BlockSystem : MonoBehaviour
                 }
             case "subLeaf":
                 {
-                    posX = GameObject.Find(blockStack.pop().getInfo()).GetComponent<RectTransform>().anchoredPosition.x - 50f;
-                    if (loopCount > 0 && notEnter)
+                    posX = GameObject.Find(blockStack.pop().getInfo()).GetComponent<RectTransform>().anchoredPosition.x - MOVE;
+                    // 중첩문에서 한 줄이 띄어지던 버그 수정
+                    // 단, 파생되는 버그가 발생했고, 해결책을 찾지 못해 보류
+                    /*if (loopCount > 0 && notEnter)
                     {
                         notEnter = false;
-                        posY += 50f;
-                    }
-                    posY -= 50f;
+                        posY += MOVE * (loopCount - 1);
+                        loopCount--;
+                    }*/
+                    posY -= MOVE;
                     return;
                 }
             default:
@@ -763,7 +826,7 @@ public class BlockSystem : MonoBehaviour
         }
         else
         {
-            posX += 50f;
+            posX += MOVE;
         }
         //Debug.Log("posX : " + posX + " posY : " + posY);
         // 프리펩 호출
@@ -797,7 +860,7 @@ public class BlockSystem : MonoBehaviour
         Block search = null;
         BStack s1 = new BStack();
         posY = 0f;
-        posX = -50f;
+        posX = -MOVE;
 
         s1.push(root);
         while (!s1.isEmpty())
@@ -815,6 +878,7 @@ public class BlockSystem : MonoBehaviour
             }
             //Debug.Log("turn : " + ++count);
         }
+        loopCount = 1;
     }
     // ht 만들었던 블럭들 삭제
     public void deleteBlocks(string target)
