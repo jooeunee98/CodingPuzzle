@@ -28,6 +28,7 @@ public class starscale : MonoBehaviour
     {
         if(timespan >= 0)
         {
+
             timespan -= Time.deltaTime;
             return;
         }
@@ -45,21 +46,21 @@ public class starscale : MonoBehaviour
             {
                 star3.transform.localScale += new Vector3(0.2f, 0.2f, 0.2f); // 짠나타나여
             }
-           /* if (i == 1)
-                audio1.Play();
-            if (i == 12)
-            {
-                audio2 = gameObject.AddComponent<AudioSource>();
-                audio2.clip = music;
-                audio2.Play();
-            }
-            if (i == 25)
-            {
-                audio3 = gameObject.AddComponent<AudioSource>();
-                audio3.clip = music;
-                audio3.Play();
-            }
-            i++;*/
+            /* if (i == 1)
+                 audio1.Play();
+             if (i == 12)
+             {
+                 audio2 = gameObject.AddComponent<AudioSource>();
+                 audio2.clip = music;
+                 audio2.Play();
+             }
+             if (i == 25)
+             {
+                 audio3 = gameObject.AddComponent<AudioSource>();
+                 audio3.clip = music;
+                 audio3.Play();
+             }*/
+            i++;
         }
     }
 }
