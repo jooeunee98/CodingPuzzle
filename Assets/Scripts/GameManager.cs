@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     //BlockManager blockManager;              // 블록 매니저
-    BlockSystemTest testManager;
+    BlockSystem blockManager;
     public TalkManager talkManager;         // 대화 매니저
     public GameObject talkPanel;            // 대화창 판넬
     public Image portraitImg;               // 대화창 초상화
@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("System start");
         //blockManager = BlockManager.FindObjectOfType<BlockManager>();
-        testManager = BlockSystemTest.FindObjectOfType<BlockSystemTest>();
+        blockManager = BlockSystem.FindObjectOfType<BlockSystem>();
     }
 
     public void Action(int sNumber)  // 대화 시작
@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
         string clicked = EventSystem.current.currentSelectedGameObject.name;    // 클릭된 버튼이 어느 건지알아옴
         Debug.Log("button : " + clicked);
         //blockManager.insertLast(clicked);                                       // 클릭된 버튼 노드 생성
-        testManager.insertNode(clicked);
+        blockManager.insertNode(clicked);
     }
     // (tg) 기존의 블럭들 사이에 새로운 블럭 삽입
     // 임의의 블럭(A)을 선택하고 레드존의 블럭(B)을 누르면, A 뒤에 B를 삽입
@@ -95,11 +95,11 @@ public class GameManager : MonoBehaviour
         string kindOf = prevBlockName.Split(':')[0];
         if (kindOf.Equals("Button_loop") || kindOf.Equals("Button_if"))
         {
-            testManager.setCheckPoint(prevBlockName);
+            blockManager.setCheckPoint(prevBlockName);
         }
         else
         {
-            testManager.setPrevNode(prevBlockName);
+            blockManager.setPrevNode(prevBlockName);
         }
     }
     // (tg) 블루존에 있는 코드블럭을 제거
@@ -111,7 +111,7 @@ public class GameManager : MonoBehaviour
         string delButtonName = deleteButton.name;               // 삭제하는 블럭의 이름
         Debug.Log("Delete this button : " + delButtonName);     // 동작 확인
         //blockManager.deleteNode(delButtonName);                 // 블루존에서 블럭 삭제
-        testManager.deleteNode(delButtonName);
+        blockManager.deleteNode(delButtonName);
     }
 
     // (tg) Scene 변경
@@ -138,14 +138,9 @@ public class GameManager : MonoBehaviour
             prev_scene = SceneManager.GetActiveScene().name;
             Debug.Log(prev_scene);
             called = called.Split('_')[1];
+            Debug.Log("++++++++++++" + called + "++++++++++++++");
             // 버튼에 따라 씬 이동
             SceneManager.LoadScene(called);
         }
-    }
-
-    public void getScore()
-    {
-        int score = testManager.evaluation();
-        Debug.Log("You got the stars : " + score);
     }
 }

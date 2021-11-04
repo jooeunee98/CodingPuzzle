@@ -19,7 +19,8 @@ public class CollisionDetector : MonoBehaviour
         switch (other.name)
         {
             case "SnowBall":
-                detectObject = "SnowBall"; break;
+                detectObject = "SnowBall";
+                break;
             case "PlantTrees":
                 Debug.Log("PlantTrees");
                 detectObject = "PlantTrees"; break;

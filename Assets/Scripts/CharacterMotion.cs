@@ -9,7 +9,7 @@ using UnityEngine.UI;
     // 아니면 반복문을 건너뜀
     if (!blockStack.isEmpty())
     {
-        ((BlockSystemTest.LoopBlock)blockStack.peek()).setLoopNum(2);
+        ((BlockSystem.LoopBlock)blockStack.peek()).setLoopNum(2);
     }
     print = blockStack.pop().right; 
 */
@@ -32,17 +32,77 @@ public class CharacterMotion : MonoBehaviour
     public static string hitTag;
     float stRotationY;
     int turnDegree = 0;
+
     void Start()
     {
         hitTag = "Noting";
     }
+
     public void Coru()
     {
         animator = GameObject.Find("Character").GetComponent<Animator>();
         coroutine = readCommand(1.0f);
         StartCoroutine(coroutine);
-
     }
+
+    public void setAnimator(string beforeAction, string kindOf)
+    {
+        if (beforeAction == "Button_left" || beforeAction == "Button_right" || beforeAction == "Button_forward")
+        {
+            if (kindOf == "Button_left" || kindOf == "Button_right" || kindOf == "Button_forward")
+            {
+
+            }
+            else
+            {
+                animator.SetBool("Idle", true);
+                animator.SetBool("Walking", false);
+                animator.SetBool("Push", false);
+                animator.SetBool("Plant Tree", false);
+                animator.SetBool("Picking up", false);
+                animator.SetBool("Success", false);
+                animator.SetBool("Fail", false);
+            }
+        } else if (beforeAction == "Button_push")
+        {
+            if (kindOf == "Button_push")
+            {
+
+            }
+            else
+            {
+                animator.SetBool("Idle", true);
+                animator.SetBool("Walking", false);
+                animator.SetBool("Push", false);
+                animator.SetBool("Plant Tree", false);
+                animator.SetBool("Picking up", false);
+                animator.SetBool("Success", false);
+                animator.SetBool("Fail", false);
+            }
+        }
+        /*else if (beforeAction == "Button_push")
+        {
+            if (kindOf == "Button_left" || kindOf == "Button_right" || kindOf == "Button_forward")
+            {
+                animator.SetBool("Idle", false);
+                animator.SetBool("Walking", true);
+                animator.SetBool("Push", false);
+                animator.SetBool("Plant Tree", false);
+                animator.SetBool("Picking up", false);
+                animator.SetBool("Success", false);
+                animator.SetBool("Fail", false);
+            }
+            else
+            {
+
+            }
+        }*/
+        else
+        {
+
+        }
+    }
+
     public IEnumerator readCommand(float waitTime)
     {
         // loopBlock을 만나면 스택에 푸쉬 & 반복 횟수 확인
@@ -51,58 +111,22 @@ public class CharacterMotion : MonoBehaviour
         string kindOf = null;
         string numResource = "Images/클리어넘버타이틀";
         int num = 0;
-        BlockSystemTest call = GameObject.Find("BlockSystemTest").GetComponent<BlockSystemTest>();
-        BlockSystemTest.Block print = call.getRoot();
-        BlockSystemTest.BStack blockStack = new BlockSystemTest.BStack();
+        BlockSystem call = GameObject.Find("BlockSystem").GetComponent<BlockSystem>();
+        BlockSystem.Block print = call.getRoot();
+        BlockSystem.BStack blockStack = new BlockSystem.BStack();
 
         blockStack.push(print);
         while (!blockStack.isEmpty())
         {
-
             beforeAction = kindOf;
             kindOf = print.getInfo().Split(':')[0];
-            if (beforeAction == "Button_left" || beforeAction == "Button_right" || beforeAction == "Button_forward")
-            {
-                if (kindOf == "Button_left" || kindOf == "Button_right" || kindOf == "Button_forward")
-                {
+            // Animator 설정
+            setAnimator(beforeAction, kindOf);
 
-                }
-                else
-                {
-                    animator.SetBool("Idle", true);
-                    animator.SetBool("Walking", false);
-                    animator.SetBool("Push", false);
-                    animator.SetBool("Plant Tree", false);
-                    animator.SetBool("Picking up", false);
-                    animator.SetBool("Success", false);
-                    animator.SetBool("Fail", false);
-                }
-            }
-            /*else if (beforeAction == "Button_push")
-            {
-                if (kindOf == "Button_left" || kindOf == "Button_right" || kindOf == "Button_forward")
-                {
-                    animator.SetBool("Idle", false);
-                    animator.SetBool("Walking", true);
-                    animator.SetBool("Push", false);
-                    animator.SetBool("Plant Tree", false);
-                    animator.SetBool("Picking up", false);
-                    animator.SetBool("Success", false);
-                    animator.SetBool("Fail", false);
-                }
-                else
-                {
-
-                }
-            }*/
-            else
-            {
-
-            }
             if (kindOf.Equals("Button_loop"))
             {
                 blockStack.push(print); // loop or if문일 경우 스택에 저장해서 체크포인트 생성
-                // 반복문 유효성 평가
+                                        // 반복문 유효성 평가
                 if (call.loopValidate(print))
                 {
                     // true이면 반복문 내부 블럭 출력
@@ -114,7 +138,7 @@ public class CharacterMotion : MonoBehaviour
                     // 아니면 반복문을 건너뜀
                     if (!blockStack.isEmpty())
                     {
-                        ((BlockSystemTest.LoopBlock)blockStack.peek()).setLoopNum(2);
+                        ((BlockSystem.LoopBlock)blockStack.peek()).setLoopNum(2);
                     }
                     print = blockStack.pop().right;
                     num = 0;
@@ -124,39 +148,14 @@ public class CharacterMotion : MonoBehaviour
             {
                 blockStack.push(print); // loop or if문일 경우 스택에 저장해서 체크포인트 생성
 
-                if (((BlockSystemTest.IfBlock)print).Validation(hitTag))
+                if (((BlockSystem.IfBlock)print).Validation(hitTag))
                     print = blockStack.peek().left;
                 else
                 {
                     print = blockStack.pop();
-                    ((BlockSystemTest.IfBlock)print).setWorkOut();
+                    ((BlockSystem.IfBlock)print).setWorkOut();
                     print = print.right;
                 }
-                /*
-                switch (hitTag)         // 사용된 조건문에 따라 다르게 동작
-
-                {
-                    case "SnowBall":
-                        Debug.Log("There is " + hitTag + " in front of the Baby");
-                        print = blockStack.peek().left;
-                        hitTag = "theOther";
-                        break;
-                    case "TakeFruits":
-                        Debug.Log("Character can pick up a fruit");
-                        print = blockStack.peek().left;
-                        hitTag = "theOther";
-                        break;
-                    case "PlantTrees":
-                        Debug.Log("He can plant a tree here");
-                        print = blockStack.peek().left;
-                        hitTag = "theOther";
-                        break;
-                    default:
-                        Debug.Log("There is no any object");
-                        print = blockStack.pop().right;
-                        break;
-                }
-                */
             }
             // 현재 노드가 leaf or subLeaf이면 단말노드까지 도달한 것이므로 스택에 저장된 체크포인트로 돌아감
             else if (call.isLeaf(print))
@@ -164,10 +163,10 @@ public class CharacterMotion : MonoBehaviour
                 // subLeaf일 때는 반복문을 1회 수행한 것이므로, 반복문 횟수 감소
                 if (blockStack.peek().getInfo().Split(':')[0].Equals("Button_loop"))
                 {
-                    BlockSystemTest.Block temp = blockStack.peek();
+                    BlockSystem.Block temp = blockStack.peek();
                     //GameObject parent = GameObject.Find(temp.getInfo()).gameObject;
                     GameObject child = GameObject.Find(temp.getInfo()).gameObject.transform.Find("Image_loopNum").gameObject;
-                    child.GetComponent<Image>().sprite = Resources.Load(numResource + ((BlockSystemTest.LoopBlock)temp).getLoopNum(), typeof(Sprite)) as Sprite;
+                    child.GetComponent<Image>().sprite = Resources.Load(numResource + ((BlockSystem.LoopBlock)temp).getLoopNum(), typeof(Sprite)) as Sprite;
                 }
                 print = blockStack.pop();
 
@@ -178,7 +177,7 @@ public class CharacterMotion : MonoBehaviour
             {
                 print = print.right;
             }
-            Debug.Log(print.getInfo());
+            Debug.Log("print info : " + print.getInfo());
             switch (kindOf)
             {
                 case "Button_left":
@@ -219,7 +218,10 @@ public class CharacterMotion : MonoBehaviour
                         animator.SetBool("Push", true);
                         waitTime = 1f;
                         go_forward = false;
-                        roll_snow = true;
+                        if (hitTag == "SnowBall")
+                        {
+                            roll_snow = true;
+                        }
                         //GameObject.Find("Character").transform.rotation = Quaternion.LookRotation(Vector3.forward, Vector3.up);
                         break;
                     }
@@ -234,7 +236,7 @@ public class CharacterMotion : MonoBehaviour
                 case "Button_plant":
                     {
                         Debug.Log("나무심기");
-                        waitTime = 1;
+                        waitTime = 1f;
                         go_forward = false;
                         CollisionDetector.delCuttedTree = true;
                         GameObject prefab = Resources.Load("Prefabs/Pref_Tree_02") as GameObject;
@@ -289,6 +291,7 @@ public class CharacterMotion : MonoBehaviour
         }
         else if (roll_snow == true)
         {
+            animator.SetBool("Push", true);
             GameObject.Find("Character").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
             GameObject.Find("SnowBall").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
             GameObject.Find("SnowBall").transform.transform.Rotate(Vector3.right * 130.0f * Time.deltaTime);

@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Chapter2/stage0205.unity
+=======
+- path: Assets/Scenes/Main.unity
+>>>>>>> origin/TG_BGMSystem
   isLoaded: 1
   isActive: 1
   isSubScene: 0
