@@ -21,6 +21,14 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        if (talkManager.TY_StageNum == 0)
+        {
+            talkIndex = 0;
+        }
+        else
+        {
+            talkIndex = talkManager.TY_DialogNum[talkManager.TY_StageNum - 1];
+        }
         Debug.Log("System start");
         //blockManager = BlockManager.FindObjectOfType<BlockManager>();
         blockManager = BlockSystem.FindObjectOfType<BlockSystem>();
@@ -51,12 +59,20 @@ public class GameManager : MonoBehaviour
     {
         string talkData = talkManager.GetTalk(sNumber, talkIndex);
         Debug.Log("isNpc" + isNpc);
-        if (talkData == null)       // 더 이상 대사가 없다면
+        if (talkIndex == talkManager.TY_DialogNum[talkManager.TY_StageNum])       // 현재 스테이지의 대화를 모두 출력했다면
+        {
+            isAction = false;       // 대화 패널을 내리고
+
+            Debug.Log(talkManager.TY_StageNum + "번 스테이지 대화가 종료되었습니다.");
+            //  talkManager.TY_StageNum 번째 스테이지 씬으로 전환
+            return;                 // 종료
+        }
+        /*if (talkData == null)       // 더 이상 대사가 없다면
         {
             isAction = false;       // 대화 패널을 내리고
             talkIndex = 0;
             return;                 // 종료
-        }
+        }*/
         if (isNpc)
         {
             Debug.Log("to delete :");
