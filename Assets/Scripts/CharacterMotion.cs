@@ -262,7 +262,7 @@ public class CharacterMotion : MonoBehaviour
             yield return new WaitForSeconds(waitTime);
         }
         // TY 성공 애니메이션 처리 (Find 옆에 TakeFruits 만 SoftStar로 변경할 것.
-        if (GameObject.Find("SoftStar").GetComponent<clear>().success == 1)
+        if (GameObject.Find("SoftStar Variant").GetComponent<clear>().success == 1)
         {
             animator.SetBool("Success", true);
         };
@@ -298,8 +298,8 @@ public class CharacterMotion : MonoBehaviour
         {
             animator.SetBool("Push", true);
             GameObject.Find("Character").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
-            GameObject.Find("SnowBall").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
-            GameObject.Find("SnowBall").transform.transform.Rotate(Vector3.right * 130.0f * Time.deltaTime);
+            GameObject.Find("Pref_SnowBall").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
+            GameObject.Find("Pref_SnowBall").transform.transform.Rotate(Vector3.right * 130.0f * Time.deltaTime);
 
         }
     }
