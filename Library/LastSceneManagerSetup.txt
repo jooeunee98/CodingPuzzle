@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Dialogue_UI.unity
+- path: Assets/Scenes/Chapter2/stage0203.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
