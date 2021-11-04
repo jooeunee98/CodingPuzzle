@@ -992,6 +992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4300b5c0b62af82408864fed3ef26077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  success: 0
 --- !u!4 &169300873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2731621824867994303, guid: 779255a143f162e458a996fc190b9c13,
@@ -6445,6 +6446,11 @@ PrefabInstance:
     - target: {fileID: 2079612213667705402, guid: caa983b729b2d464b9757295f48b580f,
         type: 3}
       propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103146274474664258, guid: caa983b729b2d464b9757295f48b580f,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3463386209052262551, guid: caa983b729b2d464b9757295f48b580f,
