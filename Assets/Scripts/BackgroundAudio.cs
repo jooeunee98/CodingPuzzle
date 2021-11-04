@@ -4,32 +4,19 @@ using UnityEngine;
 
 public class BackgroundAudio : MonoBehaviour
 {
-    public AudioSource sound;
-    private Rect audiorect;
-    private static BackgroundAudio audioPlay;
+    private static BackgroundAudio backgroundAudio;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        sound = gameObject.AddComponent<AudioSource>();
-        
-    }
-
-    public void BGMOnOff(bool onOff)
-    {
-        sound.mute = !onOff;
-    }
-
-    private void Awake()
-    {
-        if (audioPlay == null)
+        if (backgroundAudio == null)
         {
-            audioPlay = this;
-            DontDestroyOnLoad(transform.gameObject);
+            backgroundAudio = this;
+            GameObject.DontDestroyOnLoad(backgroundAudio);
         }
         else
         {
+            Debug.Log("Destroy : " + gameObject);
             Destroy(gameObject);
         }
-    }
+    } 
 }

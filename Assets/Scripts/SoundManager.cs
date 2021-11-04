@@ -55,7 +55,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-            private void Load()
+    private void Load()
     {
         muted = PlayerPrefs.GetInt("muted") == 1;
     }
