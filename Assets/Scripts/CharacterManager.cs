@@ -12,8 +12,9 @@ public class CharacterManager : MonoBehaviour
     void Start()
     {
         spawnPosY = 8;
-        CharacterSpawn();
         blockManager = BlockSystem.FindObjectOfType<BlockSystem>();
+        CharacterSpawn();
+        
     }
 
     // Update is called once per frame
