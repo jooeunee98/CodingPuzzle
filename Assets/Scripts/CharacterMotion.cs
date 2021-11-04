@@ -16,6 +16,8 @@ using UnityEngine.UI;
 
 public class CharacterMotion : MonoBehaviour
 {
+    int i = 0;
+    float timespan = 1.0f;
     string beforeAction;
     // Start is called before the first frame update
     [SerializeField]
@@ -265,6 +267,10 @@ public class CharacterMotion : MonoBehaviour
         if (GameObject.Find("SoftStar").GetComponent<clear>().success == 1)
         {
             animator.SetBool("Success", true);
+        }
+        else
+        {
+            animator.SetBool("Fail", true);
         };
         animator.SetBool("theEnd", false);
 
@@ -274,6 +280,20 @@ public class CharacterMotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (timespan >= 0)
+        {
+
+            timespan -= Time.deltaTime;
+            return;
+        }
+        else
+        {
+            if (0 < i && i < 25)
+            {
+                //GameObject.Find("PlantedTree").transform.localScale += new Vector3(0.2f, 0.2f, 0.2f); // 나무 사이즈 확대
+            }
+            i++;
+        }
         if (go_forward == true)
         {
             GameObject.Find("Character").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
