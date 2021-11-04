@@ -261,6 +261,11 @@ public class CharacterMotion : MonoBehaviour
             }
             yield return new WaitForSeconds(waitTime);
         }
+        // TY 성공 애니메이션 처리 (Find 옆에 TakeFruits 만 SoftStar로 변경할 것.
+        if (GameObject.Find("SoftStar").GetComponent<clear>().success == 1)
+        {
+            animator.SetBool("Success", true);
+        };
         animator.SetBool("theEnd", false);
 
         go_forward = false;
