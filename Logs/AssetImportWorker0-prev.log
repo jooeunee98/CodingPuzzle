@@ -1,0 +1,747 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.8f1 (507919d4fff5) revision 5273881'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 22000.258; Version 2009; 64bit' Language: 'ko' Physical Memory: 16318 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\2020.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/GitHub/GitHub/CodingPuzzle
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+64408
+Successfully changed project path to: D:/GitHub/GitHub/CodingPuzzle
+D:/GitHub/GitHub/CodingPuzzle
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 35.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.8f1 (507919d4fff5)
+[Subsystems] Discovering subsystems at path D:/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/GitHub/GitHub/CodingPuzzle/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 660 (ID=0x11c0)
+    Vendor:   
+    VRAM:     1998 MB
+    Driver:   27.21.14.6627
+Initialize mono
+Mono path[0] = 'D:/2020.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'D:/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/2020.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/2020.3.8f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: D:/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/2020.3.8f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Register platform support module: D:/2020.3.8f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
+Registered in 0.002590 seconds.
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 33.93 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.254 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000506 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.681 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1429 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.9 MB.
+System memory in use after: 71.0 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1886.
+Total: 1.763900 ms (FindLiveObjects: 0.162800 ms CreateObjectMapping: 0.036400 ms MarkObjects: 1.497200 ms  DeleteObjects: 0.066200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Block_area.prefab
+  artifactKey: Guid(197808b0683adf34685856ed5d37b5bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Block_area.prefab using Guid(197808b0683adf34685856ed5d37b5bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd5c5163764522ca6331d2aa102c5755') in 0.050668 seconds
+  Import took 0.053298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Toggle_button.prefab
+  artifactKey: Guid(3fb90789946cd3b43b01289c7cbc97d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toggle_button.prefab using Guid(3fb90789946cd3b43b01289c7cbc97d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '293f710b216aeb1dc5b7aaa3d60aa9a6') in 0.010054 seconds
+  Import took 0.012027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Setting_image.prefab
+  artifactKey: Guid(41528b0a8ac0a3b46b16d635642ce605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Setting_image.prefab using Guid(41528b0a8ac0a3b46b16d635642ce605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '524b95aa1ab4c3cfc0fc8b9290240784') in 0.004433 seconds
+  Import took 0.006509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/NoImage_button.prefab
+  artifactKey: Guid(0755f6e10dc457c49906cea8fc89a021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NoImage_button.prefab using Guid(0755f6e10dc457c49906cea8fc89a021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1fe3270fb37e26a4f159747f3a7822b') in 0.011343 seconds
+  Import took 0.013661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.923938 seconds.
+  path: Assets/Scenes/Chapter1/chapter1Sample.unity
+  artifactKey: Guid(286d5a5ef44b06249871632b8d3623ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Chapter1/chapter1Sample.unity using Guid(286d5a5ef44b06249871632b8d3623ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8ab52c7b60153f15044b920c6f6d56') in 0.008037 seconds
+  Import took 0.010345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002913 seconds.
+  path: Assets/Scenes/Chapter1/chapter1Sample.unity
+  artifactKey: Guid(286d5a5ef44b06249871632b8d3623ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Chapter1/chapter1Sample.unity using Guid(286d5a5ef44b06249871632b8d3623ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8ab52c7b60153f15044b920c6f6d56') in 0.002409 seconds
+  Import took 0.004743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.484421 seconds.
+  path: Assets/Scenes/Chapter1/stage0102.unity
+  artifactKey: Guid(0b67c671294e9f043820cf8d626bd2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Chapter1/stage0102.unity using Guid(0b67c671294e9f043820cf8d626bd2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab2249b0f0a9d2168943080bcfa7ea41') in 0.007170 seconds
+  Import took 0.009565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.513677 seconds.
+  path: Assets/Scenes/Chapter1/stage0103.unity
+  artifactKey: Guid(3d283234252348c4cbcbb237d2e2a8b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Chapter1/stage0103.unity using Guid(3d283234252348c4cbcbb237d2e2a8b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35ca69df6b0123b9369583050e2df997') in 0.002625 seconds
+  Import took 0.005254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.690687 seconds.
+  path: Assets/Scenes/Chapter1/stage0104.unity
+  artifactKey: Guid(02a995fa90ebc8e41a12520f0c09b28c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Chapter1/stage0104.unity using Guid(02a995fa90ebc8e41a12520f0c09b28c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84aef114d2be16acd9f2a3b4a3d8d5dd') in 0.007474 seconds
+  Import took 0.009720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.126338 seconds.
+  path: Assets/Scenes/Chapter1/stage0105.unity
+  artifactKey: Guid(3c54b6dede40d6f47acd990a3b7d643b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Chapter1/stage0105.unity using Guid(3c54b6dede40d6f47acd990a3b7d643b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0be6e84cd4562c1827ec56ffbff6f3d8') in 0.002506 seconds
+  Import took 0.004844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.477092 seconds.
+  path: Assets/Scenes/Main.unity
+  artifactKey: Guid(19338c74c8e6337439b80d5dd29d0c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main.unity using Guid(19338c74c8e6337439b80d5dd29d0c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab10daa05714a81a8dca18b1ce66101a') in 0.002783 seconds
+  Import took 0.005110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.562202 seconds.
+  path: Assets/Scripts/clear.cs
+  artifactKey: Guid(4300b5c0b62af82408864fed3ef26077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/clear.cs using Guid(4300b5c0b62af82408864fed3ef26077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c23fff90c871793592fcd5348d88f2') in 0.007338 seconds
+  Import took 0.009488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018233 seconds.
+  path: Assets/Scripts/clear.cs
+  artifactKey: Guid(4300b5c0b62af82408864fed3ef26077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/clear.cs using Guid(4300b5c0b62af82408864fed3ef26077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c23fff90c871793592fcd5348d88f2') in 0.002239 seconds
+  Import took 0.004474 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000802 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.689 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1427 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.8 MB.
+System memory in use after: 70.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1891.
+Total: 1.445800 ms (FindLiveObjects: 0.194500 ms CreateObjectMapping: 0.051800 ms MarkObjects: 1.184000 ms  DeleteObjects: 0.014500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 40.974340 seconds.
+  path: Assets/Scripts/clear.cs
+  artifactKey: Guid(4300b5c0b62af82408864fed3ef26077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/clear.cs using Guid(4300b5c0b62af82408864fed3ef26077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0426b51a5fcadf225fc2eb3bf3754c03') in 0.004360 seconds
+  Import took 0.006394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.213123 seconds.
+  path: Assets/Scripts/CharacterMotion.cs
+  artifactKey: Guid(7ccb98d70e00d404791ac2cf984166be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CharacterMotion.cs using Guid(7ccb98d70e00d404791ac2cf984166be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ec5be31ad6de09b0b7cbceb099562a') in 0.002799 seconds
+  Import took 0.005408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002853 seconds.
+  path: Assets/Scripts/CharacterMotion.cs
+  artifactKey: Guid(7ccb98d70e00d404791ac2cf984166be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CharacterMotion.cs using Guid(7ccb98d70e00d404791ac2cf984166be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ec5be31ad6de09b0b7cbceb099562a') in 0.002574 seconds
+  Import took 0.004837 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000680 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.696 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1427 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.9 MB.
+System memory in use after: 71.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1894.
+Total: 1.703900 ms (FindLiveObjects: 0.154000 ms CreateObjectMapping: 0.032600 ms MarkObjects: 1.503900 ms  DeleteObjects: 0.012300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 42.618859 seconds.
+  path: Assets/Scripts/CharacterMotion.cs
+  artifactKey: Guid(7ccb98d70e00d404791ac2cf984166be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CharacterMotion.cs using Guid(7ccb98d70e00d404791ac2cf984166be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b841093169288781aa916b0a39e57ea7') in 0.004281 seconds
+  Import took 0.006294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.216367 seconds.
+  path: Assets/Prefab/SoftStar Variant.prefab
+  artifactKey: Guid(80617cda464d76243b697af89b0363ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/SoftStar Variant.prefab using Guid(80617cda464d76243b697af89b0363ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bff2fff5b0e9ac09b15720ac671391ed') in 0.066565 seconds
+  Import took 0.069263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.439621 seconds.
+  path: Assets/Resources/Prefabs/Button_forward 1.prefab
+  artifactKey: Guid(48d6560d34cd9b340aaa0ccba4654f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Button_forward 1.prefab using Guid(48d6560d34cd9b340aaa0ccba4654f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d83551316fcb78d3eb7b43f53e3786b') in 0.021082 seconds
+  Import took 0.023700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Resources/Prefabs/Button_left 1.prefab
+  artifactKey: Guid(b3c25066eccbb6146bcb234710078922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Button_left 1.prefab using Guid(b3c25066eccbb6146bcb234710078922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487a35c1eb17942f04ebccf02a00b805') in 0.009611 seconds
+  Import took 0.012376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Resources/Prefabs/Button_push.prefab
+  artifactKey: Guid(bde4ae6d5f49d124ab7bc803af4d1a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Button_push.prefab using Guid(bde4ae6d5f49d124ab7bc803af4d1a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eb832661ede9e40bc4f9b9cb5301b18') in 0.009722 seconds
+  Import took 0.012302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Resources/Prefabs/Pref_Tree_02.prefab
+  artifactKey: Guid(bb3d22ebf7180ba47becc581d512ca2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pref_Tree_02.prefab using Guid(bb3d22ebf7180ba47becc581d512ca2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f03967f0f42a59a1a8a2717ec896010') in 0.025475 seconds
+  Import took 0.028266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Resources/Prefabs/Button_forward.prefab
+  artifactKey: Guid(733a2cff331b44e4db11822dbf57d348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Button_forward.prefab using Guid(733a2cff331b44e4db11822dbf57d348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c476149926965ab58c2a88117c2ec93') in 0.009689 seconds
+  Import took 0.012193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Resources/Prefabs/Taunt 1.prefab
+  artifactKey: Guid(d3212872352fb4c4da178334738092b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Taunt 1.prefab using Guid(d3212872352fb4c4da178334738092b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '617f5409d32eea722bfadc36bbfe234c') in 0.356946 seconds
+  Import took 0.359700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Resources/Prefabs/lambert1.mat
+  artifactKey: Guid(eb21d3d125e96f44e9292c214e29840c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/lambert1.mat using Guid(eb21d3d125e96f44e9292c214e29840c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9904d906caa83ebc080b0ddc131a98f') in 0.029993 seconds
+  Import took 0.032495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Resources/Prefabs/Button_if.prefab
+  artifactKey: Guid(4e63de7dd0586b143ae996731248da57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Button_if.prefab using Guid(4e63de7dd0586b143ae996731248da57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f139b46322c97a9adc28d8bd80aee512') in 0.008790 seconds
+  Import took 0.011263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Resources/Prefabs/Walking (3).fbx
+  artifactKey: Guid(08e9d4f3ae0a7aa4e9daabba3b480e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Walking (3).fbx using Guid(08e9d4f3ae0a7aa4e9daabba3b480e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2626c48d653274b4c7a6b93bbef4ca7') in 0.071792 seconds
+  Import took 0.074511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Resources/Prefabs/Button_forward 1.prefab
+  artifactKey: Guid(48d6560d34cd9b340aaa0ccba4654f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Button_forward 1.prefab using Guid(48d6560d34cd9b340aaa0ccba4654f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d83551316fcb78d3eb7b43f53e3786b') in 0.004239 seconds
+  Import took 0.006324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Resources/Prefabs/Button_right.prefab
+  artifactKey: Guid(c486612fb111b734db915270955dcfc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Button_right.prefab using Guid(c486612fb111b734db915270955dcfc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad00ab4b3625db9c2f5dbd5a743211d8') in 0.008559 seconds
+  Import took 0.010858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Resources/Prefabs/Button_left.prefab
+  artifactKey: Guid(186b969984e7e4d42b6c302336c1850e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Button_left.prefab using Guid(186b969984e7e4d42b6c302336c1850e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b464d85c264ae98d1df87187343f22de') in 0.009378 seconds
+  Import took 0.012079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Resources/Prefabs/Button_right 1.prefab
+  artifactKey: Guid(7c64f9abedb1ce24ca06aa4702c9a991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Button_right 1.prefab using Guid(7c64f9abedb1ce24ca06aa4702c9a991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c1f1d337c1bcc8157632c8de3fe16b9') in 0.009172 seconds
+  Import took 0.011708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Resources/Prefabs/Walking 1.prefab
+  artifactKey: Guid(3fac990e5fb914d49b040cbfc07702aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Walking 1.prefab using Guid(3fac990e5fb914d49b040cbfc07702aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Walking': Transition 'Idle -> Fail' in state 'Idle' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'Walking': Transition 'Idle -> Success' in state 'Idle' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'Walking': Transition 'Walking -> Plant tree' in state 'Walking' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'Walking': Transition 'Push -> Picking up' in state 'Push' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'Walking': Transition 'Picking up -> Push' in state 'Picking up' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'Walking': Transition 'Picking up -> Plant tree' in state 'Picking up' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'Walking': Transition 'Plant tree -> Picking up' in state 'Plant tree' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'Walking': Transition 'Plant tree -> Walking' in state 'Plant tree' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: '4ca850b4f4234bec0e8c408f8be05813') in 0.208637 seconds
+  Import took 0.211708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Resources/Prefabs/Walking.prefab
+  artifactKey: Guid(ac8a91d20f5ce404f868ead938b4f452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Walking.prefab using Guid(ac8a91d20f5ce404f868ead938b4f452) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Walking': Transition 'Idle -> Fail' in state 'Idle' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'Walking': Transition 'Idle -> Success' in state 'Idle' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'Walking': Transition 'Walking -> Plant tree' in state 'Walking' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'Walking': Transition 'Push -> Picking up' in state 'Push' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'Walking': Transition 'Picking up -> Push' in state 'Picking up' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'Walking': Transition 'Picking up -> Plant tree' in state 'Picking up' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'Walking': Transition 'Plant tree -> Picking up' in state 'Plant tree' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'Walking': Transition 'Plant tree -> Walking' in state 'Plant tree' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: 'b59706d1c4dbfe16f92155e2778987ea') in 0.203279 seconds
+  Import took 0.206782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Resources/Prefabs/Button_loop.prefab
+  artifactKey: Guid(c7f1e421f6ec68e46bb17662dfc2ace5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Button_loop.prefab using Guid(c7f1e421f6ec68e46bb17662dfc2ace5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6714fa2a6bb9d69b43a69c85b10bc631') in 0.009758 seconds
+  Import took 0.012060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Resources/Prefabs/Taunt.prefab
+  artifactKey: Guid(70c59e18f724a4f48a2fd1ebbe9ac08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Taunt.prefab using Guid(70c59e18f724a4f48a2fd1ebbe9ac08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a37d0e4c90e1018016c5b3ef8fd1cc7c') in 0.225336 seconds
+  Import took 0.228150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.297913 seconds.
+  path: Assets/Assets/Scanta/Sharkoy/AnimatorController/Walking.controller
+  artifactKey: Guid(9a0cb6e1403b449c4b150ac8fd0041c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Scanta/Sharkoy/AnimatorController/Walking.controller using Guid(9a0cb6e1403b449c4b150ac8fd0041c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eedb0c40a9aadd63e6176567980d19d0') in 0.015572 seconds
+  Import took 0.018732 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001027 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.904 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1427 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1941.
+Total: 2.481200 ms (FindLiveObjects: 0.385400 ms CreateObjectMapping: 0.127300 ms MarkObjects: 1.945500 ms  DeleteObjects: 0.021800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 74.397633 seconds.
+  path: Assets/Scenes/stage0101.unity
+  artifactKey: Guid(76c925e3101c1de45992bccc45b1d19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/stage0101.unity using Guid(76c925e3101c1de45992bccc45b1d19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae28e2e0f152d3ed1b67d22aa07da27') in 0.009943 seconds
+  Import took 0.012521 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000640 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.700 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1427 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1944.
+Total: 1.391700 ms (FindLiveObjects: 0.156100 ms CreateObjectMapping: 0.033400 ms MarkObjects: 1.190700 ms  DeleteObjects: 0.010600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000763 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.724 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1427 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1947.
+Total: 1.625300 ms (FindLiveObjects: 0.143700 ms CreateObjectMapping: 0.032200 ms MarkObjects: 1.436800 ms  DeleteObjects: 0.011600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000707 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.691 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1427 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1950.
+Total: 1.410000 ms (FindLiveObjects: 0.165800 ms CreateObjectMapping: 0.031500 ms MarkObjects: 1.200900 ms  DeleteObjects: 0.010800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
