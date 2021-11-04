@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        if (talkManager.TY_StageNum == 0)
+        /*if (talkManager.TY_StageNum == 0)
         {
             talkIndex = 0;
         }
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
             {
                 talkIndex = talkManager.TY_DialogNum[talkManager.TY_StageNum - 1];
             }
-        }
+        }*/
         Debug.Log("System start");
         //blockManager = BlockManager.FindObjectOfType<BlockManager>();
         blockManager = BlockSystem.FindObjectOfType<BlockSystem>();
