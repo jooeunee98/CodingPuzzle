@@ -16,7 +16,7 @@ public class CollisionDetector : MonoBehaviour
     {
         string detectObject = null;
 
-        switch (other.tag)
+        switch (other.name)
         {
             case "SnowBall":
                 detectObject = "SnowBall";

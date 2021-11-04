@@ -293,8 +293,8 @@ public class CharacterMotion : MonoBehaviour
         {
             animator.SetBool("Push", true);
             GameObject.Find("Character").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
-            GameObject.Find("Pref_SnowBall").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
-            GameObject.Find("Pref_SnowBall").transform.transform.Rotate(Vector3.right * 130.0f * Time.deltaTime);
+            GameObject.Find("SnowBall").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
+            GameObject.Find("SnowBall").transform.transform.Rotate(Vector3.right * 130.0f * Time.deltaTime);
 
         }
     }

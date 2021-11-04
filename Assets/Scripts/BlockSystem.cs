@@ -711,27 +711,27 @@ public class BlockSystem : MonoBehaviour
         {
             case "Button_left":
                 {
-                    imgResource = "images/image_renewal/좌회전 사본";
+                    imgResource = "images/Left";
                     prefResource = "Prefabs/Button_left";
                     break;
                 }
             case "Button_forward":
                 {
-                    imgResource = "images/image_renewal/전진 사본";
+                    imgResource = "images/Forward";
                     prefResource = "Prefabs/Button_forward";
                     break;
                 }
             case "Button_right":
                 {
-                    imgResource = "images/image_renewal/우회전 사본";
+                    imgResource = "images/Right";
                     prefResource = "Prefabs/Button_right";
                     break;
                 }
             case "Button_loop":
                 {
-                    imgResource = "images/image_renewal/반복 사본";
+                    imgResource = "images/For";
                     prefResource = "Prefabs/Button_loop";
-                    numResource += "images/image_renewal/" + initLoopNum.ToString() + " 사본";
+                    numResource += "images/클리어넘버타이틀" + initLoopNum.ToString();
                     if (blockStack.isEmpty())
                     {
                         //Debug.Log("stack is empty");
@@ -749,7 +749,7 @@ public class BlockSystem : MonoBehaviour
                 }
             case "Button_if":
                 {
-                    imgResource = "images/image_renewal/조건 사본";
+                    imgResource = "images/image_renewal/조건";
                     prefResource = "Prefabs/Button_if";
                     if (blockStack.isEmpty())
                     {
@@ -775,7 +775,7 @@ public class BlockSystem : MonoBehaviour
                 }
             case "Button_push":
                 {
-                    imgResource = "images/image_renewal/눈덩이 사본";
+                    imgResource = "images/image_renewal/눈밀기";
                     prefResource = "Prefabs/Button_push";
                     break;
                 }
