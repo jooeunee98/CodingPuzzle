@@ -15,11 +15,13 @@ public class CollisionDetector : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         string detectObject = null;
+        string detectName = null;
 
         switch (other.tag)
         {
             case "SnowBall":
                 detectObject = "SnowBall";
+                detectName = other.name;
                 break;
             case "PlantTrees":
                 Debug.Log("PlantTrees");
@@ -45,11 +47,13 @@ public class CollisionDetector : MonoBehaviour
             delCuttedTree = false;
         }
         CharacterMotion.hitTag = detectObject;
+        CharacterMotion.hitName = detectName;
     }
 
     private void OnTriggerExit(Collider other)
     {
         Debug.Log(other.name + "감지 종료");
         CharacterMotion.hitTag = "theOther";
+        CharacterMotion.hitName = "theOther";
     }
 }

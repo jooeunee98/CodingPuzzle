@@ -8,11 +8,12 @@ public class CharacterManager : MonoBehaviour
     // 캐릭터 및 별(골지점) 초기화 위치
     public float spawnPosX, spawnPosY, spawnPosZ;
     public float spawnRotX, spawnRotY, spawnRotZ;
-    
+    BlockSystem blockManager;
     void Start()
     {
         spawnPosY = 8;
         CharacterSpawn();
+        blockManager = BlockSystem.FindObjectOfType<BlockSystem>();
     }
 
     // Update is called once per frame
@@ -36,5 +37,6 @@ public class CharacterManager : MonoBehaviour
         character.transform.localPosition = new Vector3(spawnPosX, spawnPosY, spawnPosZ);
         character.transform.localEulerAngles = new Vector3(spawnRotX, spawnRotY, spawnRotZ);
         character.name = "Character";
+        blockManager.deleteAll();
     }
 }

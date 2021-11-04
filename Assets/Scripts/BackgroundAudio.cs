@@ -18,5 +18,5 @@ public class BackgroundAudio : MonoBehaviour
             Debug.Log("Destroy : " + gameObject);
             Destroy(gameObject);
         }
-    } 
+    }
 }

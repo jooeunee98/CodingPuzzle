@@ -140,21 +140,27 @@ public class BlockSystem : MonoBehaviour
         internal Block left;
         internal Block right;
         internal string info { get; set; }
+        private bool visited;
 
         public Block()
         {
             left = right = null;
             info = null;
+            visited = false;
         }
         public Block(string info)
         {
             left = right = null;
             this.info = info;
+            visited = false;
+
         }
         public Block(string info, int id)
         {
             left = right = null;
             this.info = info + ':' + id.ToString();
+            visited = false;
+
         }
         public string getInfo()
         {
@@ -163,6 +169,10 @@ public class BlockSystem : MonoBehaviour
         public bool isEmpty()
         {
             return (this.left == null && this.right == null) ? true : false;
+        }
+        public bool visit()
+        {
+            return visited;
         }
     }
 
@@ -652,6 +662,48 @@ public class BlockSystem : MonoBehaviour
             Debug.Log(print.getInfo());
         }
     }
+    
+    public int countBlocks()
+    {
+        int number = 0;
+        string kindOf = null;
+        Block search = root;
+        BStack s1 = new BStack();
+        s1.push(search);
+
+        while (!s1.isEmpty())
+        {
+            search = s1.pop();
+            kindOf = search.getInfo().Split(':')[0];
+            Debug.Log("kindOf : " + kindOf);
+            switch (kindOf)
+            {
+                case "Button_left":
+                case "Button_forward":
+                case "Button_right":
+                case "Button_push":
+                case "Button_plant":
+                case "Button_fruit":
+                case "Button_water":
+                case "Button_loop":
+                case "Button_if":
+                    {
+                        number++;
+                        break;
+                    }
+            }
+            if (search.left != null)
+            {
+                s1.push(search.left);
+            }
+            if (search.right != null)
+            {
+                s1.push(search.right);
+            }
+        }
+        Debug.Log("Number of Blocks : " + number);
+        return number;
+    }
 
     // 제어문을 중첩할 때 줄 바꾸기를 담당하는 함수
     public void displayBlock()
@@ -781,13 +833,19 @@ public class BlockSystem : MonoBehaviour
                 }
             case "Button_plant":
                 {
-                    imgResource = "images/image_renewal/나무심기";
+                    imgResource = "images/image_renewal/나무심기 사본";
                     prefResource = "Prefabs/Button_push";
                     break;
                 }
             case "Button_fruit":
                 {
-                    imgResource = "images/image_renewal/과일줍기";
+                    imgResource = "images/image_renewal/줍기 사본";
+                    prefResource = "Prefabs/Button_push";
+                    break;
+                }
+            case "Button_water":
+                {
+                    imgResource = "images/image_renewal/물뜨기 사본";
                     prefResource = "Prefabs/Button_push";
                     break;
                 }
