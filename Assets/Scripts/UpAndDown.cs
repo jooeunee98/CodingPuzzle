@@ -23,7 +23,7 @@ public class UpAndDown : MonoBehaviour
             {
                 runningTime += Time.deltaTime * speed;
                 yPos = Mathf.Sin(runningTime) * length;
-                Debug.Log(yPos);
+                //Debug.Log(yPos);
                 this.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + yPos, gameObject.transform.position.z);
             });
     }
