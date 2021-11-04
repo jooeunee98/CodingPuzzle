@@ -11,6 +11,7 @@ TagManager:
   - ChapterButton3
   - ChapterButton4
   - SnowBall
+  - Water
   layers:
   - Default
   - TransparentFX
