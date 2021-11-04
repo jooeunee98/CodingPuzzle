@@ -11,7 +11,7 @@ public class BackgroundAudio : MonoBehaviour
         if (backgroundAudio == null)
         {
             backgroundAudio = this;
-            GameObject.DontDestroyOnLoad(backgroundAudio);
+            DontDestroyOnLoad(backgroundAudio);
         }
         else
         {
