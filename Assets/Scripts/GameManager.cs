@@ -27,7 +27,37 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            talkIndex = talkManager.TY_DialogNum[talkManager.TY_StageNum - 1];
+            if (talkManager.TY_StageNum == 11)
+            {
+                talkIndex = 8;
+            }
+            else if (talkManager.TY_StageNum == 14)
+            {
+                talkIndex = talkManager.TY_DialogNum[talkManager.TY_StageNum - 2];
+            }
+            else if (talkManager.TY_StageNum == 21)
+            {
+                talkIndex = talkManager.TY_DialogNum[15];
+            }
+            else if (talkManager.TY_StageNum == 25)
+            {
+                talkIndex = talkManager.TY_DialogNum[22];
+
+            }
+            else if (talkManager.TY_StageNum == 31)
+            {
+                talkIndex = talkManager.TY_DialogNum[25];
+
+            }
+            else if (talkManager.TY_StageNum == 34)
+            {
+                talkIndex = talkManager.TY_DialogNum[31];
+
+            }
+            else
+            {
+                talkIndex = talkManager.TY_DialogNum[talkManager.TY_StageNum - 1];
+            }
         }
         Debug.Log("System start");
         //blockManager = BlockManager.FindObjectOfType<BlockManager>();
@@ -59,6 +89,7 @@ public class GameManager : MonoBehaviour
     {
         string talkData = talkManager.GetTalk(sNumber, talkIndex);
         Debug.Log("isNpc" + isNpc);
+
         if (talkIndex == talkManager.TY_DialogNum[talkManager.TY_StageNum])       // 현재 스테이지의 대화를 모두 출력했다면
         {
             isAction = false;       // 대화 패널을 내리고
