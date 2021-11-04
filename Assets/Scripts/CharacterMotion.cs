@@ -267,7 +267,7 @@ public class CharacterMotion : MonoBehaviour
         if (GameObject.Find("SoftStar Variant").GetComponent<clear>().success == 1)
         {
             animator.SetBool("Success", true);
-            GameObject prefab2 = Resources.Load("Prefabs/Pref_Tree_02") as GameObject;
+            GameObject prefab2 = Resources.Load("Prefabs/Canvas") as GameObject;
             GameObject ClearSC = Instantiate(prefab2) as GameObject;
             ClearSC.gameObject.name = "ClearSC";
         };
