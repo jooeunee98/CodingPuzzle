@@ -30,12 +30,14 @@ public class CharacterMotion : MonoBehaviour
     bool turn_left = false;
     bool roll_snow = false;
     public static string hitTag;
+    public static string hitName;
     float stRotationY;
     int turnDegree = 0;
 
     void Start()
     {
-        hitTag = "Noting";
+        hitTag = "Nothing";
+        hitName = "Nothing";
     }
 
     public void Coru()
@@ -298,9 +300,8 @@ public class CharacterMotion : MonoBehaviour
         {
             animator.SetBool("Push", true);
             GameObject.Find("Character").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
-            GameObject.Find("Pref_SnowBall").transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
-            GameObject.Find("Pref_SnowBall").transform.transform.Rotate(Vector3.right * 130.0f * Time.deltaTime);
-
+            GameObject.Find(hitName).transform.Translate(GameObject.Find("Character").transform.localRotation * Vector3.forward * Time.deltaTime * 5.75f, Space.World);
+            GameObject.Find(hitName).transform.transform.Rotate(Vector3.right * 130.0f * Time.deltaTime);
         }
     }
 }
