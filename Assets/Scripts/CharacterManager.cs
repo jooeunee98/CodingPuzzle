@@ -5,10 +5,23 @@ using UnityEngine;
 public class CharacterManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    
+    public float spawnPosX, spawnPosY, spawnPosZ;
+    public float spawnRotX, spawnRotY, spawnRotZ;
+
     void Start()
     {
+        spawnPosY = 8;
+        CharacterSpawn();
+    }
 
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void CharacterSpawn ()
+    {
         // 프리펩 호출
         GameObject prefab = Resources.Load("Prefabs/Walking") as GameObject;
         // 블루존(코딩존)에 생성할 프리펩 인스턴스화
@@ -16,17 +29,8 @@ public class CharacterManager : MonoBehaviour
         // mapBlocks 밑에다가 생성
         character.transform.SetParent(GameObject.Find("mapBlocks").transform);
         // 첫번째 블록 위에서 생성
-        character.transform.localPosition = new Vector3(0, 8, 0);
+        character.transform.localPosition = new Vector3(spawnPosX, spawnPosY, spawnPosZ);
+        character.transform.localEulerAngles = new Vector3(spawnRotX, spawnRotY, spawnRotZ);
         character.name = "Character";
-
-
-       
-       
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -10,7 +10,9 @@ public class clear : MonoBehaviour
         if (other.tag == "Character")
         {
             Destroy(gameObject);
-            Debug.Log(111111);
         }
+
+        GameObject.Find("DataManager").GetComponent<PlayerData>().calculateResult();
+        GameObject.Find("DataManager").GetComponent<PlayerData>().saveClearData();
     }
 }
